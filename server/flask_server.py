@@ -29,6 +29,7 @@ app = Flask(__name__, static_folder='../client', static_url_path='')
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 DATA_FILE = os.path.join(os.path.dirname(__file__), 'db.json')
+CLIENT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'client'))
 
 # Database cache to avoid reading from disk on every request
 _db_cache = None
@@ -729,21 +730,26 @@ def api_admin_clear_events():
 @app.route('/')
 def index():
     """Serve the main HTML file."""
-    return send_from_directory(app.static_folder, 'index.html')
+    return send_from_directory(CLIENT_DIR, 'index.html')
 
 
 @app.route('/<path:path>')
 def static_files(path):
     """Serve static files."""
-    # First check if the file exists
-    file_path = os.path.join(app.static_folder, path)
-    if os.path.isfile(file_path):
-        return send_from_directory(app.static_folder, path)
-    # If not found and not an API call, return index.html for client-side routing
-    if not path.startswith('api/'):
-        return send_from_directory(app.static_folder, 'index.html')
-    # For API calls that don't match, return 404
-    return jsonify({'error': 'Not found'}), 404
+    # Check if it's an API call
+    if path.startswith('api/'):
+        return jsonify({'error': 'Not found'}), 404
+    
+    # Try to serve the file
+    try:
+        return send_from_directory(CLIENT_DIR, path)
+    except Exception as e:
+        logger.error(f"Error serving static file {path}: {e}")
+        # Return index.html for client-side routing
+        try:
+            return send_from_directory(CLIENT_DIR, 'index.html')
+        except:
+            return jsonify({'error': 'File not found'}), 404
 
 
 # ============================================================================
