@@ -31,6 +31,7 @@
     {
       "id": "c4de026b148b4c3c88f15ebb1a168169",
       "username": "u1",
+      "email": "u1@example.com",
       "password": "p1",
       "householdId": "957621b617a8422cb945078cf16682a8",
       "token": "5a29834b7eb34375b4f96b58eea5862a",
@@ -39,6 +40,7 @@
     {
       "id": "06929be96583498bae8e9d88b854904f",
       "username": "testuser",
+      "email": "testuser@example.com",
       "password": "1234",
       "householdId": "27be1ca57c044900ad52f81b7d385655",
       "token": "8df558895e744db4b0370ee96aa5263b",
@@ -47,6 +49,7 @@
     {
       "id": "bda4acbd4dfb4a2797b966451bb81c64",
       "username": "דניאל",
+      "email": "daniel@example.com",
       "password": "1",
       "householdId": "2cde7647014345179c935294b2704f74",
       "token": "38d5da259f054945b6bd0e518e45f789",
@@ -55,6 +58,7 @@
     {
       "id": "fed5d4fc13374b7fa94420eff4a893cf",
       "username": "מיטל",
+      "email": "meital@example.com",
       "password": "1",
       "householdId": "2cde7647014345179c935294b2704f74",
       "token": "9657e7c045654507a4724f2a6c0973e5"
@@ -62,7 +66,7 @@
     {
       "id": "7ad1e3574eaf4115bfa2c60ab96448a8",
       "username": "יובל",
-      "email": "yuval",
+      "email": "yuval@example.com",
       "password": "1",
       "householdId": "2cde7647014345179c935294b2704f74",
       "token": "cc264307c2454edabc26af4106e19ad3",

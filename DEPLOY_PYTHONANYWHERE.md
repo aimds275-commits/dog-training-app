@@ -146,6 +146,29 @@ On PythonAnywhere Bash console:
 pip3 install --user flask flask-cors
 ```
 
+### Use a virtualenv (recommended)
+
+It's best to create a virtual environment for the web app and install all requirements from the repository. This avoids conflicts with the system Python and makes the deployment reproducible.
+
+On PythonAnywhere Bash console:
+
+```bash
+# create a venv using the same Python version you've selected for the web app (example: 3.10)
+python3.10 -m venv ~/venvs/dog-training-app-venv
+source ~/venvs/dog-training-app-venv/bin/activate
+# install all server requirements
+pip install -r ~/dog-training-app/server/requirements.txt
+deactivate
+```
+
+After creating the virtualenv, go to the PythonAnywhere Web tab and set the **Virtualenv** path to:
+
+```
+~/venvs/dog-training-app-venv
+```
+
+Then click the **Reload** button for the web app.
+
 ## Step 5: Configure Web App
 
 1. Go to PythonAnywhere Dashboard → Web

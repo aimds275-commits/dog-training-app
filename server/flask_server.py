@@ -318,19 +318,24 @@ def api_login():
     
     if not data or not data.get('email') or not data.get('password'):
         return jsonify({'error': 'email and password required'}), 400
-    
+
     db = load_db()
-    email = data['email'].strip().lower()
+    identifier = data['email'].strip()
+    identifier_l = identifier.lower()
     password = data['password']
-    
+
+    # Allow login by email OR username (fallback). Compare case-insensitively.
     user = None
     for u in db['users']:
-        if u.get('email', '').lower() == email and u.get('password') == password:
-            user = u
-            break
+        user_email = (u.get('email') or '').strip().lower()
+        username = (u.get('username') or '').strip().lower()
+        if (user_email and user_email == identifier_l) or (username and username == identifier_l):
+            if u.get('password') == password:
+                user = u
+                break
     
     if not user:
-        logger.warning(f"Login failed for: {email}")
+        logger.warning(f"Login failed for: {identifier}")
         return jsonify({'error': 'invalid credentials'}), 401
     
     logger.info(f"User logged in: {email}")
