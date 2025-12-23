@@ -437,7 +437,8 @@ def api_events_post():
     logger.info(f"POST /api/events - User {user['username']} added event: {event_type}")
     
     event_id = uuid.uuid4().hex
-    timestamp = datetime.datetime.now(datetime.UTC).timestamp()
+    # Use timezone-aware UTC timestamp
+    timestamp = datetime.datetime.now(datetime.timezone.utc).timestamp()
     
     db['events'].append({
         'id': event_id,
