@@ -24,12 +24,22 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Initialize Flask app
-app = Flask(__name__, static_folder='../client', static_url_path='')
-CORS(app, resources={r"/*": {"origins": "*"}})
+# Resolve paths
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_FILE = os.path.join(SCRIPT_DIR, 'db.json')
+CLIENT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'client'))
 
-DATA_FILE = os.path.join(os.path.dirname(__file__), 'db.json')
-CLIENT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'client'))
+# Log paths for debugging
+logger.info(f"Script directory: {SCRIPT_DIR}")
+logger.info(f"Data file: {DATA_FILE}")
+logger.info(f"Client directory: {CLIENT_DIR}")
+logger.info(f"Client directory exists: {os.path.exists(CLIENT_DIR)}")
+
+# Initialize Flask app with absolute client path
+app = Flask(__name__)
+app.static_folder = CLIENT_DIR
+app.static_url_path = ''
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Database cache to avoid reading from disk on every request
 _db_cache = None
