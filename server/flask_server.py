@@ -735,11 +735,15 @@ def index():
 @app.route('/<path:path>')
 def static_files(path):
     """Serve static files."""
-    try:
+    # First check if the file exists
+    file_path = os.path.join(app.static_folder, path)
+    if os.path.isfile(file_path):
         return send_from_directory(app.static_folder, path)
-    except:
-        # If file not found, return index.html for client-side routing
+    # If not found and not an API call, return index.html for client-side routing
+    if not path.startswith('api/'):
         return send_from_directory(app.static_folder, 'index.html')
+    # For API calls that don't match, return 404
+    return jsonify({'error': 'Not found'}), 404
 
 
 # ============================================================================

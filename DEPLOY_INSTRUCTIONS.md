@@ -80,21 +80,54 @@ On PythonAnywhere Bash console:
 
 ```bash
 # If repository is public:
+git clone https://github.com/aimds275-commits/dog-training-app.git
+
+# If repository is private:
 git clone https://github.com/YOUR_USERNAME/dog-training-app.git
+```
 
-# If repository is private, use Personal Access Token:
-git clone https://<TOKEN>@github.com/YOUR_USERNAME/dog-training-app.git
+When prompted:
+- **Username**: Your GitHub username (e.g., `aimds275-commits`)
+- **Password**: Use a **Personal Access Token** (NOT your Google password or GitHub password)
 
+**Why Personal Access Token?**
+Since you're using GitHub with Google account, GitHub doesn't allow password authentication anymore. You must use a Personal Access Token.
+
+**Creating a Personal Access Token:**
+
+1. Go to GitHub.com → Click your profile picture (top right)
+2. Settings → Developer settings (bottom left)
+3. Personal access tokens → **Tokens (classic)**
+4. Click **"Generate new token (classic)"**
+5. Give it a name: `PythonAnywhere Deployment`
+6. Select expiration: **90 days** (or longer)
+7. Select scopes: Check **`repo`** (full control of private repositories)
+8. Scroll down and click **"Generate token"**
+9. **COPY THE TOKEN IMMEDIATELY** - you won't see it again!
+   - It looks like: `ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`
+
+**Using the Token on PythonAnywhere:**
+
+When you run `git clone`, you'll be prompted:
+
+```bash
+Username for 'https://github.com': aimds275-commits
+Password for 'https://aimds275-commits@github.com': [paste your token here]
+```
+
+**Important**: The token is your password - paste it when asked for password.
+
+**Alternative: Clone with token in URL (skip prompts):**
+
+```bash
+git clone https://YOUR_TOKEN@github.com/YOUR_USERNAME/dog-training-app.git
+
+# Example:
+git clone https://ghp_xxxxxxxxxxxx@github.com/aimds275-commits/dog-training-app.git
 cd dog-training-app
 ```
 
-**Creating a Personal Access Token (for private repos):**
-
-1. GitHub: Settings → Developer settings → Personal access tokens → Tokens (classic)
-2. Click "Generate new token (classic)"
-3. Select scopes: `repo` (full control of private repositories)
-4. Generate and copy the token
-5. Use it in the clone command above
+This method embeds the token in the URL so you won't be prompted for credentials.
 
 **Option B: Upload via PythonAnywhere Files Tab**
 
@@ -161,13 +194,41 @@ Successfully installed Flask-3.0.0 Flask-CORS-4.0.0
 
 ### Step 3: Configure Web App
 
-1. Go to **Web** tab → **Add a new web app**
-2. Choose **Manual configuration** → **Python 3.10**
-3. Set paths:
-   - **Source code**: `/home/YOUR_USERNAME/dog-training-app`
-   - **Working directory**: `/home/YOUR_USERNAME/dog-training-app/server`
+**Important: Use Flask Quickstart, NOT Manual Configuration**
 
-4. Click **WSGI configuration file** and replace content with:
+1. Go to **Web** tab → **Add a new web app**
+2. Choose **Next** on domain selection
+3. Select **Flask** framework
+4. Select **Python 3.10** version
+5. **Path to your Flask app**: Enter the FULL path to flask_server.py:
+   ```
+   /home/YOUR_USERNAME/dog-training-app/server/flask_server.py
+   ```
+   Replace `YOUR_USERNAME` with your PythonAnywhere username (e.g., `dogdshmaya`)
+   
+   **Example**: `/home/dogdshmaya/dog-training-app/server/flask_server.py`
+   
+   ⚠️ **Important**: The path MUST end in `.py` and point to the `flask_server.py` file!
+
+6. Click **Next** - PythonAnywhere will automatically create the web app
+
+**After creation, configure static files:**
+
+7. Scroll down to **Static files** section
+8. **REMOVE** the `/` mapping if it exists (this causes 404 on API calls!)
+9. Add **ONE** mapping only:
+   
+   | URL | Directory |
+   |-----|-----------|
+   | `/static` | `/home/YOUR_USERNAME/dog-training-app/client` |
+
+10. Click **Reload** button at the top
+
+**Important**: Do NOT map `/` to the client folder - this will break API routes!
+
+**If you already chose Manual Configuration instead:**
+
+1. Click **WSGI configuration file** and replace content with:
 
 ```python
 import sys
@@ -185,20 +246,9 @@ os.chdir(project_home)
 from flask_server import app as application
 ```
 
-5. Configure **Static files** mapping:
-   
-   Add two entries:
-   
-   | URL | Directory |
-   |-----|-----------|
-   | `/static` | `/home/YOUR_USERNAME/dog-training-app/client` |
-   | `/` | `/home/YOUR_USERNAME/dog-training-app/client` |
-   
-   Click "Add" for each mapping.
-
-6. **Save** and click **Reload** button at the top
-
-7. Your app should now be live at: `https://YOUR_USERNAME.pythonanywhere.com`
+2. Set **Source code**: `/home/YOUR_USERNAME/dog-training-app`
+3. Set **Working directory**: `/home/YOUR_USERNAME/dog-training-app/server`
+4. Configure static files as shown above
 
 ### Step 4: Test
 
@@ -245,12 +295,12 @@ You can also use VS Code tasks:
 
 ### Static files not loading
 - Verify static files mapping in Web tab
-- Path should be: `/home/YOUR_USERNAME/dog-training-app/client`
+- Path should be: `/home/dogdshmaya/dog-training-app/client`
 
 ### Database not persisting
 ```bash
 # Check permissions
-chmod 644 /home/YOUR_USERNAME/dog-training-app/server/db.json
+chmod 644 /home/dogdshmaya/dog-training-app/server/db.json
 ```
 
 ### Import errors
