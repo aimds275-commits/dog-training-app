@@ -187,10 +187,21 @@ cd ~/dog-training-app/server
 pip3 install --user -r requirements.txt
 ```
 
+⚠️ **Make sure you're in the server directory before installing!**
+
 Expected output:
 ```
 Successfully installed Flask-3.0.0 Flask-CORS-4.0.0
 ```
+
+**If you get permission errors**, the `--user` flag should fix it.
+
+**Verify installation:**
+```bash
+pip3 list | grep -i flask
+```
+
+You should see both Flask and Flask-CORS listed.
 
 ### Step 3: Configure Web App
 
