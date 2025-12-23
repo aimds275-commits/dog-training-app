@@ -338,7 +338,7 @@ def api_login():
         logger.warning(f"Login failed for: {identifier}")
         return jsonify({'error': 'invalid credentials'}), 401
     
-    logger.info(f"User logged in: {email}")
+    logger.info(f"User logged in: {identifier}")
     household = get_household(db, user['householdId'])
     scores = compute_scoreboard(db, user['householdId'])
     
