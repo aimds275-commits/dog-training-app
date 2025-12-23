@@ -8,8 +8,9 @@ import json
 import sys
 import os
 
-# Add parent directory to path
-sys.path.insert(0, os.path.dirname(__file__))
+# Add parent directory to path (use absolute path so script is runnable from any CWD)
+script_dir = os.path.abspath(os.path.dirname(__file__))
+sys.path.insert(0, script_dir)
 
 def test_load_db():
     """Test database loading"""
@@ -83,6 +84,9 @@ def test_scoring_system(db):
         'poop': compute_points_for_event('poop'),
         'pee': compute_points_for_event('pee'),
         'walk': compute_points_for_event('walk'),
+        'walk_morning': compute_points_for_event('walk_morning'),
+        'walk_afternoon': compute_points_for_event('walk_afternoon'),
+        'walk_evening': compute_points_for_event('walk_evening'),
         'reward': compute_points_for_event('reward'),
         'accident': compute_points_for_event('accident'),
         'feed_morning': compute_points_for_event('feed_morning'),
@@ -92,6 +96,9 @@ def test_scoring_system(db):
         'poop': 3,
         'pee': 2,
         'walk': 1,
+        'walk_morning': 1,
+        'walk_afternoon': 1,
+        'walk_evening': 1,
         'reward': 1,
         'accident': -2,
         'feed_morning': 1,
@@ -151,6 +158,37 @@ def test_today_events(db):
         print("    (No events today - this is expected if running on a different date)")
     
     return True
+
+
+def test_walk_types_in_scoreboard():
+    """Verify compute_scoreboard treats walk_morning/afternoon/evening correctly"""
+    from server import compute_scoreboard
+    import time
+
+    # Build a tiny DB for a single household with two users and a few events
+    now = int(time.time())
+    household_id = 'hh_test'
+    user_a = {'id': 'u_a', 'username': 'A', 'email': 'a@example.com', 'householdId': household_id}
+    user_b = {'id': 'u_b', 'username': 'B', 'email': 'b@example.com', 'householdId': household_id}
+    db = {
+        'households': [{'id': household_id, 'dogName': 'שיצו'}],
+        'users': [user_a, user_b],
+        'events': [
+            {'id': 'e1', 'householdId': household_id, 'type': 'walk_morning', 'timestamp': now, 'userId': 'u_a'},
+            {'id': 'e2', 'householdId': household_id, 'type': 'walk_afternoon', 'timestamp': now, 'userId': 'u_b'},
+            {'id': 'e3', 'householdId': household_id, 'type': 'walk_evening', 'timestamp': now, 'userId': 'u_a'},
+            {'id': 'e4', 'householdId': household_id, 'type': 'poop', 'timestamp': now, 'userId': 'u_b'},
+        ]
+    }
+
+    scoreboard, family_total, family_weekly = compute_scoreboard(db, household_id)
+    # Expected points: walk_* =1 each, poop=3 => total = 1+1+1+3 = 6
+    if family_total == 6:
+        print('✓ Walk types contribute correctly to family total: 6 points')
+        return True
+    else:
+        print(f'✗ Unexpected family total: expected 6 got {family_total}')
+        return False
 
 def test_api_simulation():
     """Simulate API calls"""

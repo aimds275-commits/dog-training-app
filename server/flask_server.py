@@ -271,6 +271,7 @@ def api_register():
             'id': household_id,
             'dogName': '',
             'inviteTokens': [new_invite],
+            'inviteLinks': {},
             'dogAgeMonths': 0,
             'dogPhotoUrl': ''
         })
@@ -291,6 +292,13 @@ def api_register():
         'token': token,
         'isAdmin': is_admin
     })
+
+    # If registered via invite, record which user used the token
+    if invite_token:
+        household = get_household(db, household_id)
+        if household is not None:
+            links = household.setdefault('inviteLinks', {})
+            links[invite_token] = user_id
     
     save_db(db)
     logger.info(f"User registered: {email}, admin: {is_admin}")
@@ -369,6 +377,19 @@ def api_user():
     household = get_household(db, user['householdId'])
     scores = compute_scoreboard(db, user['householdId'])
     
+    # Build invite tokens with optional linked username
+    invite_tokens = []
+    for t in household.get('inviteTokens', []):
+        linked_user = None
+        links = household.get('inviteLinks', {})
+        linked_id = links.get(t)
+        if linked_id:
+            for u in db['users']:
+                if u['id'] == linked_id:
+                    linked_user = u.get('username')
+                    break
+        invite_tokens.append({'token': t, 'linkedUsername': linked_user})
+
     return jsonify({
         'userId': user['id'],
         'username': user['username'],
@@ -377,7 +398,7 @@ def api_user():
         'dogName': household.get('dogName', ''),
         'dogAgeMonths': household.get('dogAgeMonths'),
         'dogPhotoUrl': household.get('dogPhotoUrl'),
-        'inviteTokens': household.get('inviteTokens', []),
+        'inviteTokens': invite_tokens,
         'isAdmin': user.get('isAdmin', False),
         **scores
     })
@@ -395,19 +416,26 @@ def api_dog():
     if not user:
         return jsonify({'error': 'invalid token'}), 401
     
+    # Only household managers (admins) can edit the dog / household settings
+    if not user.get('isAdmin'):
+        return jsonify({'error': 'manager only'}), 403
+
     data = request.get_json()
     household = get_household(db, user['householdId'])
-    
+
+    if not data:
+        return jsonify({'error': 'no data provided'}), 400
+
     if 'dogName' in data:
         household['dogName'] = data['dogName']
     if 'dogAgeMonths' in data:
         household['dogAgeMonths'] = data['dogAgeMonths']
     if 'dogPhotoUrl' in data:
         household['dogPhotoUrl'] = data['dogPhotoUrl']
-    
+
     save_db(db)
     scores = compute_scoreboard(db, user['householdId'])
-    
+
     return jsonify({
         'dogName': household.get('dogName', ''),
         'dogAgeMonths': household.get('dogAgeMonths'),
@@ -638,14 +666,27 @@ def api_invite():
     
     household = get_household(db, user['householdId'])
     new_token = uuid.uuid4().hex
-    household['inviteTokens'].append(new_token)
-    
+    household.setdefault('inviteTokens', []).append(new_token)
+    household.setdefault('inviteLinks', {})
+
     save_db(db)
     logger.info(f"New invite token generated for household {user['householdId']}")
-    
+
+    # return tokens with linked usernames if present
+    invite_tokens = []
+    for t in household.get('inviteTokens', []):
+        linked = None
+        linked_id = household.get('inviteLinks', {}).get(t)
+        if linked_id:
+            for u in db['users']:
+                if u['id'] == linked_id:
+                    linked = u.get('username')
+                    break
+        invite_tokens.append({'token': t, 'linkedUsername': linked})
+
     return jsonify({
         'token': new_token,
-        'inviteTokens': household['inviteTokens']
+        'inviteTokens': invite_tokens
     })
 
 
@@ -667,13 +708,76 @@ def api_invite_reset():
     household = get_household(db, user['householdId'])
     new_token = uuid.uuid4().hex
     household['inviteTokens'] = [new_token]
-    
+    household['inviteLinks'] = {}
+
     save_db(db)
     logger.info(f"Invite tokens reset for household {user['householdId']}")
-    
+
+    invite_tokens = [{'token': new_token, 'linkedUsername': None}]
     return jsonify({
-        'inviteTokens': household['inviteTokens']
+        'inviteTokens': invite_tokens
     })
+
+
+@app.route('/api/household/members', methods=['GET'])
+def api_household_members():
+    """List members in the caller's household with their manager status."""
+    token = get_auth_token()
+    if not token:
+        return jsonify({'error': 'unauthorized'}), 401
+
+    db = load_db()
+    user = get_user_by_token(db, token)
+    if not user:
+        return jsonify({'error': 'invalid token'}), 401
+
+    members = [
+        {
+            'id': u['id'],
+            'username': u.get('username'),
+            'email': u.get('email', ''),
+            'isAdmin': u.get('isAdmin', False)
+        }
+        for u in db['users'] if u['householdId'] == user['householdId']
+    ]
+
+    return jsonify({'members': members})
+
+
+@app.route('/api/household/members/<member_id>/manager', methods=['POST'])
+def api_set_manager(member_id):
+    """Set or unset manager status for a household member. Caller must be a manager."""
+    token = get_auth_token()
+    if not token:
+        return jsonify({'error': 'unauthorized'}), 401
+
+    db = load_db()
+    caller = get_user_by_token(db, token)
+    if not caller:
+        return jsonify({'error': 'invalid token'}), 401
+
+    if not caller.get('isAdmin'):
+        return jsonify({'error': 'manager only'}), 403
+
+    data = request.get_json() or {}
+    make_manager = bool(data.get('isAdmin'))
+
+    # Find the member in same household
+    member = None
+    for u in db['users']:
+        if u['id'] == member_id and u['householdId'] == caller['householdId']:
+            member = u
+            break
+
+    if not member:
+        return jsonify({'error': 'member not found'}), 404
+
+    member['isAdmin'] = make_manager
+    save_db(db)
+
+    logger.info(f"User {caller['username']} set isAdmin={make_manager} for member {member.get('username')}")
+
+    return jsonify({'success': True, 'memberId': member['id'], 'isAdmin': member['isAdmin']})
 
 
 @app.route('/api/admin/reset-scores', methods=['POST'])

@@ -118,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let walkTimerId = null;
   let walkStartTime = null;
+  let currentSchedule = null;
 
   // Auth tab switching
   loginTab.addEventListener('click', () => {
@@ -281,14 +282,27 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderInvites(tokens) {
     inviteList.innerHTML = '';
     const base = window.location.origin + window.location.pathname;
-    tokens.forEach((tok) => {
+    tokens.forEach((tokObj) => {
+      // tokObj may be a string (legacy) or an object { token, linkedUsername }
+      const token = typeof tokObj === 'string' ? tokObj : tokObj.token;
+      const linked = typeof tokObj === 'string' ? null : tokObj.linkedUsername;
+
       const li = document.createElement('li');
       const span = document.createElement('span');
-      span.textContent = tok;
+      span.textContent = token;
+
+      // show linked username if available
+      if (linked) {
+        const linkedSpan = document.createElement('small');
+        linkedSpan.textContent = ` - משויך: ${linked}`;
+        linkedSpan.style.marginLeft = '0.6rem';
+        span.appendChild(linkedSpan);
+      }
+
       const linkButton = document.createElement('button');
       linkButton.textContent = 'העתק קישור';
       linkButton.addEventListener('click', () => {
-        const url = `${base}?invite=${tok}`;
+        const url = `${base}?invite=${token}`;
         copyToClipboard(url);
         alert('קישור הועתק ללוח!');
       });
@@ -349,11 +363,32 @@ document.addEventListener('DOMContentLoaded', () => {
         // sees the trip screen, even if saving the event fails.
         openWalkOverlay();
         await recordEvent('walk', btn);
+        // Also create three scheduled walk placeholders for today (morning/afternoon/evening)
+        try {
+          scheduleThreeWalksForToday();
+        } catch (e) {
+          logger.warn('Failed to schedule three walks locally:', e);
+        }
       } else {
         await recordEvent(type, btn);
       }
     });
   });
+
+  function scheduleThreeWalksForToday() {
+    const today = new Date();
+    const key = `scheduledWalks-${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+    // compute default times using current schedule fetched from server
+    // We'll read the latest schedule by calling loadToday once synchronously isn't possible, so reuse computed defaults
+    const defaults = {
+      morningTs: Math.floor(computeRecommendedWalkTime('morning', {}).getTime() / 1000),
+      afternoonTs: Math.floor(computeRecommendedWalkTime('afternoon', {}).getTime() / 1000),
+      eveningTs: Math.floor(computeRecommendedWalkTime('evening', {}).getTime() / 1000),
+    };
+    localStorage.setItem(key, JSON.stringify(defaults));
+    // merge into current UI by triggering loadToday which will read localStorage
+    loadToday();
+  }
 
   // Walk overlay internal buttons
   if (walkOverlayPoop) {
@@ -650,8 +685,29 @@ document.addEventListener('DOMContentLoaded', () => {
         logger.error('API error:', data);
         return;
       }
+      // merge any locally scheduled walks for today
+      try {
+        const today = new Date();
+        const key = `scheduledWalks-${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+        currentSchedule = data.schedule || {};
+        const raw = localStorage.getItem(key);
+        if (raw) {
+          const local = JSON.parse(raw);
+          data.schedule = data.schedule || {};
+          // store local scheduled times separately from 'hasWalkX' which means completed
+          if (local.morningTs) data.schedule.localMorningTs = local.morningTs;
+          if (local.afternoonTs) data.schedule.localAfternoonTs = local.afternoonTs;
+          if (local.eveningTs) data.schedule.localEveningTs = local.eveningTs;
+          // also expose feed timestamps if absent (don't overwrite real ones)
+          if (!data.schedule.feedMorningTs && local.feedMorningTs) data.schedule.feedMorningTs = local.feedMorningTs;
+          if (!data.schedule.feedEveningTs && local.feedEveningTs) data.schedule.feedEveningTs = local.feedEveningTs;
+        }
+      } catch (e) {
+        logger.warn('Failed to merge local scheduled walks:', e);
+      }
+
       renderTimeline(data.events || []);
-      updateSchedule(data.schedule || {});
+      updateSchedule(currentSchedule);
     } catch (e) {
       logger.error('Error loading today:', e);
     } finally {
@@ -740,6 +796,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function eventIcon(type) {
     const icons = {
       walk: '🚶',
+      walk_morning: '🌅',
+      walk_afternoon: '🌤️',
+      walk_evening: '🌙',
       poop: '💩',
       pee: '💧',
       reward: '🦴',
@@ -753,26 +812,116 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateSchedule(schedule) {
     if (!scheduleList) return;
     scheduleList.innerHTML = '';
-    
-    const scheduleItems = [
-      { label: 'אוכל בוקר', done: !!schedule.hasMorningFeed, icon: '🍖' },
-      { label: 'טיול', done: !!schedule.hasWalk, icon: '🚶‍♀️' },
-      { label: 'פיפי', done: !!schedule.hasPee, icon: '💧' },
-      { label: 'קקי', done: !!schedule.hasPoop, icon: '💩' },
-      { label: 'אוכל ערב', done: !!schedule.hasEveningFeed, icon: '🍖' }
+    // Build richer schedule: morning, afternoon, evening walks and feed flags
+    // Prefer explicit local scheduled times if present, otherwise compute recommendations
+    const morningWalkTime = schedule.localMorningTs ? new Date(schedule.localMorningTs * 1000) : computeRecommendedWalkTime('morning', schedule);
+    const afternoonWalkTime = schedule.localAfternoonTs ? new Date(schedule.localAfternoonTs * 1000) : computeRecommendedWalkTime('afternoon', schedule);
+    const eveningWalkTime = schedule.localEveningTs ? new Date(schedule.localEveningTs * 1000) : computeRecommendedWalkTime('evening', schedule);
+
+    const items = [
+      { icon: '🍖', label: 'אוכל בוקר', done: !!schedule.hasMorningFeed },
+      { icon: '🚶‍♀️', label: 'בוקר', time: morningWalkTime, done: !!schedule.hasWalkMorning },
+      { icon: '🚶‍♀️', label: 'צהריים', time: afternoonWalkTime, done: !!schedule.hasWalkAfternoon },
+      { icon: '🚶‍♀️', label: 'ערב', time: eveningWalkTime, done: !!schedule.hasWalkEvening },
+      { icon: '💧', label: 'פיפי', done: !!schedule.hasPee },
+      { icon: '💩', label: 'קקי', done: !!schedule.hasPoop },
+      { icon: '🍖', label: 'אוכל ערב', done: !!schedule.hasEveningFeed }
     ];
-    
-    scheduleItems.forEach(item => {
+
+    items.forEach(item => {
       const li = document.createElement('li');
+      const left = document.createElement('div');
+      left.style.display = 'flex';
+      left.style.alignItems = 'center';
       const labelSpan = document.createElement('span');
       labelSpan.textContent = `${item.icon} ${item.label}`;
+      left.appendChild(labelSpan);
+      if (item.time) {
+        const timeSpan = document.createElement('span');
+        timeSpan.style.marginLeft = '8px';
+        timeSpan.style.fontSize = '0.9rem';
+        timeSpan.style.color = '#555';
+        timeSpan.textContent = `— ${formatTimeLocal(item.time)}`;
+        left.appendChild(timeSpan);
+      }
       const checkSpan = document.createElement('span');
       checkSpan.className = 'check-pill';
       checkSpan.textContent = item.done ? '✔' : '✖';
       if (item.done) checkSpan.classList.add('done');
-      li.appendChild(labelSpan);
+      li.appendChild(left);
       li.appendChild(checkSpan);
       scheduleList.appendChild(li);
+    });
+
+    // After updating UI, (re)schedule notifications for feed events
+    try {
+      scheduleNotificationsForFeeds();
+    } catch (e) {
+      logger.error('Failed to schedule notifications:', e);
+    }
+  }
+
+  // Helper: format a JS Date (or timestamp seconds) to hh:mm
+  function formatTimeLocal(tsOrDate) {
+    const d = tsOrDate instanceof Date ? tsOrDate : new Date((tsOrDate || 0) * 1000);
+    const h = String(d.getHours()).padStart(2, '0');
+    const m = String(d.getMinutes()).padStart(2, '0');
+    return `${h}:${m}`;
+  }
+
+  // Compute recommended walk times (Date objects) for morning/afternoon/evening
+  function computeRecommendedWalkTime(part, schedule) {
+    const now = new Date();
+    // If schedule contains explicit feed timestamps, prefer them
+    // schedule may include fields like feedMorningTs/feedEveningTs set by loadToday
+    if (part === 'morning') {
+      if (schedule.feedMorningTs) return new Date(schedule.feedMorningTs * 1000 + 2 * 3600 * 1000);
+      // default 09:00 today
+      return new Date(now.getFullYear(), now.getMonth(), now.getDate(), 9, 0, 0);
+    }
+    if (part === 'afternoon') {
+      if (schedule.feedMorningTs) return new Date(schedule.feedMorningTs * 1000 + 6 * 3600 * 1000);
+      return new Date(now.getFullYear(), now.getMonth(), now.getDate(), 14, 0, 0);
+    }
+    if (part === 'evening') {
+      if (schedule.feedEveningTs) return new Date(schedule.feedEveningTs * 1000 + 2 * 3600 * 1000);
+      return new Date(now.getFullYear(), now.getMonth(), now.getDate(), 19, 0, 0);
+    }
+    return null;
+  }
+
+  // Schedule in-page notifications 1.5 hours after any feed events (if permission granted)
+  let _scheduledNotificationIds = [];
+  function scheduleNotificationsForFeeds() {
+    // clear previous timers
+    _scheduledNotificationIds.forEach(id => clearTimeout(id));
+    _scheduledNotificationIds = [];
+
+    // We will request Notification permission if not granted yet
+    if (!('Notification' in window)) return;
+    if (Notification.permission === 'default') {
+      Notification.requestPermission().then(() => scheduleNotificationsForFeeds());
+      return;
+    }
+    if (Notification.permission !== 'granted') return;
+
+    // Use cached schedule (set by loadToday) when possible to avoid extra network calls
+    const dataSchedule = currentSchedule || {};
+    // If authToken and no cached schedule, we skip scheduling to avoid another network call
+    if (!dataSchedule) return;
+    const feedMorningTs = dataSchedule.feedMorningTs;
+    const feedEveningTs = dataSchedule.feedEveningTs;
+    [[feedMorningTs, 'feed_morning'], [feedEveningTs, 'feed_evening']].forEach(([ts, typ]) => {
+      if (!ts) return;
+      const notifTs = ts + 90 * 60; // 1.5 hours after feed (seconds)
+      const msDelay = notifTs * 1000 - Date.now();
+      if (msDelay <= 0) return;
+      const id = setTimeout(() => {
+        const walkLabel = typ === 'feed_morning' ? 'טיול בוקר' : 'טיול ערב';
+        new Notification('זמן לטיול', { body: `בעוד חצי שעה בערך — ${walkLabel} מגיע!` });
+        showReminder(`${walkLabel} — זמן לטיול בקרוב`);
+      }, msDelay);
+      _scheduledNotificationIds.push(id);
     });
   }
 
@@ -780,6 +929,12 @@ document.addEventListener('DOMContentLoaded', () => {
     switch (type) {
       case 'feed_morning':
         return 'אוכל בוקר';
+      case 'walk_morning':
+        return 'טיול בוקר';
+      case 'walk_afternoon':
+        return 'טיול צהריים';
+      case 'walk_evening':
+        return 'טיול ערב';
       case 'feed_evening':
         return 'אוכל ערב';
       case 'walk':

@@ -5,43 +5,20 @@ Simple backend server for the potty training app.
 This server provides a very lightweight API layer over a JSON file used as
 persistent storage. It also serves the static files for the client app
 located in the sibling ``client`` directory. There is no external
-dependency: everything is handled via Python's built‑in HTTP
+dependency: everything is handled via Python's built-in HTTP
 infrastructure. This means the app can run in a constrained environment
 without access to external package repositories.
 
 All data is stored in a single JSON file (db.json) with the following
-structure:
+structure::
 
     {
-        "households": [
-            {
-                "id": "...",
-                "dogName": "...",
-                "inviteTokens": ["..."]
-            },
-            ...
-        ],
-        "users": [
-            {
-                "id": "...",
-                "username": "...",
-                "password": "...",  # stored in plain text for simplicity
-                "householdId": "...",
-                "token": "..."
-            },
-            ...
-        ],
-        "events": [
-            {
-                "id": "...",
-                "householdId": "...",
-                "type": "feed_morning|feed_evening|walk|pee|poop|reward",
-                "timestamp": 1700000000,
-                "userId": "..."
-            },
-            ...
-        ]
+        "households": [ ... ],
+        "users": [ ... ],
+        "events": [ ... ]
     }
+
+The server exposes a small REST-like API (see code for details).
 
 Endpoints:
 
@@ -50,7 +27,7 @@ POST /api/register
     Creates a new user. If inviteToken is provided and valid, the user will
     join the corresponding household. Otherwise a new household is created
     and a new invite token is generated for it. Returns a token which
-    should be stored client‑side to authenticate future calls.
+    should be stored client-side to authenticate future calls.
 
 POST /api/login
     Body: {"username": str, "password": str}
@@ -198,6 +175,9 @@ def compute_points_for_event(event_type):
         'feed_morning': 1,
         'feed_evening': 1,
         'walk': 1,
+        'walk_morning': 1,
+        'walk_afternoon': 1,
+        'walk_evening': 1,
         'pee': 2,
         'poop': 3,
         'reward': 1,
@@ -388,6 +368,7 @@ class AppHandler(SimpleHTTPRequestHandler):
                     'id': household_id,
                     'dogName': '',
                     'inviteTokens': [new_invite],
+                    'inviteLinks': {},
                     'dogAgeMonths': 0,
                     'dogPhotoUrl': ''
                 })
@@ -403,9 +384,27 @@ class AppHandler(SimpleHTTPRequestHandler):
                 'token': token,
                 'isAdmin': not invite_token  # creator without invite is admin
             })
+
+            # record invite usage
+            if invite_token:
+                h = get_household(db, household_id)
+                if h is not None:
+                    h.setdefault('inviteLinks', {})[invite_token] = user_id
             save_db(db)
             h = get_household(db, household_id)
             scoreboard, family_total, family_weekly_total = compute_scoreboard(db, household_id)
+            # build invite tokens with linked usernames
+            invite_tokens = []
+            for t in h.get('inviteTokens', []):
+                linked = None
+                linked_id = h.get('inviteLinks', {}).get(t)
+                if linked_id:
+                    for u in db['users']:
+                        if u['id'] == linked_id:
+                            linked = u.get('username')
+                            break
+                invite_tokens.append({'token': t, 'linkedUsername': linked})
+
             return self._send_json({
                 'token': token,
                 'userId': user_id,
@@ -414,7 +413,7 @@ class AppHandler(SimpleHTTPRequestHandler):
                 'dogName': h['dogName'],
                 'dogAgeMonths': h.get('dogAgeMonths'),
                 'dogPhotoUrl': h.get('dogPhotoUrl'),
-                'inviteTokens': h.get('inviteTokens', []),
+                'inviteTokens': invite_tokens,
                 'scoreboard': scoreboard,
                 'familyTotal': family_total,
                 'familyWeeklyTotal': family_weekly_total
@@ -447,7 +446,10 @@ class AppHandler(SimpleHTTPRequestHandler):
                         'dogName': h['dogName'],
                         'dogAgeMonths': h.get('dogAgeMonths'),
                         'dogPhotoUrl': h.get('dogPhotoUrl'),
-                        'inviteTokens': h.get('inviteTokens', []),
+                        'inviteTokens': [
+                            {'token': t, 'linkedUsername': (h.get('inviteLinks', {}).get(t) and next((x.get('username') for x in db['users'] if x['id'] == h.get('inviteLinks', {}).get(t)), None))}
+                            for t in h.get('inviteTokens', [])
+                        ],
                         'scoreboard': scoreboard,
                         'familyTotal': family_total,
                         'familyWeeklyTotal': family_weekly_total,
@@ -465,6 +467,17 @@ class AppHandler(SimpleHTTPRequestHandler):
                 return self._send_json({'error': 'invalid token'}, 401)
             h = get_household(db, user['householdId'])
             scoreboard, family_total, family_weekly_total = compute_scoreboard(db, user['householdId'])
+            invite_tokens = []
+            for t in h.get('inviteTokens', []):
+                linked = None
+                linked_id = h.get('inviteLinks', {}).get(t)
+                if linked_id:
+                    for u in db['users']:
+                        if u['id'] == linked_id:
+                            linked = u.get('username')
+                            break
+                invite_tokens.append({'token': t, 'linkedUsername': linked})
+
             return self._send_json({
                 'userId': user['id'],
                 'username': user['username'],
@@ -473,7 +486,7 @@ class AppHandler(SimpleHTTPRequestHandler):
                 'dogName': h['dogName'],
                 'dogAgeMonths': h.get('dogAgeMonths'),
                 'dogPhotoUrl': h.get('dogPhotoUrl'),
-                'inviteTokens': h.get('inviteTokens', []),
+                'inviteTokens': invite_tokens,
                 'scoreboard': scoreboard,
                 'familyTotal': family_total,
                 'familyWeeklyTotal': family_weekly_total,
@@ -524,8 +537,20 @@ class AppHandler(SimpleHTTPRequestHandler):
                 logger.warning(f"POST /api/events - Missing event type (user: {user['username']})")
                 return self._send_json({'error': 'type required'}, 400)
             event_type = data['type']
+            # If client sends generic 'walk', map to a time-of-day specific walk
+            if event_type == 'walk':
+                now = datetime.datetime.now()
+                hour = now.hour
+                # morning: 04:00-11:59, afternoon: 12:00-17:59, evening: 18:00-03:59
+                if 4 <= hour < 12:
+                    event_type = 'walk_morning'
+                elif 12 <= hour < 18:
+                    event_type = 'walk_afternoon'
+                else:
+                    event_type = 'walk_evening'
+
             event_id = uuid.uuid4().hex
-            timestamp = int(datetime.datetime.now(datetime.UTC).timestamp())
+            timestamp = int(datetime.datetime.now().timestamp())
             logger.info(f"POST /api/events - User {user['username']} added event: {event_type}")
             db['events'].append({
                 'id': event_id,
@@ -557,10 +582,14 @@ class AppHandler(SimpleHTTPRequestHandler):
             h = get_household(db, user['householdId'])
             new_token = uuid.uuid4().hex
             h.setdefault('inviteTokens', []).append(new_token)
+            h.setdefault('inviteLinks', {})
             save_db(db)
             return self._send_json({
                 'inviteToken': new_token,
-                'inviteTokens': h['inviteTokens']
+                'inviteTokens': [
+                    {'token': t, 'linkedUsername': (h.get('inviteLinks', {}).get(t) and next((x.get('username') for x in db['users'] if x['id'] == h.get('inviteLinks', {}).get(t)), None))}
+                    for t in h.get('inviteTokens', [])
+                ]
             }, 200)
         # Reset invite tokens (revoke all and generate a single new link)
         if path == '/api/invite/reset' and self.command == 'POST':
@@ -575,10 +604,11 @@ class AppHandler(SimpleHTTPRequestHandler):
             h = get_household(db, user['householdId'])
             new_token = uuid.uuid4().hex
             h['inviteTokens'] = [new_token]
+            h['inviteLinks'] = {}
             save_db(db)
             return self._send_json({
                 'inviteToken': new_token,
-                'inviteTokens': h['inviteTokens']
+                'inviteTokens': [{'token': new_token, 'linkedUsername': None}]
             }, 200)
         # Fetch scoreboard only
         if path == '/api/scores' and self.command == 'GET':
@@ -663,9 +693,17 @@ class AppHandler(SimpleHTTPRequestHandler):
             # basic schedule flags
             has_morning_feed = any(e['type'] == 'feed_morning' for e in events)
             has_evening_feed = any(e['type'] == 'feed_evening' for e in events)
-            has_walk = any(e['type'] == 'walk' for e in events)
+            has_walk = any(e['type'] == 'walk' or e['type'].startswith('walk_') for e in events)
             has_pee = any(e['type'] == 'pee' for e in events)
             has_poop = any(e['type'] == 'poop' for e in events)
+
+            # additional walk-specific flags and feed timestamps for client scheduling
+            has_walk_morning = any(e['type'] == 'walk_morning' for e in events)
+            has_walk_afternoon = any(e['type'] == 'walk_afternoon' for e in events)
+            has_walk_evening = any(e['type'] == 'walk_evening' for e in events)
+            # find first feed timestamps if present
+            feed_morning_ts = next((e['timestamp'] for e in events if e['type'] == 'feed_morning'), None)
+            feed_evening_ts = next((e['timestamp'] for e in events if e['type'] == 'feed_evening'), None)
 
             # simple daily challenge for the current user: 3 potty events (pee/poop)
             potty_events = [
@@ -691,6 +729,11 @@ class AppHandler(SimpleHTTPRequestHandler):
                     'hasWalk': has_walk,
                     'hasPee': has_pee,
                     'hasPoop': has_poop,
+                    'hasWalkMorning': has_walk_morning,
+                    'hasWalkAfternoon': has_walk_afternoon,
+                    'hasWalkEvening': has_walk_evening,
+                    'feedMorningTs': feed_morning_ts,
+                    'feedEveningTs': feed_evening_ts
                 },
                 'dailyChallenge': daily_challenge
             }, 200)

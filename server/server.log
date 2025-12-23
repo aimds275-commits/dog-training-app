@@ -231,3 +231,106 @@
 2025-12-23 18:01:32,284 [INFO] Returning 0 events for today
 2025-12-23 18:06:39,181 [INFO] Server shutdown initiated by user
 2025-12-23 18:06:39,181 [INFO] Server stopped
+2025-12-24 00:06:11,857 [INFO] ============================================================
+2025-12-24 00:06:11,857 [INFO] 🐕 Dog Training App Server Starting
+2025-12-24 00:06:11,857 [INFO] Port: 8000
+2025-12-24 00:06:11,857 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-24 00:06:11,857 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-24 00:06:11,857 [INFO] ============================================================
+2025-12-24 00:06:52,958 [INFO] API Request: GET /api/user
+2025-12-24 00:06:52,958 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:06:52,974 [INFO] Returning 0 events for today
+2025-12-24 00:07:06,910 [INFO] API Request: POST /api/events
+2025-12-24 00:07:06,910 [INFO] POST /api/events - User דניאל added event: walk_evening
+2025-12-24 00:07:06,910 [INFO] Event recorded: walk_evening, new family total: 1
+2025-12-24 00:07:07,165 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:07:07,165 [INFO] Returning 1 events for today
+2025-12-24 00:07:37,865 [INFO] API Request: POST /api/events
+2025-12-24 00:07:37,865 [INFO] POST /api/events - User דניאל added event: walk_evening
+2025-12-24 00:07:37,871 [INFO] Event recorded: walk_evening, new family total: 1
+2025-12-24 00:07:38,190 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:07:38,190 [INFO] Returning 2 events for today
+2025-12-24 00:07:48,496 [INFO] API Request: DELETE /api/events/d38b0f3d064e459ab7d7e488f5b0d955
+2025-12-24 00:07:48,498 [INFO] Event d38b0f3d064e459ab7d7e488f5b0d955 deleted by דניאל
+2025-12-24 00:07:48,815 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:07:48,815 [INFO] Returning 1 events for today
+2025-12-24 00:07:51,943 [INFO] API Request: DELETE /api/events/7e408fa6ddcc4f2b889809f0fe7f4ca1
+2025-12-24 00:07:51,951 [INFO] Event 7e408fa6ddcc4f2b889809f0fe7f4ca1 deleted by דניאל
+2025-12-24 00:07:52,263 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:07:52,263 [INFO] Returning 0 events for today
+2025-12-24 00:07:56,396 [INFO] API Request: GET /api/user
+2025-12-24 00:07:56,476 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:07:56,476 [INFO] Returning 0 events for today
+2025-12-24 00:08:04,277 [INFO] API Request: POST /api/events
+2025-12-24 00:08:04,277 [INFO] POST /api/events - User דניאל added event: walk_evening
+2025-12-24 00:08:04,285 [INFO] Event recorded: walk_evening, new family total: 1
+2025-12-24 00:08:04,539 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:08:04,539 [INFO] Returning 1 events for today
+2025-12-24 00:10:50,113 [INFO] Server shutdown initiated by user
+2025-12-24 00:10:50,114 [INFO] Server stopped
+2025-12-24 00:11:16,039 [INFO] ============================================================
+2025-12-24 00:11:16,039 [INFO] 🐕 Dog Training App Server Starting
+2025-12-24 00:11:16,039 [INFO] Port: 8000
+2025-12-24 00:11:16,039 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-24 00:11:16,039 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-24 00:11:16,043 [INFO] ============================================================
+2025-12-24 00:11:34,289 [INFO] Server shutdown initiated by user
+2025-12-24 00:11:34,290 [INFO] Server stopped
+2025-12-24 00:14:18,977 [INFO] ============================================================
+2025-12-24 00:14:18,977 [INFO] 🐕 Dog Training App Server Starting
+2025-12-24 00:14:18,977 [INFO] Port: 8000
+2025-12-24 00:14:18,977 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-24 00:14:18,977 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-24 00:14:18,977 [INFO] ============================================================
+2025-12-24 00:14:41,323 [INFO] API Request: GET /api/user
+2025-12-24 00:14:41,585 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:14:41,585 [INFO] Returning 1 events for today
+2025-12-24 00:15:47,735 [INFO] API Request: DELETE /api/events/16a69df5a1404bdab58d91dc313e2abe
+2025-12-24 00:15:47,742 [INFO] Event 16a69df5a1404bdab58d91dc313e2abe deleted by דניאל
+2025-12-24 00:15:47,742 [WARNING] Client disconnected before response could be sent: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-12-24 00:15:48,070 [INFO] API Request: GET /api/user
+2025-12-24 00:15:48,354 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:15:48,354 [INFO] Returning 0 events for today
+2025-12-24 00:15:57,677 [INFO] API Request: GET /api/user
+2025-12-24 00:15:57,944 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:15:57,944 [INFO] Returning 0 events for today
+2025-12-24 00:16:05,526 [INFO] API Request: POST /api/events
+2025-12-24 00:16:05,529 [INFO] POST /api/events - User דניאל added event: walk_evening
+2025-12-24 00:16:05,535 [INFO] Event recorded: walk_evening, new family total: 1
+2025-12-24 00:16:05,797 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:16:05,797 [INFO] Returning 1 events for today
+2025-12-24 00:16:15,928 [INFO] API Request: DELETE /api/events/6f1a0c9291724f5284bfb6a20f23db8c
+2025-12-24 00:16:15,936 [INFO] Event 6f1a0c9291724f5284bfb6a20f23db8c deleted by דניאל
+2025-12-24 00:16:16,259 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:16:16,259 [INFO] Returning 0 events for today
+2025-12-24 00:22:21,751 [INFO] Script directory: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server
+2025-12-24 00:22:21,751 [INFO] Data file: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-24 00:22:21,751 [INFO] Client directory: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\client
+2025-12-24 00:22:21,751 [INFO] Client directory exists: True
+2025-12-24 00:22:21,768 [INFO] ============================================================
+2025-12-24 00:22:21,768 [INFO] 🐕 Dog Training App Server Starting (Flask)
+2025-12-24 00:22:21,768 [INFO] Port: 8000
+2025-12-24 00:22:21,768 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\client
+2025-12-24 00:22:21,768 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-24 00:22:21,775 [INFO] ============================================================
+2025-12-24 00:22:21,824 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://129.231.209.61:8000
+2025-12-24 00:22:21,824 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-24 00:22:58,382 [INFO] 127.0.0.1 - - [24/Dec/2025 00:22:58] "GET /service-worker.js HTTP/1.1" 200 -
+2025-12-24 00:23:59,237 [INFO] 127.0.0.1 - - [24/Dec/2025 00:23:59] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:25:00,232 [INFO] 127.0.0.1 - - [24/Dec/2025 00:25:00] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:26:01,222 [INFO] 127.0.0.1 - - [24/Dec/2025 00:26:01] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:27:02,232 [INFO] 127.0.0.1 - - [24/Dec/2025 00:27:02] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:28:03,241 [INFO] 127.0.0.1 - - [24/Dec/2025 00:28:03] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:29:04,234 [INFO] 127.0.0.1 - - [24/Dec/2025 00:29:04] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:30:05,250 [INFO] 127.0.0.1 - - [24/Dec/2025 00:30:05] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:31:06,244 [INFO] 127.0.0.1 - - [24/Dec/2025 00:31:06] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:32:07,271 [INFO] 127.0.0.1 - - [24/Dec/2025 00:32:07] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:33:08,255 [INFO] 127.0.0.1 - - [24/Dec/2025 00:33:08] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:34:09,275 [INFO] 127.0.0.1 - - [24/Dec/2025 00:34:09] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:35:10,274 [INFO] 127.0.0.1 - - [24/Dec/2025 00:35:10] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:36:11,312 [INFO] 127.0.0.1 - - [24/Dec/2025 00:36:11] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:37:12,275 [INFO] 127.0.0.1 - - [24/Dec/2025 00:37:12] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:38:13,282 [INFO] 127.0.0.1 - - [24/Dec/2025 00:38:13] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -

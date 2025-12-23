@@ -4,15 +4,26 @@
 		{
 			"label": "Run Dog Training App Server",
 			"type": "shell",
-			"command": "cd server; python server.py",
+			"command": "python server.py",
+			"options": { "cwd": "${workspaceFolder}/server" },
 			"isBackground": true,
 			"problemMatcher": []
 		},
 		{
 			"label": "Run Dog Training App Server (Flask)",
 			"type": "shell",
-			"command": "cd server; python flask_server.py",
+			"command": "python flask_server.py",
+			"options": { "cwd": "${workspaceFolder}/server" },
 			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run Server Tests (pytest)",
+			"type": "shell",
+			"command": "python -m pytest -q",
+			"options": {
+				"cwd": "${workspaceFolder}/server"
+			},
 			"problemMatcher": []
 		}
 	]

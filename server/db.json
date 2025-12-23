@@ -5,7 +5,10 @@
       "dogName": "",
       "inviteTokens": [
         "87520be5cfdd4b3f945b49fdf440dfd2"
-      ]
+      ],
+      "inviteLinks": {
+        "87520be5cfdd4b3f945b49fdf440dfd2": "529b034edd1c4e989368822ff04610fb"
+      }
     },
     {
       "id": "27be1ca57c044900ad52f81b7d385655",
@@ -71,6 +74,82 @@
       "householdId": "2cde7647014345179c935294b2704f74",
       "token": "cc264307c2454edabc26af4106e19ad3",
       "isAdmin": false
+    },
+    {
+      "id": "eea574351a5b4970bdecb78b77669ae4",
+      "username": "Integrant",
+      "email": "integration_new@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "05df4961356143849701423a7bde4020",
+      "isAdmin": false
+    },
+    {
+      "id": "a9af84111db14b2087ce94146841cd61",
+      "username": "Integrant",
+      "email": "integration_new@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "59d7daa4af7049149f66e4978a7479e9",
+      "isAdmin": false
+    },
+    {
+      "id": "d8bd4bad4de342249b5da0aea3b8f428",
+      "username": "Integrant",
+      "email": "integration_new@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "7f10a029d5d84d3ab4880e7df4d0e3c5",
+      "isAdmin": false
+    },
+    {
+      "id": "5983bbb5f70849528aa2111e4c7d2d45",
+      "username": "Integrant",
+      "email": "integration_new@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "db88bc1f597c4eec923b39d4f22cf98c",
+      "isAdmin": false
+    },
+    {
+      "id": "7cad534540ca403daa00aeaa87eafbc3",
+      "username": "PYTEST_INT",
+      "email": "pyint@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "ded6d1a306364fe0997063717694aa65"
+    },
+    {
+      "id": "98eceaee8f094714abca9cdb34ca3d28",
+      "username": "PYTEST_INT",
+      "email": "pyint@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "15a8253d3a6f4971b324efc318fe6203"
+    },
+    {
+      "id": "f4e8959ff24c4a848ec458d5dc21c21d",
+      "username": "PYTEST_INT",
+      "email": "pyint@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "6d3254799fc34ca6b214cb1c542e40d1"
+    },
+    {
+      "id": "0fe2e3cd40ac49a4932f582efb587339",
+      "username": "PYTEST_INT",
+      "email": "pyint@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "5c867854c198457fababc08e9e4859e3"
+    },
+    {
+      "id": "529b034edd1c4e989368822ff04610fb",
+      "username": "PYTEST_INT",
+      "email": "pyint@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "19aae97f6c1e4cb39431c7d820905dc4"
     }
   ],
   "events": []

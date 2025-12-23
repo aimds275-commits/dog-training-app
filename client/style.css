@@ -617,6 +617,13 @@ thead {
   font-family: monospace;
 }
 
+#inviteList li span small {
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: #3c2a21;
+  margin-left: 0.5rem;
+}
+
 #inviteList li button {
   padding: 0.2rem 0.5rem;
   background-color: #aed581;
