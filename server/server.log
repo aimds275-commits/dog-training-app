@@ -1,0 +1,233 @@
+2025-12-22 18:56:26,673 [INFO] ============================================================
+2025-12-22 18:56:26,673 [INFO] 🐕 Dog Training App Server Starting
+2025-12-22 18:56:26,673 [INFO] Port: 8000
+2025-12-22 18:56:26,673 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-22 18:56:26,673 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-22 18:56:26,673 [INFO] ============================================================
+2025-12-22 19:53:09,375 [INFO] Server shutdown initiated by user
+2025-12-22 19:53:09,376 [INFO] Server stopped
+2025-12-22 19:54:13,099 [INFO] ============================================================
+2025-12-22 19:54:13,100 [INFO] 🐕 Dog Training App Server Starting
+2025-12-22 19:54:13,100 [INFO] Port: 8000
+2025-12-22 19:54:13,100 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-22 19:54:13,100 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-22 19:54:13,100 [INFO] ============================================================
+2025-12-22 19:58:43,723 [INFO] Server shutdown initiated by user
+2025-12-22 19:58:43,723 [INFO] Server stopped
+2025-12-22 20:03:18,473 [INFO] ============================================================
+2025-12-22 20:03:18,473 [INFO] 🐕 Dog Training App Server Starting
+2025-12-22 20:03:18,473 [INFO] Port: 8000
+2025-12-22 20:03:18,474 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-22 20:03:18,474 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-22 20:03:18,474 [INFO] ============================================================
+2025-12-23 14:38:08,150 [INFO] ============================================================
+2025-12-23 14:38:08,150 [INFO] 🐕 Dog Training App Server Starting
+2025-12-23 14:38:08,150 [INFO] Port: 8000
+2025-12-23 14:38:08,150 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-23 14:38:08,150 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-23 14:38:08,150 [INFO] ============================================================
+2025-12-23 14:39:31,350 [INFO] API Request: GET /api/user
+2025-12-23 14:39:31,613 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:39:31,617 [INFO] Returning 0 events for today
+2025-12-23 14:40:36,992 [INFO] API Request: POST /api/events
+2025-12-23 14:40:36,992 [INFO] POST /api/events - User דניאל added event: feed_morning
+2025-12-23 14:40:36,992 [INFO] Event recorded: feed_morning, new family total: 1
+2025-12-23 14:40:36,992 [WARNING] Client disconnected before response could be sent: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-12-23 14:40:37,316 [INFO] API Request: GET /api/user
+2025-12-23 14:40:37,635 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:40:37,637 [INFO] Returning 1 events for today
+2025-12-23 14:49:05,846 [INFO] ============================================================
+2025-12-23 14:49:05,846 [INFO] 🐕 Dog Training App Server Starting
+2025-12-23 14:49:05,846 [INFO] Port: 8000
+2025-12-23 14:49:05,846 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-23 14:49:05,846 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-23 14:49:05,846 [INFO] ============================================================
+2025-12-23 14:49:19,963 [INFO] API Request: GET /api/user
+2025-12-23 14:49:20,215 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:49:20,215 [INFO] Returning 1 events for today
+2025-12-23 14:50:31,148 [INFO] API Request: POST /api/events
+2025-12-23 14:50:31,148 [INFO] POST /api/events - User דניאל added event: feed_evening
+2025-12-23 14:50:31,151 [INFO] Event recorded: feed_evening, new family total: 2
+2025-12-23 14:50:31,151 [WARNING] Client disconnected before response could be sent: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-12-23 14:50:32,030 [INFO] API Request: GET /api/user
+2025-12-23 14:50:32,141 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:50:32,141 [INFO] Returning 2 events for today
+2025-12-23 14:50:37,736 [INFO] API Request: POST /api/events
+2025-12-23 14:50:37,737 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-23 14:50:37,738 [INFO] Event recorded: poop, new family total: 5
+2025-12-23 14:50:38,055 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:50:38,055 [INFO] Returning 3 events for today
+2025-12-23 14:50:40,776 [INFO] API Request: POST /api/events
+2025-12-23 14:50:40,777 [INFO] POST /api/events - User דניאל added event: pee
+2025-12-23 14:50:40,780 [INFO] Event recorded: pee, new family total: 7
+2025-12-23 14:50:41,088 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:50:41,088 [INFO] Returning 4 events for today
+2025-12-23 14:50:47,214 [INFO] API Request: POST /api/events
+2025-12-23 14:50:47,215 [INFO] POST /api/events - User דניאל added event: walk
+2025-12-23 14:50:47,219 [INFO] Event recorded: walk, new family total: 8
+2025-12-23 14:50:47,524 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:50:47,524 [INFO] Returning 5 events for today
+2025-12-23 14:50:48,372 [INFO] API Request: POST /api/events
+2025-12-23 14:50:48,372 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-23 14:50:48,374 [INFO] Event recorded: poop, new family total: 8
+2025-12-23 14:50:48,689 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:50:48,689 [INFO] Returning 6 events for today
+2025-12-23 14:50:49,772 [INFO] API Request: POST /api/events
+2025-12-23 14:50:49,773 [INFO] POST /api/events - User דניאל added event: pee
+2025-12-23 14:50:49,774 [INFO] Event recorded: pee, new family total: 8
+2025-12-23 14:50:50,091 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:50:50,091 [INFO] Returning 7 events for today
+2025-12-23 14:51:29,499 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:51:29,499 [INFO] Returning 7 events for today
+2025-12-23 14:51:34,012 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:51:34,012 [INFO] Returning 7 events for today
+2025-12-23 14:51:37,757 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:51:37,757 [INFO] Returning 7 events for today
+2025-12-23 14:51:38,598 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:51:38,598 [INFO] Returning 7 events for today
+2025-12-23 17:40:25,975 [INFO] ============================================================
+2025-12-23 17:40:25,975 [INFO] 🐕 Dog Training App Server Starting
+2025-12-23 17:40:25,977 [INFO] Port: 8000
+2025-12-23 17:40:25,977 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-23 17:40:25,977 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-23 17:40:25,978 [INFO] ============================================================
+2025-12-23 17:41:07,858 [INFO] Server shutdown initiated by user
+2025-12-23 17:41:07,860 [INFO] Server stopped
+2025-12-23 17:41:33,987 [INFO] ============================================================
+2025-12-23 17:41:33,987 [INFO] 🐕 Dog Training App Server Starting
+2025-12-23 17:41:33,988 [INFO] Port: 8000
+2025-12-23 17:41:33,988 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-23 17:41:33,988 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-23 17:41:33,988 [INFO] ============================================================
+2025-12-23 17:41:48,074 [INFO] API Request: GET /api/user
+2025-12-23 17:41:48,161 [INFO] GET /api/today - User: דניאל
+2025-12-23 17:41:48,162 [INFO] Returning 7 events for today
+2025-12-23 17:41:55,345 [INFO] API Request: DELETE /api/events/aeaafcc48c0041dc910a0f29809e8e3a
+2025-12-23 17:41:55,348 [INFO] Event aeaafcc48c0041dc910a0f29809e8e3a deleted by דניאל
+2025-12-23 17:41:55,661 [INFO] GET /api/today - User: דניאל
+2025-12-23 17:41:55,662 [INFO] Returning 6 events for today
+2025-12-23 17:41:58,607 [INFO] API Request: DELETE /api/events/70140c50f6d04876982fd4af0084056e
+2025-12-23 17:41:58,610 [INFO] Event 70140c50f6d04876982fd4af0084056e deleted by דניאל
+2025-12-23 17:41:58,921 [INFO] GET /api/today - User: דניאל
+2025-12-23 17:41:58,922 [INFO] Returning 5 events for today
+2025-12-23 17:42:01,120 [INFO] API Request: DELETE /api/events/b2484bf5fffe4d32b3a417b31c581f5a
+2025-12-23 17:42:01,124 [INFO] Event b2484bf5fffe4d32b3a417b31c581f5a deleted by דניאל
+2025-12-23 17:42:01,432 [INFO] GET /api/today - User: דניאל
+2025-12-23 17:42:01,432 [INFO] Returning 4 events for today
+2025-12-23 17:42:03,806 [INFO] API Request: DELETE /api/events/5ed05524844548faa23f16b3d9dde989
+2025-12-23 17:42:03,808 [INFO] Event 5ed05524844548faa23f16b3d9dde989 deleted by דניאל
+2025-12-23 17:42:04,124 [INFO] GET /api/today - User: דניאל
+2025-12-23 17:42:04,125 [INFO] Returning 3 events for today
+2025-12-23 17:42:06,166 [INFO] API Request: DELETE /api/events/d5eae97db5d74ab5bc8d3a78ac8c7f71
+2025-12-23 17:42:06,169 [INFO] Event d5eae97db5d74ab5bc8d3a78ac8c7f71 deleted by דניאל
+2025-12-23 17:42:06,476 [INFO] GET /api/today - User: דניאל
+2025-12-23 17:42:06,477 [INFO] Returning 2 events for today
+2025-12-23 17:42:08,749 [INFO] API Request: DELETE /api/events/be07b143fa6e4f6090e946dc83f51c5a
+2025-12-23 17:42:08,753 [INFO] Event be07b143fa6e4f6090e946dc83f51c5a deleted by דניאל
+2025-12-23 17:42:09,063 [INFO] GET /api/today - User: דניאל
+2025-12-23 17:42:09,064 [INFO] Returning 1 events for today
+2025-12-23 17:42:11,269 [INFO] API Request: DELETE /api/events/437a44cee36c4cc384fdf5d9b3c87355
+2025-12-23 17:42:11,273 [INFO] Event 437a44cee36c4cc384fdf5d9b3c87355 deleted by דניאל
+2025-12-23 17:42:11,588 [INFO] GET /api/today - User: דניאל
+2025-12-23 17:42:11,590 [INFO] Returning 0 events for today
+2025-12-23 17:43:21,935 [INFO] ============================================================
+2025-12-23 17:43:21,936 [INFO] 🐕 Dog Training App Server Starting
+2025-12-23 17:43:21,936 [INFO] Port: 8000
+2025-12-23 17:43:21,936 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-23 17:43:21,936 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-23 17:43:21,936 [INFO] ============================================================
+2025-12-23 17:43:33,777 [INFO] API Request: GET /api/user
+2025-12-23 17:43:34,039 [INFO] GET /api/today - User: דניאל
+2025-12-23 17:43:34,041 [INFO] Returning 0 events for today
+2025-12-23 17:53:58,962 [INFO] ============================================================
+2025-12-23 17:53:58,962 [INFO] 🐕 Dog Training App Server Starting (Flask)
+2025-12-23 17:53:58,964 [INFO] Port: 8000
+2025-12-23 17:53:58,964 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\../client
+2025-12-23 17:53:58,964 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-23 17:53:58,964 [INFO] ============================================================
+2025-12-23 17:53:58,984 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.14.84.239:8000
+2025-12-23 17:53:58,984 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-23 17:54:43,978 [INFO] API Request: POST /api/login
+2025-12-23 17:54:43,979 [INFO] POST /api/login - Login attempt
+2025-12-23 17:54:43,980 [INFO] Login attempt for: דניאל
+2025-12-23 17:54:43,981 [INFO] Login successful: דניאל (household: 2cde7647014345179c935294b2704f74)
+2025-12-23 17:54:43,986 [INFO] API Request: GET /api/user
+2025-12-23 17:54:43,990 [INFO] GET /api/today - User: דניאל
+2025-12-23 17:54:43,991 [INFO] Returning 0 events for today
+2025-12-23 17:59:12,411 [INFO] API Request: POST /api/register
+2025-12-23 17:59:12,412 [INFO] POST /api/register - New registration attempt
+2025-12-23 17:59:12,412 [INFO] Registering user: yuval, invite: True
+2025-12-23 17:59:12,459 [INFO] API Request: GET /api/user
+2025-12-23 17:59:12,477 [INFO] GET /api/today - User: יובל
+2025-12-23 17:59:12,477 [INFO] Returning 0 events for today
+2025-12-23 17:59:21,760 [INFO] API Request: POST /api/events
+2025-12-23 17:59:21,762 [INFO] POST /api/events - User יובל added event: feed_morning
+2025-12-23 17:59:21,766 [INFO] Event recorded: feed_morning, new family total: 1
+2025-12-23 17:59:21,782 [INFO] GET /api/today - User: יובל
+2025-12-23 17:59:21,782 [INFO] Returning 1 events for today
+2025-12-23 17:59:25,383 [INFO] API Request: POST /api/events
+2025-12-23 17:59:25,385 [INFO] POST /api/events - User יובל added event: walk
+2025-12-23 17:59:25,388 [INFO] Event recorded: walk, new family total: 2
+2025-12-23 17:59:25,403 [INFO] GET /api/today - User: יובל
+2025-12-23 17:59:25,403 [INFO] Returning 2 events for today
+2025-12-23 17:59:26,597 [INFO] API Request: POST /api/events
+2025-12-23 17:59:26,599 [INFO] POST /api/events - User יובל added event: poop
+2025-12-23 17:59:26,603 [INFO] Event recorded: poop, new family total: 5
+2025-12-23 17:59:26,616 [INFO] GET /api/today - User: יובל
+2025-12-23 17:59:26,616 [INFO] Returning 3 events for today
+2025-12-23 17:59:27,214 [INFO] API Request: POST /api/events
+2025-12-23 17:59:27,216 [INFO] POST /api/events - User יובל added event: pee
+2025-12-23 17:59:27,219 [INFO] Event recorded: pee, new family total: 7
+2025-12-23 17:59:27,233 [INFO] GET /api/today - User: יובל
+2025-12-23 17:59:27,234 [INFO] Returning 4 events for today
+2025-12-23 17:59:29,181 [INFO] API Request: POST /api/events
+2025-12-23 17:59:29,182 [INFO] POST /api/events - User יובל added event: reward
+2025-12-23 17:59:29,185 [INFO] Event recorded: reward, new family total: 8
+2025-12-23 17:59:29,199 [INFO] GET /api/today - User: יובל
+2025-12-23 17:59:29,200 [INFO] Returning 5 events for today
+2025-12-23 17:59:34,575 [INFO] API Request: POST /api/events
+2025-12-23 17:59:34,576 [INFO] POST /api/events - User יובל added event: feed_evening
+2025-12-23 17:59:34,580 [INFO] Event recorded: feed_evening, new family total: 9
+2025-12-23 17:59:34,606 [INFO] GET /api/today - User: יובל
+2025-12-23 17:59:34,607 [INFO] Returning 6 events for today
+2025-12-23 18:00:39,202 [INFO] API Request: DELETE /api/events/c240b8dd77e7492c95d96069a2d5ae57
+2025-12-23 18:00:39,205 [INFO] Event c240b8dd77e7492c95d96069a2d5ae57 deleted by יובל
+2025-12-23 18:00:39,207 [INFO] API Request: DELETE /api/events/c240b8dd77e7492c95d96069a2d5ae57
+2025-12-23 18:00:39,209 [INFO] API Request: DELETE /api/events/c240b8dd77e7492c95d96069a2d5ae57
+2025-12-23 18:00:39,210 [INFO] API Request: DELETE /api/events/c240b8dd77e7492c95d96069a2d5ae57
+2025-12-23 18:00:39,212 [INFO] API Request: DELETE /api/events/c240b8dd77e7492c95d96069a2d5ae57
+2025-12-23 18:00:40,370 [INFO] API Request: DELETE /api/events/c240b8dd77e7492c95d96069a2d5ae57
+2025-12-23 18:00:40,371 [INFO] API Request: DELETE /api/events/c240b8dd77e7492c95d96069a2d5ae57
+2025-12-23 18:00:40,371 [INFO] API Request: DELETE /api/events/c240b8dd77e7492c95d96069a2d5ae57
+2025-12-23 18:00:40,377 [INFO] API Request: DELETE /api/events/c240b8dd77e7492c95d96069a2d5ae57
+2025-12-23 18:00:40,381 [INFO] API Request: DELETE /api/events/c240b8dd77e7492c95d96069a2d5ae57
+2025-12-23 18:00:50,973 [INFO] GET /api/today - User: יובל
+2025-12-23 18:00:50,973 [INFO] Returning 5 events for today
+2025-12-23 18:01:09,287 [INFO] API Request: GET /api/user
+2025-12-23 18:01:09,310 [INFO] GET /api/today - User: יובל
+2025-12-23 18:01:09,310 [INFO] Returning 5 events for today
+2025-12-23 18:01:21,610 [INFO] API Request: DELETE /api/events/732a89bb3b48496c899f9115f835347d
+2025-12-23 18:01:21,615 [INFO] Event 732a89bb3b48496c899f9115f835347d deleted by יובל
+2025-12-23 18:01:21,629 [INFO] GET /api/today - User: יובל
+2025-12-23 18:01:21,630 [INFO] Returning 4 events for today
+2025-12-23 18:01:26,036 [INFO] API Request: DELETE /api/events/ca864b892f40438184a38590323ef8df
+2025-12-23 18:01:26,039 [INFO] Event ca864b892f40438184a38590323ef8df deleted by יובל
+2025-12-23 18:01:26,055 [INFO] GET /api/today - User: יובל
+2025-12-23 18:01:26,056 [INFO] Returning 3 events for today
+2025-12-23 18:01:28,239 [INFO] API Request: DELETE /api/events/9e9f86b0519247f6aad126288ddf63bf
+2025-12-23 18:01:28,242 [INFO] Event 9e9f86b0519247f6aad126288ddf63bf deleted by יובל
+2025-12-23 18:01:28,259 [INFO] GET /api/today - User: יובל
+2025-12-23 18:01:28,260 [INFO] Returning 2 events for today
+2025-12-23 18:01:30,177 [INFO] API Request: DELETE /api/events/1f9fd23b6d9044358c34733771196667
+2025-12-23 18:01:30,179 [INFO] Event 1f9fd23b6d9044358c34733771196667 deleted by יובל
+2025-12-23 18:01:30,193 [INFO] GET /api/today - User: יובל
+2025-12-23 18:01:30,193 [INFO] Returning 1 events for today
+2025-12-23 18:01:32,265 [INFO] API Request: DELETE /api/events/329963f711c64ec4b8a805b07c02849d
+2025-12-23 18:01:32,268 [INFO] Event 329963f711c64ec4b8a805b07c02849d deleted by יובל
+2025-12-23 18:01:32,283 [INFO] GET /api/today - User: יובל
+2025-12-23 18:01:32,284 [INFO] Returning 0 events for today
+2025-12-23 18:06:39,181 [INFO] Server shutdown initiated by user
+2025-12-23 18:06:39,181 [INFO] Server stopped

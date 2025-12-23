@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Dog Training App Server",
+			"type": "shell",
+			"command": "cd server; python server.py",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run Dog Training App Server (Flask)",
+			"type": "shell",
+			"command": "cd server; python flask_server.py",
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}

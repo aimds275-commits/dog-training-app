@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>שיצו שלי – אילוף כיף למשפחה</title>
+  <meta name="theme-color" content="#ffe9b3" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="style.css?v=16" />
+</head>
+<body>
+  <div id="app">
+    <!-- Top app bar -->
+    <header class="top-bar">
+      <div class="top-bar-left">
+        <span class="app-badge">⭐ <span id="headerTotalPoints">0</span></span>
+      </div>
+      <div class="top-bar-center">
+        <span class="app-title">שיצו שלי</span>
+      </div>
+      <div class="top-bar-right">
+        <button id="settingsButton" class="icon-button" aria-label="הגדרות">⚙️</button>
+      </div>
+    </header>
+
+    <!-- Authentication screen -->
+    <section id="authSection" class="card">
+      <h2>ברוכים הבאים 🐶</h2>
+      <p>אפליקציה משפחתית לשגרה כיפית עם השיצו שלכם.</p>
+      <div id="authTabs">
+        <button id="loginTab" class="active">כניסה</button>
+        <button id="registerTab">משפחה חדשה</button>
+      </div>
+      <div id="loginForm" class="authForm">
+        <input type="email" id="loginEmail" placeholder="אימייל" />
+        <input type="password" id="loginPassword" placeholder="סיסמה" />
+        <button id="loginButton">כניסה</button>
+      </div>
+      <div id="registerForm" class="authForm hidden">
+        <input type="text" id="registerName" placeholder="השם שלי" />
+        <input type="email" id="registerEmail" placeholder="אימייל" />
+        <input type="password" id="registerPassword" placeholder="סיסמה" />
+        <div class="invite-section">
+          <label for="registerInvite" style="font-size: 0.85rem; color: #6d4c41; margin-bottom: 0.3rem; display: block;">יש לך קוד הזמנה? (להצטרפות למשפחה קיימת)</label>
+          <input type="text" id="registerInvite" placeholder="הדבק כאן את קוד ההזמנה" />
+        </div>
+        <button id="registerButton">התחל משפחה / הצטרף</button>
+      </div>
+      <p id="authError" class="error"></p>
+    </section>
+
+    <!-- Main app screen -->
+    <section id="mainSection" class="hidden">
+      <!-- Dog profile card -->
+      <section class="card dog-profile">
+        <div class="dog-avatar-circle">
+          <span class="dog-emoji">🐾</span>
+        </div>
+        <div class="dog-info">
+          <h2 id="dogNameDisplay">שיצו שלי</h2>
+          <p class="dog-subtitle">
+            בבעלות המשפחה – מנוהל על ידי <span id="ownerName"></span>
+          </p>
+          <p class="dog-meta">
+            <span id="dogAgeText" class="dog-age hidden"></span>
+          </p>
+        </div>
+        <button id="editDogButton" class="pill-button">עריכת כלב</button>
+      </section>
+
+      <!-- Edit dog modal-ish card -->
+      <section id="dogEditSection" class="card hidden">
+        <h3>עריכת פרטי הכלב</h3>
+        <label>
+          שם הכלב
+          <input type="text" id="dogNameInput" placeholder="שם הכלב" />
+        </label>
+        <label>
+          גיל (חודשים)
+          <input type="number" id="dogAgeInput" min="0" placeholder="גיל בחודשים" />
+        </label>
+        <label>
+          קישור לתמונה (אופציונלי)
+          <input type="url" id="dogPhotoInput" placeholder="https://..." />
+        </label>
+        <div class="button-row">
+          <button id="cancelDogEdit" class="secondary-button">ביטול</button>
+          <button id="saveDogButton" class="primary-button">שמירה</button>
+        </div>
+      </section>
+
+      <!-- Tabs: Today / Leaderboard / Family -->
+      <nav class="tabs">
+        <button class="tab active" data-tab="todayTab">היום</button>
+        <button class="tab" data-tab="leaderboardTab">לוח ניקוד</button>
+        <button class="tab" data-tab="familyTab">משפחה</button>
+      </nav>
+
+      <!-- TODAY TAB -->
+      <section id="todayTab" class="tab-panel">
+        <!-- Quick actions -->
+        <section class="card quick-actions">
+          <h3>פעולות מהירות</h3>
+          <div class="actions-grid">
+            <button class="action big" data-type="feed_morning">
+              <span class="emoji">🍖</span>
+              <span>האכלה בוקר</span>
+            </button>
+            <button class="action big" data-type="feed_evening">
+              <span class="emoji">🍖</span>
+              <span>האכלה ערב</span>
+            </button>
+            <button class="action big" data-type="walk" data-reminder="treat">
+              <span class="emoji">🚶‍♀️</span>
+              <span>יצאנו לטיול!</span>
+            </button>
+            <button class="action big" data-type="poop">
+              <span class="emoji">💩</span>
+              <span>קקי בחוץ!</span>
+            </button>
+            <button class="action big" data-type="pee">
+              <span class="emoji">💧</span>
+              <span>פיפי בחוץ!</span>
+            </button>
+            <button class="action big" data-type="reward">
+              <span class="emoji">🦴</span>
+              <span>נתתי חטיף!</span>
+            </button>
+            <button class="action big" data-type="accident">
+              <span class="emoji">🚨</span>
+              <span>פספוס בבית</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- Schedule card -->
+        <section class="card schedule-card">
+          <h3>שגרת היום 🕒</h3>
+          <ul id="scheduleList" class="schedule-list">
+            <!-- Dynamic content populated by JS -->
+          </ul>
+        </section>
+
+        <!-- Treat reminders banner -->
+        <section id="reminderBanner" class="card reminder hidden">
+          <p id="reminderText"></p>
+          <button id="dismissReminder" class="secondary-button small-button">הבנתי</button>
+        </section>
+
+        <!-- Today timeline -->
+        <section class="card timeline-card">
+          <h3>היום</h3>
+          <ul id="timelineList" class="timeline-list"></ul>
+        </section>
+
+        <!-- Calendar / history -->
+        <section class="card calendar-card">
+          <h3>יומן ימים</h3>
+          <label class="calendar-label">
+            בחרו תאריך לצפייה באירועים קודמים
+            <input type="date" id="historyDate" />
+          </label>
+          <ul id="historyList" class="timeline-list"></ul>
+        </section>
+      </section>
+
+      <!-- LEADERBOARD TAB -->
+      <section id="leaderboardTab" class="tab-panel hidden">
+        <section class="card family-score-card">
+          <h3>ציון משפחתי</h3>
+          <p id="familyTotal"></p>
+          <p id="familyWeekly" class="subtext"></p>
+          <div class="progress-bar small">
+            <div id="familyGoalProgress" class="progress-inner"></div>
+          </div>
+        </section>
+        <section class="card">
+          <h3>לוח ניקוד משפחתי</h3>
+          <table id="scoreTable">
+            <thead>
+              <tr><th>מקום</th><th>שם</th><th>נקודות</th><th>שבוע</th><th>סטייק</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </section>
+      </section>
+
+      <!-- FAMILY / INVITES TAB -->
+      <section id="familyTab" class="tab-panel hidden">
+        <section class="card">
+          <h3>המשפחה שלי</h3>
+          <p>מזמינים בני משפחה להצטרף! כל אחד יכול לרשום אירועים ולצבור נקודות יחד.</p>
+          <div id="inviteAdminSection" class="hidden">
+            <button id="generateInvite" class="primary-button">צור קוד הזמנה חדש</button>
+            <button id="resetInvite" class="secondary-button">איפוס כל ההזמנות</button>
+          </div>
+          <h4>קודי הזמנה פעילים</h4>
+          <ul id="inviteList"></ul>
+          <p id="inviteNote" class="subtext">שתפו את הקוד עם בני המשפחה. הם יכניסו אותו בעת הרשמה כדי להצטרף למשפחה.</p>
+        </section>
+        <section class="card">
+          <h3>המשתמש שלי</h3>
+          <p><strong>שם:</strong> <span id="userName"></span></p>
+          <p><strong>אימייל:</strong> <span id="userEmail"></span></p>
+          <button id="logoutButton" class="secondary-button">התנתקות</button>
+        </section>
+        <section class="card" id="adminSettingsSection" class="hidden">
+          <h3>⚠️ הגדרות מנהל</h3>
+          <p style="font-size: 0.85rem; color: #7b6b5a;">פעולות אלה ישפיעו על כל המשפחה ולא ניתן לבטל אותן!</p>
+          <button id="resetScoresButton" class="secondary-button" style="background: #ff9800; color: white; margin-bottom: 0.5rem;">איפוס כל הנקודות</button>
+          <button id="clearEventsButton" class="secondary-button" style="background: #f44336; color: white;">מחיקת כל האירועים</button>
+        </section>
+      </section>
+    </section>
+
+    <!-- Walk in progress overlay -->
+    <div id="walkOverlay" class="walk-overlay hidden">
+      <div class="walk-panel">
+        <div class="walk-header">
+          <span class="walk-title">בטיול 🚶‍♀️</span>
+          <span id="walkTimer" class="walk-timer">00:00</span>
+        </div>
+        <h2 id="walkDogName" class="walk-dog-name">שיצו שלי</h2>
+        <div class="walk-subtext">עוקבים אחרי הטיול ומסמנים מה קרה בחוץ</div>
+        <div class="walk-actions">
+          <button id="walkOverlayPoop" class="walk-btn poop">
+            <span class="emoji">💩</span>
+            <span>קקי!</span>
+          </button>
+          <button id="walkOverlayPee" class="walk-btn pee">
+            <span class="emoji">💧</span>
+            <span>פיפי!</span>
+          </button>
+          <button id="walkOverlayTreat" class="walk-btn treat">
+            <span class="emoji">🦴</span>
+            <span>נתתי חטיף!</span>
+          </button>
+        </div>
+        <button id="endWalkButton" class="primary-button walk-end-button">סיום טיול 🏡</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js?v=16"></script>
+</body>
+</html>

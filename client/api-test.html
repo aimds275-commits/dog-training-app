@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Test - Dog Training App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .test-section {
+      background: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    pre {
+      background: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    .pass { color: green; font-weight: bold; }
+    .fail { color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>🐕 בדיקת API - אפליקציית אילוף שיצו</h1>
+  
+  <div class="test-section">
+    <h2>1. בדיקת חיבור בסיסי</h2>
+    <button onclick="testBasicConnection()">בדוק חיבור</button>
+    <pre id="connection-result">לחץ על הכפתור לבדיקה...</pre>
+  </div>
+  
+  <div class="test-section">
+    <h2>2. התחברות משתמש</h2>
+    <input type="text" id="login-user" value="דניאל" placeholder="שם משתמש">
+    <input type="password" id="login-pass" value="1" placeholder="סיסמה">
+    <button onclick="testLogin()">התחבר</button>
+    <pre id="login-result">הזן שם משתמש וסיסמה...</pre>
+  </div>
+  
+  <div class="test-section">
+    <h2>3. טעינת נתוני משתמש</h2>
+    <button onclick="testUserData()">טען נתוני משתמש</button>
+    <pre id="user-result">התחבר קודם...</pre>
+  </div>
+  
+  <div class="test-section">
+    <h2>4. אירועי היום</h2>
+    <button onclick="testTodayEvents()">טען אירועי היום</button>
+    <pre id="today-result">התחבר קודם...</pre>
+  </div>
+  
+  <div class="test-section">
+    <h2>5. הוספת אירוע</h2>
+    <select id="event-type">
+      <option value="walk">טיול</option>
+      <option value="pee">פיפי</option>
+      <option value="poop">קקי</option>
+      <option value="reward">חטיף</option>
+      <option value="accident">פספוס</option>
+    </select>
+    <button onclick="testAddEvent()">הוסף אירוע</button>
+    <pre id="event-result">התחבר קודם...</pre>
+  </div>
+  
+  <div class="test-section">
+    <h2>6. לוח ניקוד</h2>
+    <button onclick="testScoreboard()">טען לוח ניקוד</button>
+    <pre id="score-result">התחבר קודם...</pre>
+  </div>
+
+  <script>
+    let authToken = null;
+    let currentUser = null;
+
+    async function testBasicConnection() {
+      const output = document.getElementById('connection-result');
+      output.textContent = 'בודק חיבור לשרת...\n';
+      
+      try {
+        const start = Date.now();
+        const response = await fetch('/');
+        const elapsed = Date.now() - start;
+        
+        if (response.ok) {
+          output.textContent += `✓ שרת מגיב (${elapsed}ms)\n`;
+          output.textContent += `✓ סטטוס: ${response.status}\n`;
+          output.textContent += `✓ כתובת: ${window.location.origin}\n`;
+          output.innerHTML = '<span class="pass">' + output.textContent + '</span>';
+        } else {
+          output.textContent += `✗ שגיאה: ${response.status}\n`;
+          output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+        }
+      } catch (error) {
+        output.textContent += `✗ שגיאת רשת: ${error.message}\n`;
+        output.textContent += `טיפ: וודא שהשרת רץ על http://localhost:8000\n`;
+        output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+      }
+    }
+
+    async function testLogin() {
+      const output = document.getElementById('login-result');
+      const username = document.getElementById('login-user').value;
+      const password = document.getElementById('login-pass').value;
+      
+      output.textContent = 'מתחבר...\n';
+      
+      try {
+        const response = await fetch('/api/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: username, password: password })
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok) {
+          authToken = data.token;
+          currentUser = data;
+          output.textContent += `✓ התחברות הצליחה!\n`;
+          output.textContent += `משתמש: ${data.username}\n`;
+          output.textContent += `טוקן: ${authToken.substring(0, 20)}...\n`;
+          output.textContent += `כלב: ${data.dogName}\n`;
+          output.textContent += `נקודות משפחה: ${data.familyTotal}\n`;
+          output.innerHTML = '<span class="pass">' + output.textContent + '</span>';
+        } else {
+          output.textContent += `✗ שגיאה: ${data.error || 'התחברות נכשלה'}\n`;
+          output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+        }
+      } catch (error) {
+        output.textContent += `✗ שגיאת רשת: ${error.message}\n`;
+        output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+      }
+    }
+
+    async function testUserData() {
+      const output = document.getElementById('user-result');
+      
+      if (!authToken) {
+        output.textContent = '✗ אנא התחבר קודם\n';
+        output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+        return;
+      }
+      
+      output.textContent = 'טוען נתוני משתמש...\n';
+      
+      try {
+        const response = await fetch('/api/user', {
+          headers: { 'Authorization': 'Bearer ' + authToken }
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok) {
+          output.textContent += `✓ נתונים נטענו בהצלחה\n`;
+          output.textContent += JSON.stringify(data, null, 2);
+          output.innerHTML = '<span class="pass">✓ SUCCESS</span>\n<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+        } else {
+          output.textContent += `✗ שגיאה: ${data.error}\n`;
+          output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+        }
+      } catch (error) {
+        output.textContent += `✗ שגיאת רשת: ${error.message}\n`;
+        output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+      }
+    }
+
+    async function testTodayEvents() {
+      const output = document.getElementById('today-result');
+      
+      if (!authToken) {
+        output.textContent = '✗ אנא התחבר קודם\n';
+        output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+        return;
+      }
+      
+      output.textContent = 'טוען אירועי היום...\n';
+      
+      try {
+        const response = await fetch('/api/today', {
+          headers: { 'Authorization': 'Bearer ' + authToken }
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok) {
+          output.textContent += `✓ אירועי היום נטענו\n`;
+          output.textContent += `מספר אירועים: ${data.events?.length || 0}\n`;
+          output.textContent += `שגרת היום:\n`;
+          output.textContent += `  - אוכל בוקר: ${data.schedule?.hasMorningFeed ? '✓' : '✗'}\n`;
+          output.textContent += `  - טיול: ${data.schedule?.hasWalk ? '✓' : '✗'}\n`;
+          output.textContent += `  - פיפי: ${data.schedule?.hasPee ? '✓' : '✗'}\n`;
+          output.textContent += `  - קקי: ${data.schedule?.hasPoop ? '✓' : '✗'}\n\n`;
+          
+          if (data.events && data.events.length > 0) {
+            output.textContent += 'אירועים:\n';
+            data.events.slice(0, 10).forEach(ev => {
+              const time = new Date(ev.timestamp * 1000).toLocaleTimeString('he-IL');
+              output.textContent += `  • ${time} - ${ev.type} (${ev.username})\n`;
+            });
+          }
+          
+          output.innerHTML = '<span class="pass">✓ SUCCESS</span>\n<pre>' + output.textContent + '</pre>';
+        } else {
+          output.textContent += `✗ שגיאה: ${data.error}\n`;
+          output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+        }
+      } catch (error) {
+        output.textContent += `✗ שגיאת רשת: ${error.message}\n`;
+        output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+      }
+    }
+
+    async function testAddEvent() {
+      const output = document.getElementById('event-result');
+      const eventType = document.getElementById('event-type').value;
+      
+      if (!authToken) {
+        output.textContent = '✗ אנא התחבר קודם\n';
+        output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+        return;
+      }
+      
+      output.textContent = `מוסיף אירוע: ${eventType}...\n`;
+      
+      try {
+        const response = await fetch('/api/events', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + authToken
+          },
+          body: JSON.stringify({ type: eventType })
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok) {
+          output.textContent += `✓ אירוע נוסף בהצלחה!\n`;
+          output.textContent += `מזהה אירוע: ${data.eventId}\n`;
+          output.textContent += `נקודות משפחה: ${data.familyTotal}\n`;
+          output.textContent += `\nלוח ניקוד מעודכן:\n`;
+          data.scoreboard?.forEach(s => {
+            output.textContent += `  ${s.username}: ${s.totalPoints} נקודות\n`;
+          });
+          output.innerHTML = '<span class="pass">' + output.textContent + '</span>';
+        } else {
+          output.textContent += `✗ שגיאה: ${data.error}\n`;
+          output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+        }
+      } catch (error) {
+        output.textContent += `✗ שגיאת רשת: ${error.message}\n`;
+        output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+      }
+    }
+
+    async function testScoreboard() {
+      const output = document.getElementById('score-result');
+      
+      if (!authToken) {
+        output.textContent = '✗ אנא התחבר קודם\n';
+        output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+        return;
+      }
+      
+      output.textContent = 'טוען לוח ניקוד...\n';
+      
+      try {
+        const response = await fetch('/api/scores', {
+          headers: { 'Authorization': 'Bearer ' + authToken }
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok) {
+          output.textContent += `✓ לוח ניקוד נטען\n`;
+          output.textContent += `סה"כ משפחה: ${data.familyTotal}\n`;
+          output.textContent += `שבוע משפחה: ${data.familyWeeklyTotal}\n\n`;
+          output.textContent += 'דירוג:\n';
+          data.scoreboard?.forEach((s, i) => {
+            output.textContent += `${i + 1}. ${s.username}: ${s.totalPoints} נקודות (שבוע: ${s.weeklyPoints}, רצף: ${s.streak})\n`;
+          });
+          output.innerHTML = '<span class="pass">✓ SUCCESS</span>\n<pre>' + output.textContent + '</pre>';
+        } else {
+          output.textContent += `✗ שגיאה: ${data.error}\n`;
+          output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+        }
+      } catch (error) {
+        output.textContent += `✗ שגיאת רשת: ${error.message}\n`;
+        output.innerHTML = '<span class="fail">' + output.textContent + '</span>';
+      }
+    }
+
+    // Auto-test connection on load
+    window.addEventListener('load', () => {
+      testBasicConnection();
+    });
+  </script>
+</body>
+</html>

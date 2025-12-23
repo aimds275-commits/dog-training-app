@@ -1,0 +1,73 @@
+{
+  "households": [
+    {
+      "id": "957621b617a8422cb945078cf16682a8",
+      "dogName": "",
+      "inviteTokens": [
+        "87520be5cfdd4b3f945b49fdf440dfd2"
+      ]
+    },
+    {
+      "id": "27be1ca57c044900ad52f81b7d385655",
+      "dogName": "",
+      "inviteTokens": [
+        "bfd6bc1140e647ca83738db840bab1f7"
+      ]
+    },
+    {
+      "id": "2cde7647014345179c935294b2704f74",
+      "dogName": "צ'ילי",
+      "inviteTokens": [
+        "50aac8acbe994f3ab84e78e7d2e56216",
+        "b0d27646d8ca4ac89b4efa4d71189609",
+        "525c512648254756a1682e5a7802ce00",
+        "dd816e8c57d24961af4f60efeea2fa71"
+      ],
+      "dogAgeMonths": 36,
+      "dogPhotoUrl": "https://megapet.co.il/wp-content/uploads/2023/03/%D7%9E%D7%90%D7%9E%D7%A8%D7%99%D7%9D-2023-03-22T120659.928-1-1024x576-1.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "c4de026b148b4c3c88f15ebb1a168169",
+      "username": "u1",
+      "password": "p1",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "5a29834b7eb34375b4f96b58eea5862a",
+      "isAdmin": true
+    },
+    {
+      "id": "06929be96583498bae8e9d88b854904f",
+      "username": "testuser",
+      "password": "1234",
+      "householdId": "27be1ca57c044900ad52f81b7d385655",
+      "token": "8df558895e744db4b0370ee96aa5263b",
+      "isAdmin": true
+    },
+    {
+      "id": "bda4acbd4dfb4a2797b966451bb81c64",
+      "username": "דניאל",
+      "password": "1",
+      "householdId": "2cde7647014345179c935294b2704f74",
+      "token": "38d5da259f054945b6bd0e518e45f789",
+      "isAdmin": true
+    },
+    {
+      "id": "fed5d4fc13374b7fa94420eff4a893cf",
+      "username": "מיטל",
+      "password": "1",
+      "householdId": "2cde7647014345179c935294b2704f74",
+      "token": "9657e7c045654507a4724f2a6c0973e5"
+    },
+    {
+      "id": "7ad1e3574eaf4115bfa2c60ab96448a8",
+      "username": "יובל",
+      "email": "yuval",
+      "password": "1",
+      "householdId": "2cde7647014345179c935294b2704f74",
+      "token": "cc264307c2454edabc26af4106e19ad3",
+      "isAdmin": false
+    }
+  ],
+  "events": []
+}

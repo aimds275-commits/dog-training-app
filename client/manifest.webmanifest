@@ -1,0 +1,11 @@
+{
+  "name": "שיצו שלי – אפליקציית אילוף משפחתית",
+  "short_name": "שיצו שלי",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff7e0",
+  "theme_color": "#ffe9b3",
+  "dir": "rtl",
+  "lang": "he",
+  "icons": []
+}

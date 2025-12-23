@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Debug Today API</title>
+</head>
+<body>
+    <h1>Debug /api/today Response</h1>
+    <button onclick="checkToday()">Check Today API</button>
+    <pre id="output"></pre>
+    
+    <script>
+        async function checkToday() {
+            const output = document.getElementById('output');
+            const token = '38d5da259f054945b6bd0e518e45f789'; // דניאל token
+            
+            output.textContent = 'Fetching /api/today...\n\n';
+            
+            try {
+                const resp = await fetch('/api/today', {
+                    headers: { Authorization: 'Bearer ' + token }
+                });
+                
+                output.textContent += `Status: ${resp.status}\n\n`;
+                
+                const data = await resp.json();
+                output.textContent += 'Response:\n';
+                output.textContent += JSON.stringify(data, null, 2);
+                
+                output.textContent += '\n\n=== ANALYSIS ===\n';
+                output.textContent += `Events count: ${data.events?.length || 0}\n`;
+                output.textContent += `Schedule: ${JSON.stringify(data.schedule)}\n`;
+                
+                if (data.events && data.events.length > 0) {
+                    output.textContent += '\nFirst 5 events:\n';
+                    data.events.slice(0, 5).forEach(e => {
+                        const time = new Date(e.timestamp * 1000).toLocaleTimeString();
+                        output.textContent += `  ${time} - ${e.type} by ${e.username}\n`;
+                    });
+                }
+            } catch (e) {
+                output.textContent += 'ERROR: ' + e.message;
+            }
+        }
+        
+        // Auto-run on load
+        window.addEventListener('load', checkToday);
+    </script>
+</body>
+</html>

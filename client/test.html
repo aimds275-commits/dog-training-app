@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Server Test</title>
+</head>
+<body>
+    <h1>Server Connection Test</h1>
+    <button onclick="testServer()">Test Server</button>
+    <pre id="output"></pre>
+    
+    <script>
+        async function testServer() {
+            const output = document.getElementById('output');
+            output.textContent = 'Testing...\n';
+            
+            try {
+                // Test basic connectivity
+                const resp = await fetch('/api/user', {
+                    headers: { Authorization: 'Bearer 38d5da259f054945b6bd0e518e45f789' }
+                });
+                output.textContent += 'Status: ' + resp.status + '\n';
+                const data = await resp.json();
+                output.textContent += 'Response: ' + JSON.stringify(data, null, 2);
+            } catch (e) {
+                output.textContent += 'ERROR: ' + e.message + '\n' + e.stack;
+            }
+        }
+    </script>
+</body>
+</html>

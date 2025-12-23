@@ -1,0 +1,637 @@
+/* Global styling – cheerful, mobile-first, RTL */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #fff7e0 0%, #fdf5f2 40%, #ffffff 100%);
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  color: #3c2a21;
+}
+
+#app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0.75rem 0.75rem 1.5rem;
+}
+
+.top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.2rem 0.6rem;
+  background: linear-gradient(90deg, #ffe9b3, #ffd6a5);
+}
+
+.top-bar-left,
+.top-bar-center,
+.top-bar-right {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar-center {
+  flex: 1;
+  justify-content: center;
+}
+
+.app-title {
+  font-weight: 700;
+}
+
+.app-badge {
+  background: #fffbf3;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.icon-button {
+  border: none;
+  background: transparent;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 1rem 1.1rem;
+  margin-top: 0.75rem;
+}
+
+.dog-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.dog-avatar-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #ffe3b3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dog-emoji {
+  font-size: 2rem;
+}
+
+.dog-info h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.dog-subtitle {
+  margin: 0.15rem 0 0.1rem;
+  font-size: 0.85rem;
+  color: #7b6b5a;
+}
+
+.dog-meta {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #a09080;
+}
+
+.pill-button {
+  margin-right: auto;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: none;
+  background: #ffb74d;
+  color: #3c2a21;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.pill-button:hover {
+  background: #ffa726;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.3rem;
+  margin-top: 0.8rem;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.45rem 0;
+  border-radius: 999px;
+  border: none;
+  background: #f3eadf;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #ffb74d;
+  color: #3c2a21;
+  font-weight: 600;
+}
+
+.tab-panel {
+  margin-top: 0.2rem;
+}
+
+.mission-card .progress-bar,
+.family-score-card .progress-bar {
+  margin-top: 0.4rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #f3f0ea;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar.small {
+  height: 8px;
+}
+
+.progress-inner {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #ffb74d, #ff8a65);
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  margin: 0.3rem 0 0;
+  font-size: 0.85rem;
+}
+
+.quick-actions .actions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+@media (min-width: 480px) {
+  .quick-actions .actions-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.action.big {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 0.4rem;
+  border-radius: 16px;
+  border: none;
+  background: #ffdfa3;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.action.big .emoji {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.action.big:nth-child(2) {
+  background: #ffcc80;
+}
+
+.action.big:nth-child(3) {
+  background: #c5e1ff;
+}
+
+.action.big:nth-child(4) {
+  background: #ffe082;
+}
+
+.action.big:nth-child(5) {
+  background: #ffab91;
+}
+
+.action.big:active {
+  transform: translateY(1px);
+}
+
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #f2ebe1;
+  font-size: 0.9rem;
+}
+
+.schedule-list li:last-child {
+  border-bottom: none;
+}
+
+.check-pill {
+  min-width: 30px;
+  text-align: center;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: #f3f0ea;
+  font-size: 0.8rem;
+}
+
+.check-pill.done {
+  background: #c8e6c9;
+}
+
+.reminder {
+  background: #fff3cd;
+}
+
+.timeline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.timeline-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.timeline-list::-webkit-scrollbar-track {
+  background: #f3f0ea;
+  border-radius: 10px;
+}
+
+.timeline-list::-webkit-scrollbar-thumb {
+  background: #d4c4b0;
+  border-radius: 10px;
+}
+
+.timeline-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0.5rem;
+  border-bottom: 1px solid #f2ebe1;
+  transition: background-color 0.2s;
+  position: relative;
+}
+
+.timeline-row:hover {
+  background-color: #fffbf5;
+}
+
+.timeline-row:hover .delete-event-btn {
+  opacity: 1;
+}
+
+.delete-event-btn {
+  position: absolute;
+  left: 0.3rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background: #f44336;
+  color: white;
+  font-size: 0.75rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.delete-event-btn:hover {
+  transform: scale(1.1);
+  background: #d32f2f;
+}
+
+.delete-event-btn:active {
+  transform: scale(0.95);
+}
+
+.timeline-row:last-child {
+  border-bottom: none;
+}
+
+.timeline-row.event-walk {
+  border-right: 3px solid #64b5f6;
+}
+
+.timeline-row.event-poop {
+  border-right: 3px solid #8d6e63;
+}
+
+.timeline-row.event-pee {
+  border-right: 3px solid #4fc3f7;
+}
+
+.timeline-row.event-reward {
+  border-right: 3px solid #ffd54f;
+}
+
+.timeline-row.event-accident {
+  border-right: 3px solid #ef5350;
+}
+
+.timeline-row.event-feed_morning,
+.timeline-row.event-feed_evening {
+  border-right: 3px solid #ff8a65;
+}
+
+.timeline-row-right {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex: 1;
+}
+
+.timeline-event-icon {
+  font-size: 1.3rem;
+  min-width: 28px;
+  text-align: center;
+}
+
+.timeline-event-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  min-width: 80px;
+}
+
+.timeline-event-user {
+  font-size: 0.8rem;
+  color: #6d4c41;
+  flex: 1;
+}
+
+.timeline-event-time {
+  font-size: 0.8rem;
+  color: #8d7c6a;
+  min-width: 50px;
+  text-align: left;
+}
+
+.calendar-card .calendar-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.calendar-card input[type='date'] {
+  padding: 0.4rem 0.6rem;
+  border-radius: 10px;
+  border: 1px solid #e0d6c8;
+}
+
+/* Walk overlay */
+.walk-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 150, 136, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.walk-panel {
+  width: 100%;
+  max-width: 640px;
+  padding: 1.5rem 1.2rem 1.2rem;
+  color: #ffffff;
+}
+
+.walk-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.walk-title {
+  font-size: 1rem;
+}
+
+.walk-timer {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.walk-dog-name {
+  margin: 0.2rem 0 0.1rem;
+  text-align: center;
+}
+
+.walk-subtext {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 1.1rem;
+}
+
+.walk-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 0.9rem;
+}
+
+.walk-btn {
+  width: 100%;
+  padding: 0.9rem 0.5rem;
+  border-radius: 16px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.walk-btn .emoji {
+  font-size: 1.5rem;
+}
+
+.walk-btn.poop {
+  background: #d2691e;
+  color: #ffffff;
+}
+
+.walk-btn.pee {
+  background: #ffeb3b;
+  color: #3c2a21;
+}
+
+.walk-btn.treat {
+  background: #ffffff;
+  color: #3c2a21;
+}
+
+.walk-end-button {
+  width: 100%;
+  margin-top: 0.4rem;
+  background: #ffffff;
+  color: #3c2a21;
+}
+
+.subtext {
+  font-size: 0.8rem;
+  color: #8d7c6a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+
+th,
+td {
+  padding: 0.45rem 0.2rem;
+  text-align: center;
+}
+
+thead {
+  background-color: #f5eee4;
+}
+
+.error {
+  color: #d50000;
+  margin-top: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#authTabs {
+  margin-bottom: 1rem;
+}
+
+#authTabs button {
+  margin: 0 0.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  background-color: #ffe0b2;
+}
+
+#authTabs button.active {
+  background-color: #ffb74d;
+}
+
+.authForm input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.6rem;
+  border: 1px solid #e0d6c8;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.authForm button {
+  width: 100%;
+  padding: 0.55rem;
+  background-color: #ffb74d;
+  color: #3c2a21;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.primary-button {
+  background: #ffb74d;
+  color: #3c2a21;
+}
+
+.secondary-button {
+  background: #f3f0ea;
+  color: #3c2a21;
+}
+
+.small-button {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+#inviteList {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.4rem;
+}
+
+#inviteList li {
+  background-color: #f1f8e9;
+  border: 1px solid #c5e1a5;
+  border-radius: 8px;
+  padding: 0.4rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#inviteList li span {
+  direction: ltr;
+  font-family: monospace;
+}
+
+#inviteList li button {
+  padding: 0.2rem 0.5rem;
+  background-color: #aed581;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+#inviteList li button:hover {
+  background-color: #9ccc65;
+}
+
+@media (min-width: 640px) {
+  .quick-actions .actions-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

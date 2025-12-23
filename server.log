@@ -1,0 +1,782 @@
+2025-12-22 20:04:15,493 [INFO] ============================================================
+2025-12-22 20:04:15,494 [INFO] 🐕 Dog Training App Server Starting
+2025-12-22 20:04:15,494 [INFO] Port: 8000
+2025-12-22 20:04:15,494 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-22 20:04:15,494 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-22 20:04:15,494 [INFO] ============================================================
+2025-12-22 20:05:30,261 [INFO] Server shutdown initiated by user
+2025-12-22 20:05:30,261 [INFO] Server stopped
+2025-12-22 20:06:02,072 [INFO] ============================================================
+2025-12-22 20:06:02,074 [INFO] 🐕 Dog Training App Server Starting
+2025-12-22 20:06:02,074 [INFO] Port: 8000
+2025-12-22 20:06:02,074 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-22 20:06:02,074 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-22 20:06:02,075 [INFO] ============================================================
+2025-12-22 20:06:15,426 [INFO] API Request: GET /api/user
+2025-12-22 20:06:15,427 [INFO] Database loaded: 3 households, 4 users, 71 events
+2025-12-22 20:06:15,472 [INFO] API Request: GET /api/history
+2025-12-22 20:06:15,473 [INFO] Database loaded: 3 households, 4 users, 71 events
+2025-12-22 20:06:15,481 [INFO] API Request: GET /api/today
+2025-12-22 20:06:15,481 [INFO] Database loaded: 3 households, 4 users, 71 events
+2025-12-22 20:06:15,482 [INFO] GET /api/today - User: דניאל
+2025-12-22 20:06:15,482 [INFO] Returning 71 events for today
+2025-12-22 20:13:40,369 [INFO] API Request: GET /api/history
+2025-12-22 20:13:40,369 [INFO] Database loaded: 3 households, 4 users, 71 events
+2025-12-22 20:13:40,371 [INFO] API Request: GET /api/history
+2025-12-22 20:13:40,371 [INFO] Database loaded: 3 households, 4 users, 71 events
+2025-12-22 20:13:40,722 [INFO] API Request: GET /api/user
+2025-12-22 20:13:40,722 [INFO] Database loaded: 3 households, 4 users, 71 events
+2025-12-22 20:13:40,973 [INFO] API Request: GET /api/history
+2025-12-22 20:13:40,974 [INFO] Database loaded: 3 households, 4 users, 71 events
+2025-12-22 20:13:41,021 [INFO] API Request: GET /api/today
+2025-12-22 20:13:41,021 [INFO] Database loaded: 3 households, 4 users, 71 events
+2025-12-22 20:13:41,022 [INFO] GET /api/today - User: דניאל
+2025-12-22 20:13:41,022 [INFO] Returning 71 events for today
+2025-12-22 20:37:29,052 [INFO] API Request: GET /api/user
+2025-12-22 20:37:29,052 [INFO] Database loaded: 3 households, 4 users, 71 events
+2025-12-22 20:37:29,053 [INFO] API Request: GET /api/history
+2025-12-22 20:37:29,053 [INFO] Database loaded: 3 households, 4 users, 71 events
+2025-12-22 20:37:29,112 [INFO] API Request: GET /api/today
+2025-12-22 20:37:29,113 [INFO] Database loaded: 3 households, 4 users, 71 events
+2025-12-22 20:37:29,113 [INFO] GET /api/today - User: דניאל
+2025-12-22 20:37:29,115 [INFO] Returning 71 events for today
+2025-12-22 20:37:38,295 [INFO] API Request: GET /api/user
+2025-12-22 20:37:38,297 [INFO] Database loaded: 3 households, 4 users, 71 events
+2025-12-22 20:37:38,515 [INFO] API Request: GET /api/history
+2025-12-22 20:37:38,515 [INFO] Database loaded: 3 households, 4 users, 71 events
+2025-12-22 20:37:38,594 [INFO] API Request: GET /api/today
+2025-12-22 20:37:38,595 [INFO] Database loaded: 3 households, 4 users, 71 events
+2025-12-22 20:37:38,595 [INFO] GET /api/today - User: דניאל
+2025-12-22 20:37:38,595 [INFO] Returning 71 events for today
+2025-12-22 20:38:04,034 [INFO] API Request: POST /api/events
+2025-12-22 20:38:04,034 [INFO] Database loaded: 3 households, 4 users, 71 events
+2025-12-22 20:38:04,036 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-22 20:38:04,038 [INFO] Event recorded: reward, new family total: 7
+2025-12-22 20:43:40,359 [INFO] API Request: GET /api/today
+2025-12-22 20:43:40,359 [INFO] Database loaded: 3 households, 4 users, 72 events
+2025-12-22 20:43:40,359 [INFO] GET /api/today - User: דניאל
+2025-12-22 20:43:40,361 [INFO] Returning 72 events for today
+2025-12-22 20:43:40,367 [INFO] API Request: POST /api/events
+2025-12-22 20:43:40,368 [INFO] Database loaded: 3 households, 4 users, 72 events
+2025-12-22 20:43:40,368 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-22 20:43:40,370 [INFO] Event recorded: reward, new family total: 7
+2025-12-22 20:43:40,373 [INFO] API Request: POST /api/events
+2025-12-22 20:43:40,373 [INFO] Database loaded: 3 households, 4 users, 73 events
+2025-12-22 20:43:40,374 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-22 20:43:40,375 [INFO] Event recorded: reward, new family total: 7
+2025-12-22 20:43:40,378 [INFO] API Request: POST /api/events
+2025-12-22 20:43:40,378 [INFO] Database loaded: 3 households, 4 users, 74 events
+2025-12-22 20:43:40,378 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-22 20:43:40,381 [INFO] Event recorded: reward, new family total: 7
+2025-12-22 22:04:36,424 [INFO] API Request: GET /api/user
+2025-12-22 22:04:36,424 [INFO] Database loaded: 3 households, 4 users, 75 events
+2025-12-22 22:04:36,425 [INFO] API Request: GET /api/history
+2025-12-22 22:04:36,426 [INFO] Database loaded: 3 households, 4 users, 75 events
+2025-12-22 22:04:36,690 [INFO] API Request: GET /api/today
+2025-12-22 22:04:36,690 [INFO] Database loaded: 3 households, 4 users, 75 events
+2025-12-22 22:04:36,691 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:04:36,691 [INFO] Returning 75 events for today
+2025-12-22 22:05:39,611 [INFO] API Request: POST /api/events
+2025-12-22 22:05:39,611 [INFO] Database loaded: 3 households, 4 users, 75 events
+2025-12-22 22:05:39,611 [INFO] POST /api/events - User דניאל added event: walk
+2025-12-22 22:05:39,614 [INFO] Event recorded: walk, new family total: 7
+2025-12-22 22:05:39,615 [INFO] API Request: POST /api/events
+2025-12-22 22:05:39,615 [INFO] Database loaded: 3 households, 4 users, 76 events
+2025-12-22 22:05:39,615 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-22 22:05:39,617 [INFO] Event recorded: poop, new family total: 7
+2025-12-22 22:05:39,618 [INFO] API Request: POST /api/events
+2025-12-22 22:05:39,618 [INFO] Database loaded: 3 households, 4 users, 77 events
+2025-12-22 22:05:39,618 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-22 22:05:39,620 [INFO] Event recorded: reward, new family total: 7
+2025-12-22 22:05:39,621 [INFO] API Request: POST /api/events
+2025-12-22 22:05:39,621 [INFO] Database loaded: 3 households, 4 users, 78 events
+2025-12-22 22:05:39,621 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-22 22:05:39,624 [INFO] Event recorded: reward, new family total: 7
+2025-12-22 22:06:26,428 [INFO] Server shutdown initiated by user
+2025-12-22 22:06:26,429 [INFO] Server stopped
+2025-12-22 22:06:39,701 [INFO] ============================================================
+2025-12-22 22:06:39,702 [INFO] 🐕 Dog Training App Server Starting
+2025-12-22 22:06:39,702 [INFO] Port: 8000
+2025-12-22 22:06:39,702 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-22 22:06:39,702 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-22 22:06:39,702 [INFO] ============================================================
+2025-12-22 22:06:48,476 [INFO] API Request: GET /api/user
+2025-12-22 22:06:48,477 [INFO] Database loaded: 3 households, 4 users, 79 events
+2025-12-22 22:06:48,540 [INFO] API Request: GET /api/history
+2025-12-22 22:06:48,541 [INFO] Database loaded: 3 households, 4 users, 79 events
+2025-12-22 22:06:48,547 [INFO] API Request: GET /api/today
+2025-12-22 22:06:48,548 [INFO] Database loaded: 3 households, 4 users, 79 events
+2025-12-22 22:06:48,548 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:06:48,549 [INFO] Returning 79 events for today
+2025-12-22 22:06:53,008 [INFO] API Request: POST /api/events
+2025-12-22 22:06:53,009 [INFO] Database loaded: 3 households, 4 users, 79 events
+2025-12-22 22:06:53,010 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-22 22:06:53,014 [INFO] Event recorded: reward, new family total: 7
+2025-12-22 22:07:49,280 [INFO] API Request: GET /api/today
+2025-12-22 22:07:49,282 [INFO] Database loaded: 3 households, 4 users, 80 events
+2025-12-22 22:07:49,282 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:07:49,283 [INFO] Returning 80 events for today
+2025-12-22 22:07:49,284 [INFO] API Request: POST /api/events
+2025-12-22 22:07:49,284 [INFO] Database loaded: 3 households, 4 users, 80 events
+2025-12-22 22:07:49,284 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-22 22:07:49,286 [INFO] Event recorded: reward, new family total: 7
+2025-12-22 22:07:49,287 [INFO] API Request: POST /api/events
+2025-12-22 22:07:49,287 [INFO] Database loaded: 3 households, 4 users, 81 events
+2025-12-22 22:07:49,289 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-22 22:07:49,291 [INFO] Event recorded: poop, new family total: 7
+2025-12-22 22:07:49,292 [INFO] API Request: POST /api/events
+2025-12-22 22:07:49,293 [INFO] Database loaded: 3 households, 4 users, 82 events
+2025-12-22 22:07:49,293 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-22 22:07:49,295 [INFO] Event recorded: poop, new family total: 7
+2025-12-22 22:07:49,297 [INFO] API Request: GET /api/today
+2025-12-22 22:07:49,298 [INFO] Database loaded: 3 households, 4 users, 83 events
+2025-12-22 22:07:49,298 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:07:49,298 [INFO] Returning 83 events for today
+2025-12-22 22:07:49,593 [INFO] API Request: GET /api/today
+2025-12-22 22:07:49,594 [INFO] Database loaded: 3 households, 4 users, 83 events
+2025-12-22 22:07:49,594 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:07:49,595 [INFO] Returning 83 events for today
+2025-12-22 22:08:18,549 [INFO] Server shutdown initiated by user
+2025-12-22 22:08:18,549 [INFO] Server stopped
+2025-12-22 22:08:33,260 [INFO] ============================================================
+2025-12-22 22:08:33,261 [INFO] 🐕 Dog Training App Server Starting
+2025-12-22 22:08:33,261 [INFO] Port: 8000
+2025-12-22 22:08:33,262 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-22 22:08:33,262 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-22 22:08:33,262 [INFO] ============================================================
+2025-12-22 22:12:48,397 [INFO] API Request: GET /api/user
+2025-12-22 22:12:48,398 [INFO] Database loaded: 3 households, 4 users, 83 events
+2025-12-22 22:12:48,400 [INFO] API Request: GET /api/history
+2025-12-22 22:12:48,400 [INFO] Database loaded: 3 households, 4 users, 83 events
+2025-12-22 22:12:48,661 [INFO] API Request: GET /api/today
+2025-12-22 22:12:48,662 [INFO] Database loaded: 3 households, 4 users, 83 events
+2025-12-22 22:12:48,662 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:12:48,662 [INFO] Returning 83 events for today
+2025-12-22 22:12:56,694 [INFO] API Request: POST /api/events
+2025-12-22 22:12:58,264 [INFO] Database loaded: 3 households, 4 users, 83 events
+2025-12-22 22:12:58,826 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-22 22:12:58,837 [INFO] Event recorded: poop, new family total: 7
+2025-12-22 22:12:59,145 [INFO] API Request: GET /api/today
+2025-12-22 22:12:59,146 [INFO] Database loaded: 3 households, 4 users, 84 events
+2025-12-22 22:12:59,146 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:12:59,147 [INFO] Returning 84 events for today
+2025-12-22 22:12:59,317 [INFO] API Request: POST /api/events
+2025-12-22 22:12:59,318 [INFO] Database loaded: 3 households, 4 users, 84 events
+2025-12-22 22:12:59,318 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-22 22:12:59,404 [INFO] Event recorded: poop, new family total: 7
+2025-12-22 22:12:59,408 [INFO] API Request: GET /api/today
+2025-12-22 22:12:59,408 [INFO] Database loaded: 3 households, 4 users, 85 events
+2025-12-22 22:12:59,409 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:12:59,409 [INFO] Returning 85 events for today
+2025-12-22 22:13:03,803 [INFO] API Request: POST /api/events
+2025-12-22 22:13:03,804 [INFO] Database loaded: 3 households, 4 users, 85 events
+2025-12-22 22:13:03,804 [INFO] POST /api/events - User דניאל added event: pee
+2025-12-22 22:13:03,807 [INFO] Event recorded: pee, new family total: 7
+2025-12-22 22:13:04,052 [INFO] API Request: GET /api/today
+2025-12-22 22:13:04,053 [INFO] Database loaded: 3 households, 4 users, 86 events
+2025-12-22 22:13:04,053 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:13:04,054 [INFO] Returning 86 events for today
+2025-12-22 22:13:06,181 [INFO] API Request: POST /api/events
+2025-12-22 22:13:06,181 [INFO] Database loaded: 3 households, 4 users, 86 events
+2025-12-22 22:13:06,182 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-22 22:13:06,184 [INFO] Event recorded: reward, new family total: 7
+2025-12-22 22:13:06,498 [INFO] API Request: GET /api/today
+2025-12-22 22:13:06,499 [INFO] Database loaded: 3 households, 4 users, 87 events
+2025-12-22 22:13:06,499 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:13:06,500 [INFO] Returning 87 events for today
+2025-12-22 22:13:09,276 [INFO] API Request: POST /api/events
+2025-12-22 22:13:09,278 [INFO] Database loaded: 3 households, 4 users, 87 events
+2025-12-22 22:13:09,278 [INFO] POST /api/events - User דניאל added event: accident
+2025-12-22 22:13:09,298 [INFO] Event recorded: accident, new family total: 7
+2025-12-22 22:13:09,605 [INFO] API Request: GET /api/today
+2025-12-22 22:13:09,606 [INFO] Database loaded: 3 households, 4 users, 88 events
+2025-12-22 22:13:09,606 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:13:09,606 [INFO] Returning 88 events for today
+2025-12-22 22:13:17,412 [INFO] API Request: POST /api/events
+2025-12-22 22:13:17,576 [INFO] Database loaded: 3 households, 4 users, 88 events
+2025-12-22 22:13:17,577 [INFO] POST /api/events - User דניאל added event: walk
+2025-12-22 22:13:17,581 [INFO] Event recorded: walk, new family total: 7
+2025-12-22 22:13:17,901 [INFO] API Request: GET /api/today
+2025-12-22 22:13:17,901 [INFO] Database loaded: 3 households, 4 users, 89 events
+2025-12-22 22:13:17,901 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:13:17,901 [INFO] Returning 89 events for today
+2025-12-22 22:13:19,784 [INFO] API Request: POST /api/events
+2025-12-22 22:13:19,785 [INFO] Database loaded: 3 households, 4 users, 89 events
+2025-12-22 22:13:19,786 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-22 22:13:19,788 [INFO] Event recorded: poop, new family total: 7
+2025-12-22 22:13:20,102 [INFO] API Request: GET /api/today
+2025-12-22 22:13:20,103 [INFO] Database loaded: 3 households, 4 users, 90 events
+2025-12-22 22:13:20,103 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:13:20,103 [INFO] Returning 90 events for today
+2025-12-22 22:13:20,599 [INFO] API Request: POST /api/events
+2025-12-22 22:13:20,600 [INFO] Database loaded: 3 households, 4 users, 90 events
+2025-12-22 22:13:20,600 [INFO] POST /api/events - User דניאל added event: pee
+2025-12-22 22:13:20,603 [INFO] Event recorded: pee, new family total: 7
+2025-12-22 22:13:20,914 [INFO] API Request: GET /api/today
+2025-12-22 22:13:20,915 [INFO] Database loaded: 3 households, 4 users, 91 events
+2025-12-22 22:13:20,915 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:13:20,915 [INFO] Returning 91 events for today
+2025-12-22 22:13:21,252 [INFO] API Request: POST /api/events
+2025-12-22 22:13:21,253 [INFO] Database loaded: 3 households, 4 users, 91 events
+2025-12-22 22:13:21,253 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-22 22:13:21,256 [INFO] Event recorded: reward, new family total: 7
+2025-12-22 22:13:21,567 [INFO] API Request: GET /api/today
+2025-12-22 22:13:21,568 [INFO] Database loaded: 3 households, 4 users, 92 events
+2025-12-22 22:13:21,568 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:13:21,569 [INFO] Returning 92 events for today
+2025-12-22 22:14:18,439 [INFO] API Request: GET /api/user
+2025-12-22 22:14:18,440 [INFO] Database loaded: 3 households, 4 users, 92 events
+2025-12-22 22:14:18,441 [INFO] API Request: GET /api/history
+2025-12-22 22:14:18,441 [INFO] Database loaded: 3 households, 4 users, 92 events
+2025-12-22 22:14:18,526 [INFO] API Request: GET /api/today
+2025-12-22 22:14:18,527 [INFO] Database loaded: 3 households, 4 users, 92 events
+2025-12-22 22:14:18,527 [INFO] GET /api/today - User: מיטל
+2025-12-22 22:14:18,528 [INFO] Returning 92 events for today
+2025-12-22 22:14:40,726 [INFO] API Request: POST /api/events
+2025-12-22 22:14:40,727 [INFO] Database loaded: 3 households, 4 users, 92 events
+2025-12-22 22:14:40,727 [INFO] POST /api/events - User מיטל added event: poop
+2025-12-22 22:14:40,729 [INFO] Event recorded: poop, new family total: 10
+2025-12-22 22:14:40,757 [INFO] API Request: GET /api/today
+2025-12-22 22:14:40,758 [INFO] Database loaded: 3 households, 4 users, 93 events
+2025-12-22 22:14:40,759 [INFO] GET /api/today - User: מיטל
+2025-12-22 22:14:40,759 [INFO] Returning 93 events for today
+2025-12-22 22:14:47,440 [INFO] API Request: POST /api/events
+2025-12-22 22:14:47,441 [INFO] Database loaded: 3 households, 4 users, 93 events
+2025-12-22 22:14:47,441 [INFO] POST /api/events - User מיטל added event: poop
+2025-12-22 22:14:47,444 [INFO] Event recorded: poop, new family total: 10
+2025-12-22 22:14:47,480 [INFO] API Request: GET /api/today
+2025-12-22 22:14:47,481 [INFO] Database loaded: 3 households, 4 users, 94 events
+2025-12-22 22:14:47,481 [INFO] GET /api/today - User: מיטל
+2025-12-22 22:14:47,481 [INFO] Returning 94 events for today
+2025-12-22 22:14:54,101 [INFO] API Request: GET /api/user
+2025-12-22 22:14:54,102 [INFO] Database loaded: 3 households, 4 users, 94 events
+2025-12-22 22:14:54,163 [INFO] API Request: GET /api/history
+2025-12-22 22:14:54,164 [INFO] Database loaded: 3 households, 4 users, 94 events
+2025-12-22 22:14:54,166 [INFO] API Request: GET /api/today
+2025-12-22 22:14:54,166 [INFO] Database loaded: 3 households, 4 users, 94 events
+2025-12-22 22:14:54,166 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:14:54,167 [INFO] Returning 94 events for today
+2025-12-22 22:15:28,583 [INFO] API Request: POST /api/events
+2025-12-22 22:15:28,584 [INFO] Database loaded: 3 households, 4 users, 94 events
+2025-12-22 22:15:28,584 [INFO] POST /api/events - User דניאל added event: walk
+2025-12-22 22:15:28,587 [INFO] Event recorded: walk, new family total: 10
+2025-12-22 22:15:28,849 [INFO] API Request: GET /api/today
+2025-12-22 22:15:28,851 [INFO] Database loaded: 3 households, 4 users, 95 events
+2025-12-22 22:15:28,851 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:15:28,851 [INFO] Returning 95 events for today
+2025-12-22 22:15:33,223 [INFO] API Request: POST /api/events
+2025-12-22 22:15:33,224 [INFO] Database loaded: 3 households, 4 users, 95 events
+2025-12-22 22:15:33,224 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-22 22:15:33,226 [INFO] Event recorded: poop, new family total: 10
+2025-12-22 22:15:33,541 [INFO] API Request: GET /api/today
+2025-12-22 22:15:33,542 [INFO] Database loaded: 3 households, 4 users, 96 events
+2025-12-22 22:15:33,542 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:15:33,542 [INFO] Returning 96 events for today
+2025-12-22 22:15:35,329 [INFO] API Request: POST /api/events
+2025-12-22 22:15:35,330 [INFO] Database loaded: 3 households, 4 users, 96 events
+2025-12-22 22:15:35,330 [INFO] POST /api/events - User דניאל added event: pee
+2025-12-22 22:15:35,334 [INFO] Event recorded: pee, new family total: 10
+2025-12-22 22:15:35,651 [INFO] API Request: GET /api/today
+2025-12-22 22:15:35,651 [INFO] Database loaded: 3 households, 4 users, 97 events
+2025-12-22 22:15:35,652 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:15:35,652 [INFO] Returning 97 events for today
+2025-12-22 22:15:36,684 [INFO] API Request: POST /api/events
+2025-12-22 22:15:36,685 [INFO] Database loaded: 3 households, 4 users, 97 events
+2025-12-22 22:15:36,686 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-22 22:15:36,690 [INFO] Event recorded: reward, new family total: 10
+2025-12-22 22:15:37,006 [INFO] API Request: GET /api/today
+2025-12-22 22:15:37,007 [INFO] Database loaded: 3 households, 4 users, 98 events
+2025-12-22 22:15:37,008 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:15:37,008 [INFO] Returning 98 events for today
+2025-12-22 22:15:39,156 [INFO] API Request: POST /api/events
+2025-12-22 22:15:39,157 [INFO] Database loaded: 3 households, 4 users, 98 events
+2025-12-22 22:15:39,158 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-22 22:15:39,161 [INFO] Event recorded: poop, new family total: 10
+2025-12-22 22:15:39,469 [INFO] API Request: GET /api/today
+2025-12-22 22:15:39,470 [INFO] Database loaded: 3 households, 4 users, 99 events
+2025-12-22 22:15:39,470 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:15:39,470 [INFO] Returning 99 events for today
+2025-12-22 22:15:39,955 [INFO] API Request: POST /api/events
+2025-12-22 22:15:39,957 [INFO] Database loaded: 3 households, 4 users, 99 events
+2025-12-22 22:15:39,957 [INFO] POST /api/events - User דניאל added event: pee
+2025-12-22 22:15:39,960 [INFO] Event recorded: pee, new family total: 10
+2025-12-22 22:15:40,276 [INFO] API Request: GET /api/today
+2025-12-22 22:15:40,276 [INFO] Database loaded: 3 households, 4 users, 100 events
+2025-12-22 22:15:40,277 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:15:40,277 [INFO] Returning 100 events for today
+2025-12-22 22:15:41,017 [INFO] API Request: POST /api/events
+2025-12-22 22:15:41,018 [INFO] Database loaded: 3 households, 4 users, 100 events
+2025-12-22 22:15:41,018 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-22 22:15:41,023 [INFO] Event recorded: reward, new family total: 10
+2025-12-22 22:15:41,335 [INFO] API Request: GET /api/today
+2025-12-22 22:15:41,335 [INFO] Database loaded: 3 households, 4 users, 101 events
+2025-12-22 22:15:41,335 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:15:41,336 [INFO] Returning 101 events for today
+2025-12-22 22:15:49,881 [INFO] API Request: GET /api/today
+2025-12-22 22:15:49,882 [INFO] Database loaded: 3 households, 4 users, 101 events
+2025-12-22 22:15:49,883 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:15:49,883 [INFO] Returning 101 events for today
+2025-12-22 22:15:51,031 [INFO] API Request: GET /api/today
+2025-12-22 22:15:51,031 [INFO] Database loaded: 3 households, 4 users, 101 events
+2025-12-22 22:15:51,032 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:15:51,032 [INFO] Returning 101 events for today
+2025-12-22 22:16:24,533 [INFO] API Request: POST /api/events
+2025-12-22 22:16:24,533 [INFO] Database loaded: 3 households, 4 users, 101 events
+2025-12-22 22:16:24,534 [INFO] POST /api/events - User דניאל added event: accident
+2025-12-22 22:16:24,537 [INFO] Event recorded: accident, new family total: 10
+2025-12-22 22:16:24,538 [INFO] API Request: GET /api/history
+2025-12-22 22:16:24,539 [INFO] Database loaded: 3 households, 4 users, 102 events
+2025-12-22 22:16:24,862 [INFO] API Request: GET /api/today
+2025-12-22 22:16:24,863 [INFO] Database loaded: 3 households, 4 users, 102 events
+2025-12-22 22:16:24,863 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:16:24,863 [INFO] Returning 102 events for today
+2025-12-22 22:16:25,434 [INFO] API Request: POST /api/events
+2025-12-22 22:16:25,435 [INFO] Database loaded: 3 households, 4 users, 102 events
+2025-12-22 22:16:25,437 [INFO] POST /api/events - User דניאל added event: accident
+2025-12-22 22:16:25,438 [INFO] Event recorded: accident, new family total: 10
+2025-12-22 22:16:25,750 [INFO] API Request: GET /api/today
+2025-12-22 22:16:25,750 [INFO] Database loaded: 3 households, 4 users, 103 events
+2025-12-22 22:16:25,751 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:16:25,751 [INFO] Returning 103 events for today
+2025-12-22 22:16:26,383 [INFO] API Request: POST /api/events
+2025-12-22 22:16:26,384 [INFO] Database loaded: 3 households, 4 users, 103 events
+2025-12-22 22:16:26,384 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-22 22:16:26,386 [INFO] Event recorded: reward, new family total: 10
+2025-12-22 22:16:26,701 [INFO] API Request: GET /api/today
+2025-12-22 22:16:26,701 [INFO] Database loaded: 3 households, 4 users, 104 events
+2025-12-22 22:16:26,702 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:16:26,702 [INFO] Returning 104 events for today
+2025-12-22 22:16:27,800 [INFO] API Request: POST /api/events
+2025-12-22 22:16:27,801 [INFO] Database loaded: 3 households, 4 users, 104 events
+2025-12-22 22:16:27,801 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-22 22:16:27,805 [INFO] Event recorded: poop, new family total: 10
+2025-12-22 22:16:28,113 [INFO] API Request: GET /api/today
+2025-12-22 22:16:28,114 [INFO] Database loaded: 3 households, 4 users, 105 events
+2025-12-22 22:16:28,114 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:16:28,115 [INFO] Returning 105 events for today
+2025-12-22 22:16:29,989 [INFO] API Request: POST /api/events
+2025-12-22 22:16:29,990 [INFO] Database loaded: 3 households, 4 users, 105 events
+2025-12-22 22:16:29,990 [INFO] POST /api/events - User דניאל added event: pee
+2025-12-22 22:16:29,993 [INFO] Event recorded: pee, new family total: 10
+2025-12-22 22:16:30,317 [INFO] API Request: GET /api/today
+2025-12-22 22:16:30,318 [INFO] Database loaded: 3 households, 4 users, 106 events
+2025-12-22 22:16:30,319 [INFO] GET /api/today - User: דניאל
+2025-12-22 22:16:30,319 [INFO] Returning 106 events for today
+2025-12-23 09:52:21,957 [INFO] ============================================================
+2025-12-23 09:52:21,957 [INFO] 🐕 Dog Training App Server Starting
+2025-12-23 09:52:21,957 [INFO] Port: 8000
+2025-12-23 09:52:21,957 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-23 09:52:21,957 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-23 09:52:21,957 [INFO] ============================================================
+2025-12-23 09:52:31,030 [INFO] API Request: GET /api/user
+2025-12-23 09:52:31,032 [INFO] Database loaded: 3 households, 4 users, 106 events
+2025-12-23 09:52:31,150 [INFO] API Request: GET /api/history
+2025-12-23 09:52:31,150 [INFO] Database loaded: 3 households, 4 users, 106 events
+2025-12-23 09:52:31,155 [INFO] API Request: GET /api/today
+2025-12-23 09:52:31,156 [INFO] Database loaded: 3 households, 4 users, 106 events
+2025-12-23 09:52:31,156 [INFO] GET /api/today - User: דניאל
+2025-12-23 09:52:31,157 [INFO] Returning 0 events for today
+2025-12-23 09:54:30,400 [INFO] Server shutdown initiated by user
+2025-12-23 09:54:30,400 [INFO] Server stopped
+2025-12-23 09:55:20,820 [INFO] ============================================================
+2025-12-23 09:55:20,820 [INFO] 🐕 Dog Training App Server Starting
+2025-12-23 09:55:20,820 [INFO] Port: 8000
+2025-12-23 09:55:20,820 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-23 09:55:20,820 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-23 09:55:20,820 [INFO] ============================================================
+2025-12-23 09:55:27,778 [INFO] API Request: GET /api/user
+2025-12-23 09:55:27,778 [INFO] Database loaded: 3 households, 4 users, 106 events
+2025-12-23 09:55:27,778 [INFO] API Request: GET /api/history
+2025-12-23 09:55:27,778 [INFO] Database loaded: 3 households, 4 users, 106 events
+2025-12-23 09:55:28,030 [INFO] API Request: GET /api/today
+2025-12-23 09:55:28,031 [INFO] Database loaded: 3 households, 4 users, 106 events
+2025-12-23 09:55:28,032 [INFO] GET /api/today - User: דניאל
+2025-12-23 09:55:28,035 [INFO] Returning 0 events for today
+2025-12-23 09:56:38,963 [INFO] API Request: POST /api/events
+2025-12-23 09:56:38,964 [INFO] Database loaded: 3 households, 4 users, 106 events
+2025-12-23 09:56:38,964 [INFO] POST /api/events - User דניאל added event: walk
+2025-12-23 09:56:38,967 [INFO] Event recorded: walk, new family total: 11
+2025-12-23 09:56:38,968 [INFO] API Request: POST /api/events
+2025-12-23 09:56:38,969 [INFO] Database loaded: 3 households, 4 users, 107 events
+2025-12-23 09:56:38,969 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-23 09:56:38,971 [INFO] Event recorded: poop, new family total: 14
+2025-12-23 09:56:38,973 [INFO] API Request: POST /api/events
+2025-12-23 09:56:38,974 [INFO] Database loaded: 3 households, 4 users, 108 events
+2025-12-23 09:56:38,974 [INFO] POST /api/events - User דניאל added event: pee
+2025-12-23 09:56:38,976 [INFO] Event recorded: pee, new family total: 16
+2025-12-23 09:56:38,977 [INFO] API Request: GET /api/today
+2025-12-23 09:56:38,978 [INFO] Database loaded: 3 households, 4 users, 109 events
+2025-12-23 09:56:38,978 [INFO] GET /api/today - User: דניאל
+2025-12-23 09:56:38,978 [INFO] Returning 3 events for today
+2025-12-23 09:56:38,979 [INFO] API Request: POST /api/events
+2025-12-23 09:56:38,979 [INFO] Database loaded: 3 households, 4 users, 109 events
+2025-12-23 09:56:38,979 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-23 09:56:38,984 [INFO] Event recorded: reward, new family total: 17
+2025-12-23 09:56:40,321 [INFO] API Request: GET /api/user
+2025-12-23 09:56:40,322 [INFO] Database loaded: 3 households, 4 users, 110 events
+2025-12-23 09:56:40,634 [INFO] API Request: GET /api/history
+2025-12-23 09:56:40,635 [INFO] Database loaded: 3 households, 4 users, 110 events
+2025-12-23 09:56:40,636 [INFO] API Request: GET /api/today
+2025-12-23 09:56:40,639 [INFO] Database loaded: 3 households, 4 users, 110 events
+2025-12-23 09:56:40,639 [INFO] GET /api/today - User: דניאל
+2025-12-23 09:56:40,639 [INFO] Returning 4 events for today
+2025-12-23 11:51:16,223 [INFO] API Request: GET /api/user
+2025-12-23 11:51:16,224 [INFO] Database loaded: 3 households, 4 users, 110 events
+2025-12-23 11:51:16,372 [INFO] API Request: GET /api/history
+2025-12-23 11:51:16,372 [INFO] Database loaded: 3 households, 4 users, 110 events
+2025-12-23 11:51:16,373 [INFO] API Request: GET /api/today
+2025-12-23 11:51:16,373 [INFO] Database loaded: 3 households, 4 users, 110 events
+2025-12-23 11:51:16,373 [INFO] GET /api/today - User: דניאל
+2025-12-23 11:51:16,373 [INFO] Returning 4 events for today
+2025-12-23 11:51:24,393 [INFO] API Request: POST /api/events
+2025-12-23 11:51:24,393 [INFO] Database loaded: 3 households, 4 users, 110 events
+2025-12-23 11:51:24,393 [INFO] POST /api/events - User דניאל added event: pee
+2025-12-23 11:51:24,399 [INFO] Event recorded: pee, new family total: 17
+2025-12-23 11:51:24,652 [INFO] API Request: GET /api/today
+2025-12-23 11:51:24,653 [INFO] Database loaded: 3 households, 4 users, 111 events
+2025-12-23 11:51:24,653 [INFO] GET /api/today - User: דניאל
+2025-12-23 11:51:24,653 [INFO] Returning 5 events for today
+2025-12-23 11:51:27,553 [INFO] API Request: POST /api/events
+2025-12-23 11:51:27,553 [INFO] Database loaded: 3 households, 4 users, 111 events
+2025-12-23 11:51:27,553 [INFO] POST /api/events - User דניאל added event: accident
+2025-12-23 11:51:27,559 [INFO] Event recorded: accident, new family total: 15
+2025-12-23 11:51:27,865 [INFO] API Request: GET /api/today
+2025-12-23 11:51:27,865 [INFO] Database loaded: 3 households, 4 users, 112 events
+2025-12-23 11:51:27,865 [INFO] GET /api/today - User: דניאל
+2025-12-23 11:51:27,865 [INFO] Returning 6 events for today
+2025-12-23 11:51:29,307 [INFO] API Request: POST /api/events
+2025-12-23 11:51:29,309 [INFO] Database loaded: 3 households, 4 users, 112 events
+2025-12-23 11:51:29,310 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-23 11:51:29,317 [INFO] Event recorded: reward, new family total: 15
+2025-12-23 11:51:29,633 [INFO] API Request: GET /api/today
+2025-12-23 11:51:29,633 [INFO] Database loaded: 3 households, 4 users, 113 events
+2025-12-23 11:51:29,640 [INFO] GET /api/today - User: דניאל
+2025-12-23 11:51:29,640 [INFO] Returning 7 events for today
+2025-12-23 11:51:31,138 [INFO] API Request: POST /api/events
+2025-12-23 11:51:31,139 [INFO] Database loaded: 3 households, 4 users, 113 events
+2025-12-23 11:51:31,139 [INFO] POST /api/events - User דניאל added event: walk
+2025-12-23 11:51:31,141 [INFO] Event recorded: walk, new family total: 15
+2025-12-23 11:51:31,445 [INFO] API Request: GET /api/today
+2025-12-23 11:51:31,447 [INFO] Database loaded: 3 households, 4 users, 114 events
+2025-12-23 11:51:31,447 [INFO] GET /api/today - User: דניאל
+2025-12-23 11:51:31,447 [INFO] Returning 8 events for today
+2025-12-23 11:51:31,988 [INFO] API Request: POST /api/events
+2025-12-23 11:51:31,988 [INFO] Database loaded: 3 households, 4 users, 114 events
+2025-12-23 11:51:31,988 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-23 11:51:31,990 [INFO] Event recorded: poop, new family total: 15
+2025-12-23 11:51:32,300 [INFO] API Request: GET /api/today
+2025-12-23 11:51:32,302 [INFO] Database loaded: 3 households, 4 users, 115 events
+2025-12-23 11:51:32,302 [INFO] GET /api/today - User: דניאל
+2025-12-23 11:51:32,303 [INFO] Returning 9 events for today
+2025-12-23 11:51:32,564 [INFO] API Request: POST /api/events
+2025-12-23 11:51:32,564 [INFO] Database loaded: 3 households, 4 users, 115 events
+2025-12-23 11:51:32,564 [INFO] POST /api/events - User דניאל added event: pee
+2025-12-23 11:51:32,567 [INFO] Event recorded: pee, new family total: 15
+2025-12-23 11:51:32,743 [INFO] API Request: GET /api/today
+2025-12-23 11:51:32,744 [INFO] Database loaded: 3 households, 4 users, 116 events
+2025-12-23 11:51:32,744 [INFO] GET /api/today - User: דניאל
+2025-12-23 11:51:32,744 [INFO] Returning 10 events for today
+2025-12-23 11:52:00,177 [INFO] API Request: POST /api/invite
+2025-12-23 11:52:00,178 [INFO] Database loaded: 3 households, 4 users, 116 events
+2025-12-23 11:52:05,279 [INFO] API Request: POST /api/invite/reset
+2025-12-23 11:52:05,279 [INFO] Database loaded: 3 households, 4 users, 116 events
+2025-12-23 11:52:06,690 [INFO] API Request: POST /api/invite/reset
+2025-12-23 11:52:06,691 [INFO] Database loaded: 3 households, 4 users, 116 events
+2025-12-23 11:52:07,707 [INFO] API Request: POST /api/invite/reset
+2025-12-23 11:52:07,708 [INFO] Database loaded: 3 households, 4 users, 116 events
+2025-12-23 11:52:08,495 [INFO] API Request: POST /api/invite
+2025-12-23 11:52:08,497 [INFO] Database loaded: 3 households, 4 users, 116 events
+2025-12-23 11:52:09,291 [INFO] API Request: POST /api/invite
+2025-12-23 11:52:09,291 [INFO] Database loaded: 3 households, 4 users, 116 events
+2025-12-23 11:52:09,873 [INFO] API Request: POST /api/invite
+2025-12-23 11:52:09,873 [INFO] Database loaded: 3 households, 4 users, 116 events
+2025-12-23 12:19:37,335 [INFO] API Request: POST /api/events
+2025-12-23 12:19:37,336 [INFO] Database loaded: 3 households, 4 users, 116 events
+2025-12-23 12:19:37,337 [INFO] POST /api/events - User דניאל added event: walk
+2025-12-23 12:19:37,340 [INFO] Event recorded: walk, new family total: 15
+2025-12-23 12:19:37,594 [INFO] API Request: GET /api/today
+2025-12-23 12:19:37,596 [INFO] Database loaded: 3 households, 4 users, 117 events
+2025-12-23 12:19:37,596 [INFO] GET /api/today - User: דניאל
+2025-12-23 12:19:37,596 [INFO] Returning 11 events for today
+2025-12-23 12:19:38,005 [INFO] API Request: POST /api/events
+2025-12-23 12:19:38,005 [INFO] Database loaded: 3 households, 4 users, 117 events
+2025-12-23 12:19:38,005 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-23 12:19:38,007 [INFO] Event recorded: poop, new family total: 15
+2025-12-23 12:19:38,322 [INFO] API Request: GET /api/today
+2025-12-23 12:19:38,323 [INFO] Database loaded: 3 households, 4 users, 118 events
+2025-12-23 12:19:38,323 [INFO] GET /api/today - User: דניאל
+2025-12-23 12:19:38,324 [INFO] Returning 12 events for today
+2025-12-23 12:19:38,574 [INFO] API Request: POST /api/events
+2025-12-23 12:19:38,574 [INFO] Database loaded: 3 households, 4 users, 118 events
+2025-12-23 12:19:38,574 [INFO] POST /api/events - User דניאל added event: pee
+2025-12-23 12:19:38,577 [INFO] Event recorded: pee, new family total: 15
+2025-12-23 12:19:38,814 [INFO] API Request: GET /api/today
+2025-12-23 12:19:38,814 [INFO] Database loaded: 3 households, 4 users, 119 events
+2025-12-23 12:19:38,815 [INFO] GET /api/today - User: דניאל
+2025-12-23 12:19:38,815 [INFO] Returning 13 events for today
+2025-12-23 12:19:40,372 [INFO] API Request: POST /api/events
+2025-12-23 12:19:40,372 [INFO] Database loaded: 3 households, 4 users, 119 events
+2025-12-23 12:19:40,372 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-23 12:19:40,372 [INFO] Event recorded: poop, new family total: 15
+2025-12-23 12:19:40,682 [INFO] API Request: GET /api/today
+2025-12-23 12:19:40,683 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 12:19:40,683 [INFO] GET /api/today - User: דניאל
+2025-12-23 12:19:40,684 [INFO] Returning 14 events for today
+2025-12-23 12:19:41,092 [INFO] API Request: POST /api/events
+2025-12-23 12:19:41,092 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 12:19:41,092 [INFO] POST /api/events - User דניאל added event: pee
+2025-12-23 12:19:41,098 [INFO] Event recorded: pee, new family total: 15
+2025-12-23 12:19:41,404 [INFO] API Request: GET /api/today
+2025-12-23 12:19:41,406 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 12:19:41,406 [INFO] GET /api/today - User: דניאל
+2025-12-23 12:19:41,407 [INFO] Returning 15 events for today
+2025-12-23 12:20:46,255 [INFO] API Request: POST /api/events
+2025-12-23 12:20:46,256 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 12:20:46,256 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-23 12:20:46,259 [INFO] Event recorded: poop, new family total: 15
+2025-12-23 12:20:46,508 [INFO] API Request: GET /api/today
+2025-12-23 12:20:46,509 [INFO] Database loaded: 3 households, 4 users, 122 events
+2025-12-23 12:20:46,509 [INFO] GET /api/today - User: דניאל
+2025-12-23 12:20:46,509 [INFO] Returning 16 events for today
+2025-12-23 12:20:48,703 [INFO] API Request: POST /api/events
+2025-12-23 12:20:48,703 [INFO] Database loaded: 3 households, 4 users, 122 events
+2025-12-23 12:20:48,703 [INFO] POST /api/events - User דניאל added event: pee
+2025-12-23 12:20:48,703 [INFO] Event recorded: pee, new family total: 15
+2025-12-23 12:20:49,018 [INFO] API Request: GET /api/today
+2025-12-23 12:20:49,019 [INFO] Database loaded: 3 households, 4 users, 123 events
+2025-12-23 12:20:49,019 [INFO] GET /api/today - User: דניאל
+2025-12-23 12:20:49,020 [INFO] Returning 17 events for today
+2025-12-23 12:20:57,780 [INFO] API Request: GET /api/history
+2025-12-23 12:20:57,783 [INFO] Database loaded: 3 households, 4 users, 123 events
+2025-12-23 14:04:29,492 [INFO] Server shutdown initiated by user
+2025-12-23 14:04:29,492 [INFO] Server stopped
+2025-12-23 14:04:41,892 [INFO] ============================================================
+2025-12-23 14:04:41,892 [INFO] 🐕 Dog Training App Server Starting
+2025-12-23 14:04:41,892 [INFO] Port: 8000
+2025-12-23 14:04:41,892 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-23 14:04:41,892 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-23 14:04:41,892 [INFO] ============================================================
+2025-12-23 14:12:41,143 [INFO] Server shutdown initiated by user
+2025-12-23 14:12:41,144 [INFO] Server stopped
+2025-12-23 14:12:55,908 [INFO] ============================================================
+2025-12-23 14:12:55,908 [INFO] 🐕 Dog Training App Server Starting
+2025-12-23 14:12:55,908 [INFO] Port: 8000
+2025-12-23 14:12:55,908 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-23 14:12:55,908 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-23 14:12:55,908 [INFO] ============================================================
+2025-12-23 14:13:42,209 [INFO] API Request: GET /api/user
+2025-12-23 14:13:42,209 [INFO] Database loaded: 3 households, 4 users, 123 events
+2025-12-23 14:13:42,209 [INFO] API Request: GET /api/history
+2025-12-23 14:13:42,209 [INFO] Database loaded: 3 households, 4 users, 123 events
+2025-12-23 14:13:42,468 [INFO] API Request: GET /api/today
+2025-12-23 14:13:42,468 [INFO] Database loaded: 3 households, 4 users, 123 events
+2025-12-23 14:13:42,469 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:13:42,469 [INFO] Returning 17 events for today
+2025-12-23 14:13:54,846 [INFO] API Request: DELETE /api/events/3bb4b596418447a2b0e80deab16febfe
+2025-12-23 14:13:54,848 [INFO] Database loaded: 3 households, 4 users, 123 events
+2025-12-23 14:13:54,851 [INFO] Event 3bb4b596418447a2b0e80deab16febfe deleted by דניאל
+2025-12-23 14:13:55,111 [INFO] API Request: GET /api/today
+2025-12-23 14:13:55,112 [INFO] Database loaded: 3 households, 4 users, 122 events
+2025-12-23 14:13:55,112 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:13:55,112 [INFO] Returning 16 events for today
+2025-12-23 14:14:04,212 [INFO] API Request: DELETE /api/events/a39b9b194fbe4656b4398f04d74c271e
+2025-12-23 14:14:04,213 [INFO] Database loaded: 3 households, 4 users, 122 events
+2025-12-23 14:14:04,213 [INFO] Event a39b9b194fbe4656b4398f04d74c271e deleted by דניאל
+2025-12-23 14:14:04,525 [INFO] API Request: GET /api/today
+2025-12-23 14:14:04,526 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 14:14:04,527 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:14:04,527 [INFO] Returning 15 events for today
+2025-12-23 14:14:09,025 [INFO] API Request: GET /api/user
+2025-12-23 14:14:09,025 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 14:14:09,025 [INFO] API Request: GET /api/history
+2025-12-23 14:14:09,025 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 14:14:09,291 [INFO] API Request: GET /api/today
+2025-12-23 14:14:09,291 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 14:14:09,291 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:14:09,291 [INFO] Returning 15 events for today
+2025-12-23 14:14:38,268 [INFO] API Request: GET /api/today
+2025-12-23 14:14:38,268 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 14:14:38,268 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:14:38,268 [INFO] Returning 15 events for today
+2025-12-23 14:14:39,443 [INFO] API Request: GET /api/today
+2025-12-23 14:14:39,443 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 14:14:39,443 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:14:39,444 [INFO] Returning 15 events for today
+2025-12-23 14:14:43,035 [INFO] API Request: DELETE /api/events/40e3dd6a19654e2bb3c0ee8ddbe4db35
+2025-12-23 14:14:43,035 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 14:14:43,040 [INFO] Event 40e3dd6a19654e2bb3c0ee8ddbe4db35 deleted by דניאל
+2025-12-23 14:14:43,358 [INFO] API Request: GET /api/today
+2025-12-23 14:14:43,360 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:14:43,360 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:14:43,360 [INFO] Returning 14 events for today
+2025-12-23 14:16:47,842 [INFO] API Request: GET /api/user
+2025-12-23 14:16:47,843 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:16:47,844 [INFO] API Request: GET /api/history
+2025-12-23 14:16:47,845 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:16:48,108 [INFO] API Request: GET /api/today
+2025-12-23 14:16:48,108 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:16:48,108 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:16:48,108 [INFO] Returning 14 events for today
+2025-12-23 14:18:01,925 [INFO] ============================================================
+2025-12-23 14:18:01,925 [INFO] 🐕 Dog Training App Server Starting
+2025-12-23 14:18:01,926 [INFO] Port: 8000
+2025-12-23 14:18:01,926 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-23 14:18:01,926 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-23 14:18:01,926 [INFO] ============================================================
+2025-12-23 14:18:21,375 [INFO] Server shutdown initiated by user
+2025-12-23 14:18:21,375 [INFO] Server stopped
+2025-12-23 14:18:21,947 [INFO] API Request: GET /api/user
+2025-12-23 14:18:21,948 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:18:22,039 [INFO] API Request: GET /api/history
+2025-12-23 14:18:22,041 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:18:22,045 [INFO] API Request: GET /api/today
+2025-12-23 14:18:22,046 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:18:22,046 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:18:22,047 [INFO] Returning 14 events for today
+2025-12-23 14:18:32,326 [INFO] API Request: GET /api/user
+2025-12-23 14:18:32,327 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:18:32,391 [INFO] API Request: GET /api/history
+2025-12-23 14:18:32,392 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:18:32,393 [INFO] API Request: GET /api/today
+2025-12-23 14:18:32,394 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:18:32,394 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:18:32,394 [INFO] Returning 14 events for today
+2025-12-23 14:18:33,841 [INFO] API Request: GET /api/user
+2025-12-23 14:18:33,841 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:18:33,841 [INFO] API Request: GET /api/history
+2025-12-23 14:18:33,841 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:18:34,101 [INFO] API Request: GET /api/today
+2025-12-23 14:18:34,107 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:18:34,107 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:18:34,107 [INFO] Returning 14 events for today
+2025-12-23 14:18:50,768 [INFO] API Request: POST /api/events
+2025-12-23 14:18:50,768 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:18:50,768 [INFO] POST /api/events - User דניאל added event: feed_morning
+2025-12-23 14:18:50,774 [INFO] Event recorded: feed_morning, new family total: 16
+2025-12-23 14:18:50,774 [INFO] API Request: GET /api/today
+2025-12-23 14:18:50,780 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 14:18:50,780 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:18:50,782 [INFO] Returning 15 events for today
+2025-12-23 14:18:51,074 [INFO] API Request: GET /api/today
+2025-12-23 14:18:51,074 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 14:18:51,078 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:18:51,078 [INFO] Returning 15 events for today
+2025-12-23 14:18:51,087 [INFO] API Request: GET /api/today
+2025-12-23 14:18:51,087 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 14:18:51,087 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:18:51,089 [INFO] Returning 15 events for today
+2025-12-23 14:18:51,391 [INFO] API Request: GET /api/today
+2025-12-23 14:18:51,391 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 14:18:51,391 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:18:51,391 [INFO] Returning 15 events for today
+2025-12-23 14:19:01,721 [INFO] API Request: POST /api/events
+2025-12-23 14:19:01,721 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 14:19:01,724 [INFO] POST /api/events - User דניאל added event: feed_morning
+2025-12-23 14:19:01,724 [INFO] Event recorded: feed_morning, new family total: 16
+2025-12-23 14:19:01,990 [INFO] API Request: GET /api/today
+2025-12-23 14:19:01,991 [INFO] Database loaded: 3 households, 4 users, 122 events
+2025-12-23 14:19:01,991 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:19:01,991 [INFO] Returning 16 events for today
+2025-12-23 14:19:07,562 [INFO] API Request: POST /api/events
+2025-12-23 14:19:07,564 [INFO] Database loaded: 3 households, 4 users, 122 events
+2025-12-23 14:19:07,564 [INFO] POST /api/events - User דניאל added event: feed_morning
+2025-12-23 14:19:07,567 [INFO] Event recorded: feed_morning, new family total: 16
+2025-12-23 14:19:07,891 [INFO] API Request: GET /api/today
+2025-12-23 14:19:07,891 [INFO] Database loaded: 3 households, 4 users, 123 events
+2025-12-23 14:19:07,891 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:19:07,891 [INFO] Returning 17 events for today
+2025-12-23 14:19:14,128 [INFO] API Request: DELETE /api/events/758e92ec0ece468589e41d37763189cf
+2025-12-23 14:19:14,129 [INFO] Database loaded: 3 households, 4 users, 123 events
+2025-12-23 14:19:14,133 [INFO] Event 758e92ec0ece468589e41d37763189cf deleted by דניאל
+2025-12-23 14:19:14,440 [INFO] API Request: GET /api/today
+2025-12-23 14:19:14,440 [INFO] Database loaded: 3 households, 4 users, 122 events
+2025-12-23 14:19:14,440 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:19:14,440 [INFO] Returning 16 events for today
+2025-12-23 14:19:16,854 [INFO] API Request: DELETE /api/events/d65305a6820548ee8d83223c711f97b2
+2025-12-23 14:19:16,855 [INFO] Database loaded: 3 households, 4 users, 122 events
+2025-12-23 14:19:16,859 [INFO] Event d65305a6820548ee8d83223c711f97b2 deleted by דניאל
+2025-12-23 14:19:17,173 [INFO] API Request: GET /api/today
+2025-12-23 14:19:17,173 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 14:19:17,173 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:19:17,173 [INFO] Returning 15 events for today
+2025-12-23 14:19:28,340 [INFO] API Request: DELETE /api/events/6f3f96eba36e467ba368c435fd78cb9b
+2025-12-23 14:19:28,341 [INFO] Database loaded: 3 households, 4 users, 121 events
+2025-12-23 14:19:28,346 [INFO] Event 6f3f96eba36e467ba368c435fd78cb9b deleted by דניאל
+2025-12-23 14:19:28,657 [INFO] API Request: GET /api/today
+2025-12-23 14:19:28,657 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:19:28,657 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:19:28,657 [INFO] Returning 14 events for today
+2025-12-23 14:19:35,874 [INFO] API Request: DELETE /api/events/58b8e9409001481ca42ebeaf972dde12
+2025-12-23 14:19:35,875 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:19:35,879 [INFO] Event 58b8e9409001481ca42ebeaf972dde12 deleted by דניאל
+2025-12-23 14:19:36,190 [INFO] API Request: GET /api/today
+2025-12-23 14:19:36,190 [INFO] Database loaded: 3 households, 4 users, 119 events
+2025-12-23 14:19:36,190 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:19:36,193 [INFO] Returning 13 events for today
+2025-12-23 14:20:52,594 [INFO] API Request: POST /api/dog
+2025-12-23 14:20:52,594 [INFO] Database loaded: 3 households, 4 users, 119 events
+2025-12-23 14:21:16,886 [INFO] API Request: POST /api/dog
+2025-12-23 14:21:16,887 [INFO] Database loaded: 3 households, 4 users, 119 events
+2025-12-23 14:22:01,011 [INFO] API Request: POST /api/dog
+2025-12-23 14:22:01,011 [INFO] Database loaded: 3 households, 4 users, 119 events
+2025-12-23 14:24:52,674 [INFO] ============================================================
+2025-12-23 14:24:52,674 [INFO] 🐕 Dog Training App Server Starting
+2025-12-23 14:24:52,674 [INFO] Port: 8000
+2025-12-23 14:24:52,674 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\..\client
+2025-12-23 14:24:52,674 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-23 14:24:52,674 [INFO] ============================================================
+2025-12-23 14:25:09,420 [INFO] Server shutdown initiated by user
+2025-12-23 14:25:09,420 [INFO] Server stopped
+2025-12-23 14:25:10,072 [INFO] API Request: GET /api/user
+2025-12-23 14:25:10,073 [INFO] Database loaded: 3 households, 4 users, 119 events
+2025-12-23 14:25:10,310 [INFO] API Request: GET /api/history
+2025-12-23 14:25:10,311 [INFO] Database loaded: 3 households, 4 users, 119 events
+2025-12-23 14:25:10,315 [INFO] API Request: GET /api/today
+2025-12-23 14:25:10,317 [INFO] Database loaded: 3 households, 4 users, 119 events
+2025-12-23 14:25:10,317 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:25:10,317 [INFO] Returning 13 events for today
+2025-12-23 14:30:30,455 [INFO] API Request: GET /api/user
+2025-12-23 14:30:30,455 [INFO] Database loaded: 3 households, 4 users, 119 events
+2025-12-23 14:30:30,456 [INFO] API Request: GET /api/history
+2025-12-23 14:30:30,456 [INFO] Database loaded: 3 households, 4 users, 119 events
+2025-12-23 14:30:30,717 [INFO] API Request: GET /api/today
+2025-12-23 14:30:30,717 [INFO] Database loaded: 3 households, 4 users, 119 events
+2025-12-23 14:30:30,717 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:30:30,717 [INFO] Returning 13 events for today
+2025-12-23 14:31:35,243 [INFO] API Request: POST /api/events
+2025-12-23 14:31:35,245 [INFO] Database loaded: 3 households, 4 users, 119 events
+2025-12-23 14:31:35,245 [INFO] POST /api/events - User דניאל added event: feed_morning
+2025-12-23 14:31:35,249 [INFO] Event recorded: feed_morning, new family total: 16
+2025-12-23 14:31:35,249 [WARNING] Client disconnected before response could be sent: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-12-23 14:31:35,904 [INFO] API Request: GET /api/user
+2025-12-23 14:31:35,905 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:31:35,905 [INFO] API Request: GET /api/history
+2025-12-23 14:31:35,905 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:31:36,159 [INFO] API Request: GET /api/today
+2025-12-23 14:31:36,160 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:31:36,160 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:31:36,160 [INFO] Returning 14 events for today
+2025-12-23 14:32:21,070 [INFO] API Request: GET /api/user
+2025-12-23 14:32:21,072 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:32:21,073 [INFO] API Request: GET /api/history
+2025-12-23 14:32:21,073 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:32:21,330 [INFO] API Request: GET /api/today
+2025-12-23 14:32:21,330 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:32:21,330 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:32:21,330 [INFO] Returning 14 events for today
+2025-12-23 14:33:35,019 [INFO] API Request: POST /api/admin/reset-scores
+2025-12-23 14:33:35,019 [INFO] Database loaded: 3 households, 4 users, 120 events
+2025-12-23 14:33:35,019 [INFO] All scores reset by admin דניאל for household 2cde7647014345179c935294b2704f74
+2025-12-23 14:33:35,019 [WARNING] Client disconnected before response could be sent: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-12-23 14:33:35,019 [INFO] API Request: POST /api/admin/clear-events
+2025-12-23 14:33:35,019 [INFO] Database loaded: 3 households, 4 users, 0 events
+2025-12-23 14:33:35,019 [INFO] All 0 events cleared by admin דניאל for household 2cde7647014345179c935294b2704f74
+2025-12-23 14:33:35,019 [WARNING] Client disconnected before response could be sent: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-12-23 14:33:35,041 [INFO] API Request: GET /api/user
+2025-12-23 14:33:35,041 [INFO] Database loaded: 3 households, 4 users, 0 events
+2025-12-23 14:33:35,353 [INFO] API Request: GET /api/history
+2025-12-23 14:33:35,354 [INFO] Database loaded: 3 households, 4 users, 0 events
+2025-12-23 14:33:35,354 [INFO] API Request: GET /api/today
+2025-12-23 14:33:35,355 [INFO] Database loaded: 3 households, 4 users, 0 events
+2025-12-23 14:33:35,355 [INFO] GET /api/today - User: דניאל
+2025-12-23 14:33:35,356 [INFO] Returning 0 events for today
