@@ -265,6 +265,21 @@ from flask_server import app as application
 
 Visit: `https://YOUR_USERNAME.pythonanywhere.com`
 
+## Login Notes
+
+- The server accepts the login identifier as either an **email** or a **username** (case-insensitive). This was added to help test users that don't have an `email` field in the database.
+- Example test credentials included in the repository (for quick testing):
+
+   - Username: דניאל
+      Email: daniel@example.com
+      Password: 1
+
+   - Username: מיטל
+      Email: meital@example.com
+      Password: 1
+
+If you prefer users to log in only with email, add or update the `email` field for each user in `server/db.json` and reload the web app.
+
 ## Switching Between Servers Locally
 
 Both servers maintain identical behavior:
