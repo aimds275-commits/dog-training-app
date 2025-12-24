@@ -259,6 +259,8 @@ document.addEventListener('DOMContentLoaded', () => {
       headerTotalPoints.textContent = myRow?.totalPoints ?? myRow?.points ?? 0;
       // show invites list
       renderInvites(data.inviteTokens || []);
+      // render members list (admins only will see promote/demote)
+      renderMembers(data.members || []);
       // render scoreboard
       renderScoreboard(
         data.scoreboard || [],
@@ -273,9 +275,81 @@ document.addEventListener('DOMContentLoaded', () => {
       if (adminSettingsSection) {
         adminSettingsSection.classList.toggle('hidden', !isAdmin);
       }
+      // Only show dog edit controls to admins
+      if (editDogButton) {
+        editDogButton.style.display = isAdmin ? '' : 'none';
+      }
+      if (dogEditSection && !isAdmin) {
+        dogEditSection.classList.add('hidden');
+      }
     } catch (err) {
       console.error(err);
     }
+  }
+
+  // Fetch members from server (used after login)
+  async function fetchMembers() {
+    if (!authToken) return;
+    try {
+      const resp = await fetch('/api/household/members', {
+        method: 'GET',
+        headers: { Authorization: 'Bearer ' + authToken }
+      });
+      if (!resp.ok) return;
+      const data = await resp.json();
+      renderMembers(data.members || []);
+    } catch (e) {
+      logger.warn('Failed to fetch members:', e);
+    }
+  }
+
+  // Render household members and show promote/demote buttons for admins
+  function renderMembers(members) {
+    const memberList = $('#memberList');
+    if (!memberList) return;
+    memberList.innerHTML = '';
+    members.forEach((m) => {
+      const li = document.createElement('li');
+      li.style.display = 'flex';
+      li.style.justifyContent = 'space-between';
+      li.style.alignItems = 'center';
+      const name = document.createElement('span');
+      name.textContent = m.username + (m.email ? ` (${m.email})` : '');
+      const right = document.createElement('div');
+      if (m.isAdmin) {
+        const badge = document.createElement('small');
+        badge.textContent = 'מנהל';
+        badge.style.marginRight = '0.5rem';
+        right.appendChild(badge);
+      }
+      if (isAdmin && m.id !== currentUser.userId) {
+        const btn = document.createElement('button');
+        btn.textContent = m.isAdmin ? 'הסר מנהל' : 'הפוך למנהל';
+        btn.className = 'small-button';
+        btn.addEventListener('click', async () => {
+          try {
+            const resp = await fetch(`/api/household/members/${m.id}/manager`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + authToken },
+              body: JSON.stringify({ isAdmin: !m.isAdmin })
+            });
+            if (!resp.ok) {
+              alert('שגיאה בעדכון זכויות');
+              return;
+            }
+            const j = await resp.json();
+            m.isAdmin = j.isAdmin;
+            renderMembers(members);
+          } catch (e) {
+            alert('שגיאת רשת');
+          }
+        });
+        right.appendChild(btn);
+      }
+      li.appendChild(name);
+      li.appendChild(right);
+      memberList.appendChild(li);
+    });
   }
 
   // Render invite tokens
@@ -481,6 +555,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Edit dog profile toggle
   editDogButton.addEventListener('click', () => {
+    if (!isAdmin) return; // extra safety: only admins can open edit UI
     dogEditSection.classList.remove('hidden');
     dogNameInput.focus();
   });

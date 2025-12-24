@@ -7,7 +7,7 @@
         "87520be5cfdd4b3f945b49fdf440dfd2"
       ],
       "inviteLinks": {
-        "87520be5cfdd4b3f945b49fdf440dfd2": "529b034edd1c4e989368822ff04610fb"
+        "87520be5cfdd4b3f945b49fdf440dfd2": "bdd54375850c42acb41e2dd0c263e9ae"
       }
     },
     {
@@ -64,7 +64,8 @@
       "email": "meital@example.com",
       "password": "1",
       "householdId": "2cde7647014345179c935294b2704f74",
-      "token": "9657e7c045654507a4724f2a6c0973e5"
+      "token": "9657e7c045654507a4724f2a6c0973e5",
+      "isAdmin": false
     },
     {
       "id": "7ad1e3574eaf4115bfa2c60ab96448a8",
@@ -150,7 +151,114 @@
       "password": "p",
       "householdId": "957621b617a8422cb945078cf16682a8",
       "token": "19aae97f6c1e4cb39431c7d820905dc4"
+    },
+    {
+      "id": "4a9a0593b5684b0bb7d7e1640448a352",
+      "username": "PYTEST_INT",
+      "email": "pyint@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "00deda8d2c1542b89746b17aedf145d9"
+    },
+    {
+      "id": "fe1fa9cca1534faf9f78b3787a09c532",
+      "username": "PYTEST_INT",
+      "email": "pyint@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "b65edc7cdc6d444e92b7068bc37d6921"
+    },
+    {
+      "id": "c5443e0c8dd3459798903086a384f101",
+      "username": "PYTEST_INT",
+      "email": "pyint@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "804d7b961c674df5ba5be1c0a364f90e"
+    },
+    {
+      "id": "d701fab7aa7a4683a38b579f5df279f9",
+      "username": "PYTEST_INT",
+      "email": "pyint@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "c09f0a7041284deba3661f4b728ea000"
+    },
+    {
+      "id": "37e8f8df8b424b8a9066eb6595b4f60c",
+      "username": "PYTEST_INT",
+      "email": "pyint@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "c7b9e3fb1e8047f79da9c81e2179eb09"
+    },
+    {
+      "id": "77745c98ea0b4bf5aa5463fff5862e8a",
+      "username": "PYTEST_INT",
+      "email": "pyint@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "0a07075daedc457ea817704a307271b3"
+    },
+    {
+      "id": "2445bc845fff4ca08e2b8184f324ea1f",
+      "username": "PYTEST_INT",
+      "email": "pyint@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "063de9ea7b46422299dfa9032682053f"
+    },
+    {
+      "id": "bdd54375850c42acb41e2dd0c263e9ae",
+      "username": "PYTEST_INT",
+      "email": "pyint@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "e305d555a9774424b97b59c2994eb9bd"
     }
   ],
-  "events": []
+  "events": [
+    {
+      "id": "cf17630fd4ce43ada1fbdb0b395c97e3",
+      "householdId": "2cde7647014345179c935294b2704f74",
+      "userId": "fed5d4fc13374b7fa94420eff4a893cf",
+      "type": "walk_evening",
+      "timestamp": 1766530267.278937
+    },
+    {
+      "id": "a2dae5595da3412e86c3fff58011b3c5",
+      "householdId": "2cde7647014345179c935294b2704f74",
+      "userId": "bda4acbd4dfb4a2797b966451bb81c64",
+      "type": "walk_evening",
+      "timestamp": 1766530315.162747
+    },
+    {
+      "id": "02c6d216ea3d45fca2b4e75bb6541d71",
+      "householdId": "2cde7647014345179c935294b2704f74",
+      "userId": "bda4acbd4dfb4a2797b966451bb81c64",
+      "type": "pee",
+      "timestamp": 1766530333.303
+    },
+    {
+      "id": "c8f77f48403e40bdbcfc411eacceb575",
+      "householdId": "2cde7647014345179c935294b2704f74",
+      "userId": "bda4acbd4dfb4a2797b966451bb81c64",
+      "type": "poop",
+      "timestamp": 1766530339.763097
+    },
+    {
+      "id": "720f1809fdc94a1b833a10aabed9ce82",
+      "householdId": "2cde7647014345179c935294b2704f74",
+      "userId": "bda4acbd4dfb4a2797b966451bb81c64",
+      "type": "walk_evening",
+      "timestamp": 1766530342.122934
+    },
+    {
+      "id": "f62c066041bd48379f0eb1ecdaaaee2c",
+      "householdId": "2cde7647014345179c935294b2704f74",
+      "userId": "bda4acbd4dfb4a2797b966451bb81c64",
+      "type": "walk_evening",
+      "timestamp": 1766530607.904487
+    }
+  ]
 }

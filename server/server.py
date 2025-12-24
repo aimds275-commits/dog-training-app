@@ -91,8 +91,11 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-DATA_FILE = os.path.join(os.path.dirname(__file__), 'db.json')
-CLIENT_DIR = os.path.join(os.path.dirname(__file__), '..', 'client')
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+# Allow overriding the data file via DB_FILE env var (useful on PythonAnywhere)
+DATA_FILE = os.environ.get('DB_FILE') or os.path.join(SCRIPT_DIR, 'db.json')
+# Absolute client dir path
+CLIENT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'client'))
 
 # Database cache to avoid reading from disk on every request
 _db_cache = None
@@ -500,6 +503,9 @@ class AppHandler(SimpleHTTPRequestHandler):
             user = get_user_by_token(db, token)
             if not user:
                 return self._send_json({'error': 'invalid token'}, 401)
+            # Only household managers (admins) can edit the dog / household settings
+            if not user.get('isAdmin'):
+                return self._send_json({'error': 'manager only'}, 403)
             data = self._read_json()
             if not data or not data.get('dogName'):
                 return self._send_json({'error': 'dogName required'}, 400)
@@ -643,19 +649,24 @@ class AppHandler(SimpleHTTPRequestHandler):
                 target_date = _start_of_today().date()
             users_by_id = {u['id']: u for u in db['users']}
             events = []
-            for ev in db['events']:
-                if ev['householdId'] != user['householdId']:
+            matched = 0
+            for ev in db.get('events', []):
+                # Robust household check: use get() and compare as strings to avoid
+                # mismatches from different types or missing fields.
+                if str(ev.get('householdId')) != str(user.get('householdId')):
                     continue
-                if _event_date(ev['timestamp']) != target_date:
+                if _event_date(ev.get('timestamp', 0)) != target_date:
                     continue
-                uinfo = users_by_id.get(ev['userId'])
+                uinfo = users_by_id.get(ev.get('userId'))
                 events.append({
-                    'id': ev['id'],
-                    'type': ev['type'],
-                    'timestamp': ev['timestamp'],
-                    'userId': ev['userId'],
+                    'id': ev.get('id'),
+                    'type': ev.get('type'),
+                    'timestamp': ev.get('timestamp'),
+                    'userId': ev.get('userId'),
                     'username': uinfo.get('username') if uinfo else None
                 })
+                matched += 1
+            logger.debug(f"/api/history: matched {matched} events for household {user.get('householdId')}")
             events.sort(key=lambda e: e['timestamp'])
             return self._send_json({
                 'date': target_date.isoformat(),
@@ -676,20 +687,24 @@ class AppHandler(SimpleHTTPRequestHandler):
             # index users for name lookup
             users_by_id = {u['id']: u for u in db['users']}
             events = []
-            for ev in db['events']:
-                if ev['householdId'] != user['householdId']:
+            matched = 0
+            for ev in db.get('events', []):
+                # Robust household check and tolerant field access
+                if str(ev.get('householdId')) != str(user.get('householdId')):
                     continue
                 # only events from *today* in local time
-                if _event_date(ev['timestamp']) != today:
+                if _event_date(ev.get('timestamp', 0)) != today:
                     continue
-                uinfo = users_by_id.get(ev['userId'])
+                uinfo = users_by_id.get(ev.get('userId'))
                 events.append({
-                    'id': ev['id'],
-                    'type': ev['type'],
-                    'timestamp': ev['timestamp'],
-                    'userId': ev['userId'],
+                    'id': ev.get('id'),
+                    'type': ev.get('type'),
+                    'timestamp': ev.get('timestamp'),
+                    'userId': ev.get('userId'),
                     'username': uinfo.get('username') if uinfo else None
                 })
+                matched += 1
+            logger.debug(f"/api/today: matched {matched} events for household {user.get('householdId')}")
             # basic schedule flags
             has_morning_feed = any(e['type'] == 'feed_morning' for e in events)
             has_evening_feed = any(e['type'] == 'feed_evening' for e in events)
@@ -698,9 +713,32 @@ class AppHandler(SimpleHTTPRequestHandler):
             has_poop = any(e['type'] == 'poop' for e in events)
 
             # additional walk-specific flags and feed timestamps for client scheduling
-            has_walk_morning = any(e['type'] == 'walk_morning' for e in events)
-            has_walk_afternoon = any(e['type'] == 'walk_afternoon' for e in events)
-            has_walk_evening = any(e['type'] == 'walk_evening' for e in events)
+            # Map generic 'walk' events to time-of-day buckets using the event timestamp
+            has_walk_morning = False
+            has_walk_afternoon = False
+            has_walk_evening = False
+            for e in events:
+                t = e['type']
+                if t == 'walk_morning':
+                    has_walk_morning = True
+                elif t == 'walk_afternoon':
+                    has_walk_afternoon = True
+                elif t == 'walk_evening':
+                    has_walk_evening = True
+                elif t == 'walk':
+                    # categorize by timestamp hour (local time)
+                    try:
+                        ev_dt = datetime.datetime.fromtimestamp(e['timestamp'])
+                        hour = ev_dt.hour
+                        if 4 <= hour < 12:
+                            has_walk_morning = True
+                        elif 12 <= hour < 18:
+                            has_walk_afternoon = True
+                        else:
+                            has_walk_evening = True
+                    except Exception:
+                        # Fallback: treat as generic walk
+                        has_walk_evening = True
             # find first feed timestamps if present
             feed_morning_ts = next((e['timestamp'] for e in events if e['type'] == 'feed_morning'), None)
             feed_evening_ts = next((e['timestamp'] for e in events if e['type'] == 'feed_evening'), None)

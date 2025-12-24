@@ -334,3 +334,246 @@
 2025-12-24 00:36:11,312 [INFO] 127.0.0.1 - - [24/Dec/2025 00:36:11] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
 2025-12-24 00:37:12,275 [INFO] 127.0.0.1 - - [24/Dec/2025 00:37:12] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
 2025-12-24 00:38:13,282 [INFO] 127.0.0.1 - - [24/Dec/2025 00:38:13] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:39:14,279 [INFO] 127.0.0.1 - - [24/Dec/2025 00:39:14] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:40:15,302 [INFO] 127.0.0.1 - - [24/Dec/2025 00:40:15] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:41:16,281 [INFO] 127.0.0.1 - - [24/Dec/2025 00:41:16] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:42:17,301 [INFO] 127.0.0.1 - - [24/Dec/2025 00:42:17] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:43:18,298 [INFO] 127.0.0.1 - - [24/Dec/2025 00:43:18] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:44:19,305 [INFO] 127.0.0.1 - - [24/Dec/2025 00:44:19] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:45:20,304 [INFO] 127.0.0.1 - - [24/Dec/2025 00:45:20] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:46:21,299 [INFO] 127.0.0.1 - - [24/Dec/2025 00:46:21] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:47:22,315 [INFO] 127.0.0.1 - - [24/Dec/2025 00:47:22] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:48:23,334 [INFO] 127.0.0.1 - - [24/Dec/2025 00:48:23] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:49:15,897 [INFO] Script directory: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server
+2025-12-24 00:49:15,897 [INFO] Data file: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-24 00:49:15,897 [INFO] Client directory: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\client
+2025-12-24 00:49:15,897 [INFO] Client directory exists: True
+2025-12-24 00:49:15,912 [INFO] ============================================================
+2025-12-24 00:49:15,912 [INFO] 🐕 Dog Training App Server Starting (Flask)
+2025-12-24 00:49:15,912 [INFO] Port: 8000
+2025-12-24 00:49:15,912 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\client
+2025-12-24 00:49:15,912 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-24 00:49:15,912 [INFO] ============================================================
+2025-12-24 00:49:15,955 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://129.231.209.61:8000
+2025-12-24 00:49:15,955 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-24 00:49:24,324 [INFO] 127.0.0.1 - - [24/Dec/2025 00:49:24] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:49:34,297 [INFO] 127.0.0.1 - - [24/Dec/2025 00:49:34] "HEAD / HTTP/1.1" 200 -
+2025-12-24 00:49:34,331 [INFO] 127.0.0.1 - - [24/Dec/2025 00:49:34] "[31m[1mHEAD /api/household/members HTTP/1.1[0m" 401 -
+2025-12-24 00:50:07,149 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:07] "GET / HTTP/1.1" 200 -
+2025-12-24 00:50:07,214 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:07] "GET /style.css?v=16 HTTP/1.1" 200 -
+2025-12-24 00:50:07,222 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:07] "GET /app.js?v=16 HTTP/1.1" 200 -
+2025-12-24 00:50:07,335 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 00:50:07,335 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:07] "GET /manifest.webmanifest HTTP/1.1" 200 -
+2025-12-24 00:50:07,335 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:07] "GET /favicon.ico HTTP/1.1" 200 -
+2025-12-24 00:50:07,355 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:07] "GET /service-worker.js HTTP/1.1" 200 -
+2025-12-24 00:50:07,374 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:07] "[36mGET / HTTP/1.1[0m" 304 -
+2025-12-24 00:50:07,374 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:07] "GET /index.html HTTP/1.1" 200 -
+2025-12-24 00:50:07,390 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:07] "GET /style.css HTTP/1.1" 200 -
+2025-12-24 00:50:07,402 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:07] "GET /app.js HTTP/1.1" 200 -
+2025-12-24 00:50:07,416 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:07] "[36mGET /manifest.webmanifest HTTP/1.1[0m" 304 -
+2025-12-24 00:50:25,324 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:25] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:50:27,236 [INFO] API Request: POST /api/login
+2025-12-24 00:50:27,239 [INFO] User logged in: מיטל
+2025-12-24 00:50:27,239 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:27] "POST /api/login HTTP/1.1" 200 -
+2025-12-24 00:50:27,253 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:27] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 00:50:27,266 [INFO] GET /api/today - User: מיטל
+2025-12-24 00:50:27,266 [INFO] Returning 0 events for today
+2025-12-24 00:50:27,266 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:27] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:50:38,282 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:38] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:50:38,282 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:38] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:50:38,329 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:38] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 00:50:38,339 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 00:50:38,347 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:38] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 00:50:38,347 [INFO] GET /api/today - User: מיטל
+2025-12-24 00:50:38,355 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:38] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 00:50:38,355 [INFO] Returning 0 events for today
+2025-12-24 00:50:38,355 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:38] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:50:39,907 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:39] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:50:41,253 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:41] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:50:41,256 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:41] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:50:41,273 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:41] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 00:50:41,273 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:41] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 00:50:41,283 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 00:50:41,292 [INFO] GET /api/today - User: מיטל
+2025-12-24 00:50:41,292 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:41] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 00:50:41,293 [INFO] Returning 0 events for today
+2025-12-24 00:50:41,295 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:41] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:50:41,806 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:41] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:50:41,811 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:41] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:50:41,830 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:41] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 00:50:41,834 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:41] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 00:50:41,847 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 00:50:41,847 [INFO] GET /api/today - User: מיטל
+2025-12-24 00:50:41,855 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:41] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 00:50:41,855 [INFO] Returning 0 events for today
+2025-12-24 00:50:41,859 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:41] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:50:43,412 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:43] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:50:59,084 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:59] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:50:59,129 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:59] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:50:59,149 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:59] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 00:50:59,154 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:59] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 00:50:59,154 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 00:50:59,168 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:59] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 00:50:59,168 [INFO] GET /api/today - User: מיטל
+2025-12-24 00:50:59,168 [INFO] Returning 0 events for today
+2025-12-24 00:50:59,176 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:59] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:50:59,779 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:59] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:50:59,781 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:59] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:50:59,793 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:59] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 00:50:59,793 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:59] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 00:50:59,798 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 00:50:59,800 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:59] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 00:50:59,800 [INFO] GET /api/today - User: מיטל
+2025-12-24 00:50:59,800 [INFO] Returning 0 events for today
+2025-12-24 00:50:59,800 [INFO] 127.0.0.1 - - [24/Dec/2025 00:50:59] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:51:00,133 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:51:00,133 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:51:00,149 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 00:51:00,151 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 00:51:00,151 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 00:51:00,157 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 00:51:00,157 [INFO] GET /api/today - User: מיטל
+2025-12-24 00:51:00,157 [INFO] Returning 0 events for today
+2025-12-24 00:51:00,163 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:51:00,332 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:51:00,340 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:51:00,356 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 00:51:00,357 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 00:51:00,359 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 00:51:00,365 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 00:51:00,365 [INFO] GET /api/today - User: מיטל
+2025-12-24 00:51:00,365 [INFO] Returning 0 events for today
+2025-12-24 00:51:00,365 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:51:00,736 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:51:00,741 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:51:00,744 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:51:00,752 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 00:51:00,761 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 00:51:00,776 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 00:51:00,776 [INFO] GET /api/today - User: מיטל
+2025-12-24 00:51:00,776 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 00:51:00,776 [INFO] Returning 0 events for today
+2025-12-24 00:51:00,785 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:51:00,992 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:51:00,992 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:00] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:51:01,000 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:01] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 00:51:01,000 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:01] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 00:51:01,010 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 00:51:01,017 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:01] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 00:51:01,017 [INFO] GET /api/today - User: מיטל
+2025-12-24 00:51:01,017 [INFO] Returning 0 events for today
+2025-12-24 00:51:01,017 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:01] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:51:02,620 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:02] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:51:07,276 [INFO] POST /api/events - User מיטל added event: walk
+2025-12-24 00:51:07,287 [INFO] Event recorded: walk, new family total: 1
+2025-12-24 00:51:07,287 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:07] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 00:51:07,303 [INFO] GET /api/today - User: מיטל
+2025-12-24 00:51:07,303 [INFO] Returning 1 events for today
+2025-12-24 00:51:07,303 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:07] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:51:15,514 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:15] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:51:15,514 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:15] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:51:15,559 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:15] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 00:51:15,567 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:15] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 00:51:15,576 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 00:51:15,603 [INFO] GET /api/today - User: מיטל
+2025-12-24 00:51:15,609 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:15] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 00:51:15,609 [INFO] Returning 1 events for today
+2025-12-24 00:51:15,616 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:15] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:51:17,369 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:17] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:51:26,319 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:26] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:51:33,629 [INFO] API Request: POST /api/login
+2025-12-24 00:51:33,629 [INFO] User logged in: דניאל
+2025-12-24 00:51:33,629 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:33] "POST /api/login HTTP/1.1" 200 -
+2025-12-24 00:51:33,647 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:33] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 00:51:33,667 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:51:33,667 [INFO] Returning 1 events for today
+2025-12-24 00:51:33,671 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:33] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:51:42,962 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:42] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:51:42,962 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:42] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:51:42,987 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:42] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 00:51:42,994 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:42] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 00:51:43,002 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 00:51:43,006 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:43] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 00:51:43,006 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:51:43,013 [INFO] Returning 1 events for today
+2025-12-24 00:51:43,013 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:43] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:51:44,641 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:44] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:51:55,162 [INFO] POST /api/events - User דניאל added event: walk
+2025-12-24 00:51:55,178 [INFO] Event recorded: walk, new family total: 2
+2025-12-24 00:51:55,182 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:55] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 00:51:55,195 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:51:55,195 [INFO] Returning 2 events for today
+2025-12-24 00:51:55,199 [INFO] 127.0.0.1 - - [24/Dec/2025 00:51:55] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:52:06,904 [INFO] 127.0.0.1 - - [24/Dec/2025 00:52:06] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:52:06,911 [INFO] 127.0.0.1 - - [24/Dec/2025 00:52:06] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:52:06,932 [INFO] 127.0.0.1 - - [24/Dec/2025 00:52:06] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 00:52:06,935 [INFO] 127.0.0.1 - - [24/Dec/2025 00:52:06] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 00:52:06,935 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 00:52:06,948 [INFO] 127.0.0.1 - - [24/Dec/2025 00:52:06] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 00:52:06,956 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:52:06,956 [INFO] Returning 2 events for today
+2025-12-24 00:52:06,960 [INFO] 127.0.0.1 - - [24/Dec/2025 00:52:06] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:52:08,808 [INFO] 127.0.0.1 - - [24/Dec/2025 00:52:08] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:52:13,302 [INFO] POST /api/events - User דניאל added event: pee
+2025-12-24 00:52:13,312 [INFO] Event recorded: pee, new family total: 4
+2025-12-24 00:52:13,318 [INFO] 127.0.0.1 - - [24/Dec/2025 00:52:13] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 00:52:13,365 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:52:13,374 [INFO] Returning 3 events for today
+2025-12-24 00:52:13,385 [INFO] 127.0.0.1 - - [24/Dec/2025 00:52:13] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:52:19,763 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-24 00:52:19,778 [INFO] Event recorded: poop, new family total: 7
+2025-12-24 00:52:19,778 [INFO] 127.0.0.1 - - [24/Dec/2025 00:52:19] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 00:52:19,795 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:52:19,795 [INFO] Returning 4 events for today
+2025-12-24 00:52:19,795 [INFO] 127.0.0.1 - - [24/Dec/2025 00:52:19] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:52:22,120 [INFO] POST /api/events - User דניאל added event: walk
+2025-12-24 00:52:22,127 [INFO] Event recorded: walk, new family total: 7
+2025-12-24 00:52:22,129 [INFO] 127.0.0.1 - - [24/Dec/2025 00:52:22] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 00:52:22,135 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:52:22,137 [INFO] Returning 5 events for today
+2025-12-24 00:52:22,137 [INFO] 127.0.0.1 - - [24/Dec/2025 00:52:22] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:52:27,337 [INFO] 127.0.0.1 - - [24/Dec/2025 00:52:27] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:53:07,023 [INFO] 127.0.0.1 - - [24/Dec/2025 00:53:07] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:53:28,344 [INFO] 127.0.0.1 - - [24/Dec/2025 00:53:28] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:54:07,025 [INFO] 127.0.0.1 - - [24/Dec/2025 00:54:07] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:54:29,331 [INFO] 127.0.0.1 - - [24/Dec/2025 00:54:29] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:55:07,026 [INFO] 127.0.0.1 - - [24/Dec/2025 00:55:07] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:55:30,334 [INFO] 127.0.0.1 - - [24/Dec/2025 00:55:30] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:56:07,033 [INFO] 127.0.0.1 - - [24/Dec/2025 00:56:07] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:56:31,344 [INFO] 127.0.0.1 - - [24/Dec/2025 00:56:31] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:56:38,845 [INFO] 127.0.0.1 - - [24/Dec/2025 00:56:38] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:56:38,845 [INFO] 127.0.0.1 - - [24/Dec/2025 00:56:38] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 00:56:38,932 [INFO] 127.0.0.1 - - [24/Dec/2025 00:56:38] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 00:56:38,938 [INFO] 127.0.0.1 - - [24/Dec/2025 00:56:38] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 00:56:38,942 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 00:56:38,952 [INFO] 127.0.0.1 - - [24/Dec/2025 00:56:38] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 00:56:38,952 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:56:38,952 [INFO] Returning 5 events for today
+2025-12-24 00:56:38,952 [INFO] 127.0.0.1 - - [24/Dec/2025 00:56:38] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:56:40,585 [INFO] 127.0.0.1 - - [24/Dec/2025 00:56:40] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:56:47,904 [INFO] POST /api/events - User דניאל added event: walk
+2025-12-24 00:56:47,912 [INFO] Event recorded: walk, new family total: 7
+2025-12-24 00:56:47,912 [INFO] 127.0.0.1 - - [24/Dec/2025 00:56:47] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 00:56:47,932 [INFO] GET /api/today - User: דניאל
+2025-12-24 00:56:47,932 [INFO] Returning 6 events for today
+2025-12-24 00:56:47,936 [INFO] 127.0.0.1 - - [24/Dec/2025 00:56:47] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 00:57:06,704 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 00:57:06,712 [INFO] 127.0.0.1 - - [24/Dec/2025 00:57:06] "GET /favicon.ico HTTP/1.1" 200 -
+2025-12-24 00:57:07,040 [INFO] 127.0.0.1 - - [24/Dec/2025 00:57:07] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:57:32,342 [INFO] 127.0.0.1 - - [24/Dec/2025 00:57:32] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:57:39,038 [INFO] 127.0.0.1 - - [24/Dec/2025 00:57:39] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:58:07,041 [INFO] 127.0.0.1 - - [24/Dec/2025 00:58:07] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:58:33,348 [INFO] 127.0.0.1 - - [24/Dec/2025 00:58:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:58:39,031 [INFO] 127.0.0.1 - - [24/Dec/2025 00:58:39] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:59:07,047 [INFO] 127.0.0.1 - - [24/Dec/2025 00:59:07] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:59:34,382 [INFO] 127.0.0.1 - - [24/Dec/2025 00:59:34] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 00:59:39,114 [INFO] 127.0.0.1 - - [24/Dec/2025 00:59:39] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:00:08,043 [INFO] 127.0.0.1 - - [24/Dec/2025 01:00:08] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:00:35,363 [INFO] 127.0.0.1 - - [24/Dec/2025 01:00:35] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:00:39,045 [INFO] 127.0.0.1 - - [24/Dec/2025 01:00:39] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:01:09,035 [INFO] 127.0.0.1 - - [24/Dec/2025 01:01:09] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:01:36,358 [INFO] 127.0.0.1 - - [24/Dec/2025 01:01:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:01:39,052 [INFO] 127.0.0.1 - - [24/Dec/2025 01:01:39] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -

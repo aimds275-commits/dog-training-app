@@ -462,6 +462,18 @@ def api_events_post():
     if not event_type:
         return jsonify({'error': 'type required'}), 400
     
+    # Normalize generic 'walk' to time-of-day specific walk types
+    if event_type == 'walk':
+        now_local = datetime.datetime.now()
+        hour = now_local.hour
+        # morning: 04:00-11:59, afternoon: 12:00-17:59, evening: 18:00-03:59
+        if 4 <= hour < 12:
+            event_type = 'walk_morning'
+        elif 12 <= hour < 18:
+            event_type = 'walk_afternoon'
+        else:
+            event_type = 'walk_evening'
+
     logger.info(f"POST /api/events - User {user['username']} added event: {event_type}")
     
     event_id = uuid.uuid4().hex
