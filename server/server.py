@@ -515,7 +515,23 @@ class AppHandler(SimpleHTTPRequestHandler):
             # optional extra profile fields
             if 'dogAgeMonths' in data:
                 h['dogAgeMonths'] = data['dogAgeMonths']
-            if 'dogPhotoUrl' in data:
+            # support receiving base64-encoded uploaded image
+            if data.get('dogPhotoBase64'):
+                try:
+                    uploads_dir = os.path.join(CLIENT_DIR, 'uploads')
+                    os.makedirs(uploads_dir, exist_ok=True)
+                    import base64
+                    b64 = data['dogPhotoBase64']
+                    imgdata = base64.b64decode(b64)
+                    fname = f"{user['householdId']}_{int(datetime.datetime.now().timestamp())}.jpg"
+                    fpath = os.path.join(uploads_dir, fname)
+                    with open(fpath, 'wb') as fh:
+                        fh.write(imgdata)
+                    # store relative URL path for client (served from client directory)
+                    h['dogPhotoUrl'] = f"/uploads/{fname}"
+                except Exception as e:
+                    logger.error(f"Failed to save uploaded dog photo: {e}")
+            elif 'dogPhotoUrl' in data:
                 h['dogPhotoUrl'] = data['dogPhotoUrl']
             save_db(db)
             scoreboard, family_total, family_weekly_total = compute_scoreboard(db, user['householdId'])

@@ -26,7 +26,9 @@ logger = logging.getLogger(__name__)
 
 # Resolve paths
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_FILE = os.path.join(SCRIPT_DIR, 'db.json')
+# Allow overriding the data file. Prefer `DB_FILE`, fall back to `TEST_DB_FILE` for tests.
+DATA_FILE = os.environ.get('DB_FILE') or os.environ.get('TEST_DB_FILE') or os.path.join(SCRIPT_DIR, 'db.json')
+# Absolute path to client directory (sibling `client` folder)
 CLIENT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'client'))
 
 # Log paths for debugging
@@ -430,7 +432,23 @@ def api_dog():
         household['dogName'] = data['dogName']
     if 'dogAgeMonths' in data:
         household['dogAgeMonths'] = data['dogAgeMonths']
-    if 'dogPhotoUrl' in data:
+    # support base64 image upload
+    if data.get('dogPhotoBase64'):
+        try:
+            uploads_dir = os.path.join(SCRIPT_DIR, '..', 'client', 'uploads')
+            uploads_dir = os.path.abspath(uploads_dir)
+            os.makedirs(uploads_dir, exist_ok=True)
+            import base64
+            b64 = data['dogPhotoBase64']
+            imgdata = base64.b64decode(b64)
+            fname = f"{user['householdId']}_{int(datetime.datetime.now().timestamp())}.jpg"
+            fpath = os.path.join(uploads_dir, fname)
+            with open(fpath, 'wb') as fh:
+                fh.write(imgdata)
+            household['dogPhotoUrl'] = f"/uploads/{fname}"
+        except Exception as e:
+            app.logger.error(f"Failed to save uploaded dog photo: {e}")
+    elif 'dogPhotoUrl' in data:
         household['dogPhotoUrl'] = data['dogPhotoUrl']
 
     save_db(db)
@@ -601,8 +619,29 @@ def api_today():
                 schedule['hasMorningFeed'] = True
             elif event['type'] == 'feed_evening':
                 schedule['hasEveningFeed'] = True
-            elif event['type'] == 'walk':
+            elif event['type'] in ('walk_morning', 'walk_afternoon', 'walk_evening'):
+                # set generic hasWalk as well as specific flags
                 schedule['hasWalk'] = True
+                if event['type'] == 'walk_morning':
+                    schedule['hasWalkMorning'] = True
+                elif event['type'] == 'walk_afternoon':
+                    schedule['hasWalkAfternoon'] = True
+                else:
+                    schedule['hasWalkEvening'] = True
+            elif event['type'] == 'walk':
+                # categorize generic walk by timestamp
+                try:
+                    ev_dt = datetime.datetime.fromtimestamp(event['timestamp'])
+                    hour = ev_dt.hour
+                    schedule['hasWalk'] = True
+                    if 4 <= hour < 12:
+                        schedule['hasWalkMorning'] = True
+                    elif 12 <= hour < 18:
+                        schedule['hasWalkAfternoon'] = True
+                    else:
+                        schedule['hasWalkEvening'] = True
+                except Exception:
+                    schedule['hasWalk'] = True
             elif event['type'] == 'pee':
                 schedule['hasPee'] = True
             elif event['type'] == 'poop':

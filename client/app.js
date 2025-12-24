@@ -83,6 +83,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const dogNameInput = $('#dogNameInput');
   const dogAgeInput = $('#dogAgeInput');
   const dogPhotoInput = $('#dogPhotoInput');
+  const dogPhotoFile = $('#dogPhotoFile');
+  const dogPhotoPreviewImg = $('#dogPhotoPreviewImg');
+  const dogAvatarImg = $('#dogAvatarImg');
+  let _pendingPhotoBase64 = null; // holds base64 string (without data: prefix)
   const dogAgeText = $('#dogAgeText');
   const ownerName = $('#ownerName');
   const editDogButton = $('#editDogButton');
@@ -252,6 +256,17 @@ document.addEventListener('DOMContentLoaded', () => {
           ? String(data.dogAgeMonths)
           : '';
       dogPhotoInput.value = data.dogPhotoUrl || '';
+      // show avatar image if available
+      if (data.dogPhotoUrl) {
+        try {
+          dogAvatarImg.src = data.dogPhotoUrl;
+          dogAvatarImg.style.display = '';
+          const emoji = document.querySelector('.dog-emoji');
+          if (emoji) emoji.style.display = 'none';
+        } catch (e) {
+          // ignore
+        }
+      }
       updateDogAgeText();
       const myRow = (data.scoreboard || []).find(
         (row) => row.userId === data.userId
@@ -562,6 +577,28 @@ document.addEventListener('DOMContentLoaded', () => {
   cancelDogEdit.addEventListener('click', () => {
     dogEditSection.classList.add('hidden');
   });
+
+  // Handle file selection: resize/crop to square and preview
+  if (dogPhotoFile) {
+    dogPhotoFile.addEventListener('change', async (evt) => {
+      const f = evt.target.files && evt.target.files[0];
+      if (!f) return;
+      try {
+        const dataUrl = await fileToDataUrl(f);
+        const squared = await resizeImageToSquare(dataUrl, 300);
+        // squared is a data URL; strip prefix for upload convenience
+        const base64 = squared.split(',')[1];
+        _pendingPhotoBase64 = base64;
+        // preview
+        dogPhotoPreviewImg.src = squared;
+        dogPhotoPreviewImg.style.display = '';
+        // clear URL input to avoid confusion
+        dogPhotoInput.value = '';
+      } catch (e) {
+        alert('שגיאה בעיבוד התמונה');
+      }
+    });
+  }
   saveDogButton.addEventListener('click', async () => {
     const newName = dogNameInput.value.trim();
     const ageVal = dogAgeInput.value.trim();
@@ -577,7 +614,9 @@ document.addEventListener('DOMContentLoaded', () => {
         body: JSON.stringify({
           dogName: newName,
           dogAgeMonths: ageMonths,
-          dogPhotoUrl: photoUrl
+          dogPhotoUrl: photoUrl,
+          // include base64 payload if user uploaded a file
+          dogPhotoBase64: _pendingPhotoBase64
         })
       });
       const data = await resp.json();
@@ -641,6 +680,40 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('שגיאת רשת.');
       }
     });
+
+  // Utilities for image processing
+  function fileToDataUrl(file) {
+    return new Promise((resolve, reject) => {
+      const fr = new FileReader();
+      fr.onload = () => resolve(fr.result);
+      fr.onerror = reject;
+      fr.readAsDataURL(file);
+    });
+  }
+
+  async function resizeImageToSquare(dataUrl, size) {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => {
+        // draw to canvas, crop to center square
+        const canvas = document.createElement('canvas');
+        canvas.width = size;
+        canvas.height = size;
+        const ctx = canvas.getContext('2d');
+        const w = img.width;
+        const h = img.height;
+        const side = Math.min(w, h);
+        const sx = Math.floor((w - side) / 2);
+        const sy = Math.floor((h - side) / 2);
+        ctx.drawImage(img, sx, sy, side, side, 0, 0, size, size);
+        // export as JPEG to reduce size
+        const out = canvas.toDataURL('image/jpeg', 0.85);
+        resolve(out);
+      };
+      img.onerror = reject;
+      img.src = dataUrl;
+    });
+  }
   }
 
   // Settings button - go to family tab

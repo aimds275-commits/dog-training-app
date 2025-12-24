@@ -58,6 +58,7 @@
       <section class="card dog-profile">
         <div class="dog-avatar-circle">
           <span class="dog-emoji">🐾</span>
+          <img id="dogAvatarImg" src="" alt="dog" style="display:none; width:100%; height:100%; object-fit:cover; border-radius:50%;" />
         </div>
         <div class="dog-info">
           <h2 id="dogNameDisplay">שיצו שלי</h2>
@@ -86,6 +87,16 @@
           קישור לתמונה (אופציונלי)
           <input type="url" id="dogPhotoInput" placeholder="https://..." />
         </label>
+        <label>
+          או העלה תמונה מהמחשב
+          <input type="file" id="dogPhotoFile" accept="image/*" />
+        </label>
+        <div id="dogPhotoPreview" style="margin-top:8px; display:flex; gap:8px; align-items:center;">
+          <div style="width:64px; height:64px; border-radius:50%; overflow:hidden; background:#eee; display:flex; align-items:center; justify-content:center;">
+            <img id="dogPhotoPreviewImg" src="" alt="preview" style="width:100%; height:100%; object-fit:cover; display:none;" />
+          </div>
+          <small style="color:#666">העלאת תמונה תתאים למעגל התצוגה</small>
+        </div>
         <div class="button-row">
           <button id="cancelDogEdit" class="secondary-button">ביטול</button>
           <button id="saveDogButton" class="primary-button">שמירה</button>
