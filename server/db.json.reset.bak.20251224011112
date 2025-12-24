@@ -4,10 +4,10 @@
       "id": "957621b617a8422cb945078cf16682a8",
       "dogName": "",
       "inviteTokens": [
-        "a67360d094d54a8f935cf9c6b198fa0e"
+        "87520be5cfdd4b3f945b49fdf440dfd2"
       ],
       "inviteLinks": {
-        "a67360d094d54a8f935cf9c6b198fa0e": "f30cf4c8a4714d2fad769c462dd777fd"
+        "87520be5cfdd4b3f945b49fdf440dfd2": "bdd54375850c42acb41e2dd0c263e9ae"
       }
     },
     {
@@ -28,69 +28,6 @@
       ],
       "dogAgeMonths": 36,
       "dogPhotoUrl": "https://megapet.co.il/wp-content/uploads/2023/03/%D7%9E%D7%90%D7%9E%D7%A8%D7%99%D7%9D-2023-03-22T120659.928-1-1024x576-1.jpg"
-    },
-    {
-      "id": "d9fd8a30905445a08c21a9b939082d0d",
-      "dogName": "",
-      "inviteTokens": [
-        "7f7f79a9efe542e19aa1385a7eed0101"
-      ],
-      "inviteLinks": {},
-      "dogAgeMonths": 0,
-      "dogPhotoUrl": ""
-    },
-    {
-      "id": "80b028650acc47639376fcd78e5fd071",
-      "dogName": "",
-      "inviteTokens": [
-        "7372258b1cbf4cbab07669fc2b56f02c"
-      ],
-      "inviteLinks": {},
-      "dogAgeMonths": 0,
-      "dogPhotoUrl": ""
-    },
-    {
-      "id": "b6e7dbd681f14545aab71641ae367beb",
-      "dogName": "",
-      "inviteTokens": [
-        "1237843431d14a0db59d931eae436267"
-      ],
-      "inviteLinks": {},
-      "dogAgeMonths": 0,
-      "dogPhotoUrl": ""
-    },
-    {
-      "id": "6882b23b774e404fb83d1db6c79671d2",
-      "dogName": "",
-      "inviteTokens": [
-        "ace0af977b994821b67951b530382f86"
-      ],
-      "inviteLinks": {},
-      "dogAgeMonths": 0,
-      "dogPhotoUrl": ""
-    },
-    {
-      "id": "77809ade6a0049659ce0f6bbe89993ac",
-      "dogName": "",
-      "inviteTokens": [
-        "c7adef7e27f2427a9472d9581241dc6f",
-        "006aea05a149478a849e90867d140d10"
-      ],
-      "inviteLinks": {},
-      "dogAgeMonths": 0,
-      "dogPhotoUrl": ""
-    },
-    {
-      "id": "5992568795ff49479f941bdd012f0fd7",
-      "dogName": "",
-      "inviteTokens": [
-        "4d5f08e9104c4fe4804bf9dcf3a137a0"
-      ],
-      "inviteLinks": {
-        "4d5f08e9104c4fe4804bf9dcf3a137a0": "afc1ee0986204940b648031e45fbb2ef"
-      },
-      "dogAgeMonths": 0,
-      "dogPhotoUrl": ""
     }
   ],
   "users": [
@@ -278,148 +215,50 @@
       "password": "p",
       "householdId": "957621b617a8422cb945078cf16682a8",
       "token": "e305d555a9774424b97b59c2994eb9bd"
-    },
-    {
-      "id": "1f09892333a148b096348048acbc32d5",
-      "username": "PYTEST_INT",
-      "email": "pyint@example.com",
-      "password": "p",
-      "householdId": "957621b617a8422cb945078cf16682a8",
-      "token": "db80fc56b7da401a8cea87f421110194"
-    },
-    {
-      "id": "0425156e8d144544963ef7e4c7950432",
-      "username": "PYTEST_INT",
-      "email": "pyint@example.com",
-      "password": "p",
-      "householdId": "957621b617a8422cb945078cf16682a8",
-      "token": "5dfdf761308b471fafd830dad8223ae4"
-    },
-    {
-      "id": "448e6463d27445eb9df111fdc797e822",
-      "username": "PYTEST_INT",
-      "email": "pyint@example.com",
-      "password": "p",
-      "householdId": "957621b617a8422cb945078cf16682a8",
-      "token": "a950aebac3f84711a1a5ec6583d7971a"
-    },
-    {
-      "id": "7427b478d0ea4460bf2906bb0cdb18a3",
-      "username": "Tester",
-      "email": "testuser+8428a240a8384eb99e910c094e9900e6@example.com",
-      "password": "p",
-      "householdId": "d9fd8a30905445a08c21a9b939082d0d",
-      "token": "0e03e71fc03b47fbaeedf628661d2c74",
-      "isAdmin": true
-    },
-    {
-      "id": "4077b526679a4890a153301050621a3e",
-      "username": "Tester",
-      "email": "testuser+49bd535a0fc349a9a324bba51d8bfa0b@example.com",
-      "password": "p",
-      "householdId": "80b028650acc47639376fcd78e5fd071",
-      "token": "7e65c907f2e34517921b74189a251ce1",
-      "isAdmin": true
-    },
-    {
-      "id": "adf07c2d6f144ec298bab0c45645a7c6",
-      "username": "Tester",
-      "email": "testuser+bed2b300292044f394f5f12a67a8c566@example.com",
-      "password": "p",
-      "householdId": "b6e7dbd681f14545aab71641ae367beb",
-      "token": "bc6c172899c744948ce43d82905a62b4",
-      "isAdmin": true
-    },
-    {
-      "id": "fbdf12f1bd414f51a2d95e129012d20e",
-      "username": "PYTEST_INT",
-      "email": "pyint@example.com",
-      "password": "p",
-      "householdId": "957621b617a8422cb945078cf16682a8",
-      "token": "f2cb305139ff4c7e92b433d98d1adc48"
-    },
-    {
-      "id": "5ed45386b0184f37b0b8cfd5065bce2a",
-      "username": "Tester",
-      "email": "testuser+d1cace1639d94c43b7975155efa7b8ee@example.com",
-      "password": "p",
-      "householdId": "6882b23b774e404fb83d1db6c79671d2",
-      "token": "310057fff0444af89b96de86def6b606",
-      "isAdmin": true
-    },
-    {
-      "id": "ec49fc4265ed4c6090c5fab4b081da1f",
-      "username": "tmpuser",
-      "email": "tmp+494de5cd6e0b461e933782d0f34fc0e5@example.com",
-      "password": "p",
-      "householdId": "77809ade6a0049659ce0f6bbe89993ac",
-      "token": "edfa6fb7d01c45d28db2f2c17391f2d7",
-      "isAdmin": true
-    },
-    {
-      "id": "a03f8714212343188e56357881f665dc",
-      "username": "tmpuser",
-      "email": "tmp+856f73f60e504ec4b182cc14678070b9@example.com",
-      "password": "p",
-      "householdId": "957621b617a8422cb945078cf16682a8",
-      "token": "2e8000b5be6f4445a4e2f95fd05ef1c5",
-      "isAdmin": false
-    },
-    {
-      "id": "f30cf4c8a4714d2fad769c462dd777fd",
-      "username": "PYTEST_INT",
-      "email": "pyint@example.com",
-      "password": "p",
-      "householdId": "957621b617a8422cb945078cf16682a8",
-      "token": "03d3bcced25248668d1d64806c9b9588"
-    },
-    {
-      "id": "99a9a921cb8d4ff1b0b17f5f2f560d46",
-      "username": "משה",
-      "email": "as@a",
-      "password": "1",
-      "householdId": "5992568795ff49479f941bdd012f0fd7",
-      "token": "398ede5b74fe4da9b7a84c8915da36f0",
-      "isAdmin": true
-    },
-    {
-      "id": "afc1ee0986204940b648031e45fbb2ef",
-      "username": "ברוך",
-      "email": "asע@ד",
-      "password": "1",
-      "householdId": "5992568795ff49479f941bdd012f0fd7",
-      "token": "d0ad1a04e3714383ace97e1344c09108",
-      "isAdmin": false
     }
   ],
   "events": [
     {
-      "id": "93b78d62bcfe45fba5029df6fc3abcf3",
-      "householdId": "d9fd8a30905445a08c21a9b939082d0d",
-      "userId": "7427b478d0ea4460bf2906bb0cdb18a3",
+      "id": "cf17630fd4ce43ada1fbdb0b395c97e3",
+      "householdId": "2cde7647014345179c935294b2704f74",
+      "userId": "fed5d4fc13374b7fa94420eff4a893cf",
       "type": "walk_evening",
-      "timestamp": 1766531716.079804
+      "timestamp": 1766530267.278937
     },
     {
-      "id": "b2ee72b157a6419ab4451fb902fd777b",
-      "householdId": "80b028650acc47639376fcd78e5fd071",
-      "userId": "4077b526679a4890a153301050621a3e",
+      "id": "a2dae5595da3412e86c3fff58011b3c5",
+      "householdId": "2cde7647014345179c935294b2704f74",
+      "userId": "bda4acbd4dfb4a2797b966451bb81c64",
       "type": "walk_evening",
-      "timestamp": 1766531763.716249
+      "timestamp": 1766530315.162747
     },
     {
-      "id": "ebc2a64a45114ed68a1da4b1ba264895",
-      "householdId": "b6e7dbd681f14545aab71641ae367beb",
-      "userId": "adf07c2d6f144ec298bab0c45645a7c6",
-      "type": "walk_evening",
-      "timestamp": 1766531830.302479
+      "id": "02c6d216ea3d45fca2b4e75bb6541d71",
+      "householdId": "2cde7647014345179c935294b2704f74",
+      "userId": "bda4acbd4dfb4a2797b966451bb81c64",
+      "type": "pee",
+      "timestamp": 1766530333.303
     },
     {
-      "id": "31951f4172db492fbf8f509e23e8dd56",
-      "householdId": "6882b23b774e404fb83d1db6c79671d2",
-      "userId": "5ed45386b0184f37b0b8cfd5065bce2a",
+      "id": "c8f77f48403e40bdbcfc411eacceb575",
+      "householdId": "2cde7647014345179c935294b2704f74",
+      "userId": "bda4acbd4dfb4a2797b966451bb81c64",
+      "type": "poop",
+      "timestamp": 1766530339.763097
+    },
+    {
+      "id": "720f1809fdc94a1b833a10aabed9ce82",
+      "householdId": "2cde7647014345179c935294b2704f74",
+      "userId": "bda4acbd4dfb4a2797b966451bb81c64",
       "type": "walk_evening",
-      "timestamp": 1766531888.436393
+      "timestamp": 1766530342.122934
+    },
+    {
+      "id": "f62c066041bd48379f0eb1ecdaaaee2c",
+      "householdId": "2cde7647014345179c935294b2704f74",
+      "userId": "bda4acbd4dfb4a2797b966451bb81c64",
+      "type": "walk_evening",
+      "timestamp": 1766530607.904487
     }
   ]
 }

@@ -84,7 +84,7 @@ app = Flask(__name__, static_folder='../client')
 CORS(app)
 
 # Configure logging
-logging.basicConfig(level=logging.INFO)
+from flask_server import app as application
 logger = logging.getLogger(__name__)
 
 DATA_FILE = os.path.join(os.path.dirname(__file__), 'db.json')

@@ -265,6 +265,8 @@ from flask_server import app as application
 
 Visit: `https://YOUR_USERNAME.pythonanywhere.com`
 
+If you moved `db.json` to a separate data folder, ensure you set `DB_FILE` in your WSGI file. See `server/PYTHONANYWHERE_READY.md` for a short checklist and example WSGI snippet.
+
 ## Login Notes
 
 - The server accepts the login identifier as either an **email** or a **username** (case-insensitive). This was added to help test users that don't have an `email` field in the database.
@@ -393,16 +395,16 @@ Open http://localhost:8000 and test:
 ### PythonAnywhere Setup
 - [ ] Code pushed to Git or uploaded to PythonAnywhere
 - [ ] Navigate to server folder: `cd ~/dog-training-app/server`
-- [ ] Dependencies installed: `pip3 install --user -r requirements.txt`
-- [ ] Web app created with Manual configuration (Python 3.10)
+- [ ] Dependencies installed (use virtualenv recommended): `python3.10 -m venv ~/venvs/dog-training-app && source ~/venvs/dog-training-app/bin/activate && pip install -r requirements.txt`
+- [ ] Web app created (Flask quickstart is easiest) and Python 3.10 selected
 - [ ] Source code path: `/home/YOUR_USERNAME/dog-training-app`
 - [ ] Working directory: `/home/YOUR_USERNAME/dog-training-app/server`
 
 ### Configuration
-- [ ] WSGI config updated with correct username in paths
-- [ ] Static files configured: both `/static` and `/` mappings
-- [ ] Database file exists: `ls ~/dog-training-app/server/db.json`
-- [ ] File permissions correct: `chmod 644 ~/dog-training-app/server/db.json`
+- [ ] WSGI config updated with correct username in paths and `DB_FILE` if you moved the DB
+- [ ] Static files configured: map `/static` (or similar) to `/home/YOUR_USERNAME/dog-training-app/client` (do not map `/`)
+- [ ] Database file exists and is writable by the web app: `ls -l ~/dog-training-app/server/db.json` or `ls -l /home/YOUR_USERNAME/data/db.json`
+- [ ] File permissions correct: `chmod 600 /home/YOUR_USERNAME/data/db.json` (recommended if moved to data folder)
 
 ### Launch
 - [ ] Click "Reload" button at top of Web tab
@@ -435,12 +437,12 @@ If everything works locally with Flask, it will work on PythonAnywhere! Deploy w
 
 - [ ] Code pushed to Git or uploaded to PythonAnywhere
 - [ ] Dependencies installed: `pip3 install --user -r requirements.txt`
-- [ ] Web app created with Manual configuration
-- [ ] WSGI config updated with correct paths
-- [ ] Static files configured
-- [ ] Database file uploaded
-- [ ] Reload button clicked
-- [ ] Site tested: login, events, admin features
+-- [ ] Web app created (Flask quickstart recommended)
+-- [ ] WSGI config updated with correct paths and `DB_FILE` if needed
+-- [ ] Static files configured (map `/static` to client folder)
+-- [ ] Database file uploaded and permissions set
+-- [ ] Reload button clicked
+-- [ ] Site tested: login, events, admin features
 
 ## Support
 

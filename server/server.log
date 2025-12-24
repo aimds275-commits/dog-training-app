@@ -577,3 +577,766 @@
 2025-12-24 01:01:09,035 [INFO] 127.0.0.1 - - [24/Dec/2025 01:01:09] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
 2025-12-24 01:01:36,358 [INFO] 127.0.0.1 - - [24/Dec/2025 01:01:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
 2025-12-24 01:01:39,052 [INFO] 127.0.0.1 - - [24/Dec/2025 01:01:39] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:02:10,061 [INFO] 127.0.0.1 - - [24/Dec/2025 01:02:10] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:02:36,051 [INFO] 127.0.0.1 - - [24/Dec/2025 01:02:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:02:39,044 [INFO] 127.0.0.1 - - [24/Dec/2025 01:02:39] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:03:11,054 [INFO] 127.0.0.1 - - [24/Dec/2025 01:03:11] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:03:36,371 [INFO] 127.0.0.1 - - [24/Dec/2025 01:03:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:03:39,055 [INFO] 127.0.0.1 - - [24/Dec/2025 01:03:39] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:04:12,059 [INFO] 127.0.0.1 - - [24/Dec/2025 01:04:12] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:04:36,064 [INFO] 127.0.0.1 - - [24/Dec/2025 01:04:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:04:40,070 [INFO] 127.0.0.1 - - [24/Dec/2025 01:04:40] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:05:13,068 [INFO] 127.0.0.1 - - [24/Dec/2025 01:05:13] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:05:36,362 [INFO] 127.0.0.1 - - [24/Dec/2025 01:05:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:05:41,049 [INFO] 127.0.0.1 - - [24/Dec/2025 01:05:41] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:06:14,061 [INFO] 127.0.0.1 - - [24/Dec/2025 01:06:14] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:06:36,059 [INFO] 127.0.0.1 - - [24/Dec/2025 01:06:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:06:42,065 [INFO] 127.0.0.1 - - [24/Dec/2025 01:06:42] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:07:15,064 [INFO] 127.0.0.1 - - [24/Dec/2025 01:07:15] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:07:36,378 [INFO] 127.0.0.1 - - [24/Dec/2025 01:07:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:07:43,064 [INFO] 127.0.0.1 - - [24/Dec/2025 01:07:43] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:08:16,064 [INFO] 127.0.0.1 - - [24/Dec/2025 01:08:16] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:08:36,070 [INFO] 127.0.0.1 - - [24/Dec/2025 01:08:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:08:44,068 [INFO] 127.0.0.1 - - [24/Dec/2025 01:08:44] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:09:17,070 [INFO] 127.0.0.1 - - [24/Dec/2025 01:09:17] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:09:36,378 [INFO] 127.0.0.1 - - [24/Dec/2025 01:09:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:09:45,073 [INFO] 127.0.0.1 - - [24/Dec/2025 01:09:45] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:10:18,075 [INFO] 127.0.0.1 - - [24/Dec/2025 01:10:18] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:10:36,392 [INFO] 127.0.0.1 - - [24/Dec/2025 01:10:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:10:46,086 [INFO] 127.0.0.1 - - [24/Dec/2025 01:10:46] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:11:19,075 [INFO] 127.0.0.1 - - [24/Dec/2025 01:11:19] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:11:36,074 [INFO] 127.0.0.1 - - [24/Dec/2025 01:11:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:11:47,081 [INFO] 127.0.0.1 - - [24/Dec/2025 01:11:47] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:12:20,072 [INFO] 127.0.0.1 - - [24/Dec/2025 01:12:20] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:12:36,381 [INFO] 127.0.0.1 - - [24/Dec/2025 01:12:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:12:57,325 [INFO] 127.0.0.1 - - [24/Dec/2025 01:12:57] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:13:21,079 [INFO] 127.0.0.1 - - [24/Dec/2025 01:13:21] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:13:36,070 [INFO] 127.0.0.1 - - [24/Dec/2025 01:13:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:13:49,079 [INFO] 127.0.0.1 - - [24/Dec/2025 01:13:49] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:14:22,079 [INFO] 127.0.0.1 - - [24/Dec/2025 01:14:22] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:14:36,395 [INFO] 127.0.0.1 - - [24/Dec/2025 01:14:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:14:50,084 [INFO] 127.0.0.1 - - [24/Dec/2025 01:14:50] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:15:23,093 [INFO] 127.0.0.1 - - [24/Dec/2025 01:15:23] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:15:36,084 [INFO] 127.0.0.1 - - [24/Dec/2025 01:15:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:15:51,090 [INFO] 127.0.0.1 - - [24/Dec/2025 01:15:51] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:16:24,079 [INFO] 127.0.0.1 - - [24/Dec/2025 01:16:24] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:16:36,417 [INFO] 127.0.0.1 - - [24/Dec/2025 01:16:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:16:52,098 [INFO] 127.0.0.1 - - [24/Dec/2025 01:16:52] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:17:25,102 [INFO] 127.0.0.1 - - [24/Dec/2025 01:17:25] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:17:36,093 [INFO] 127.0.0.1 - - [24/Dec/2025 01:17:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:17:53,088 [INFO] 127.0.0.1 - - [24/Dec/2025 01:17:53] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:18:26,102 [INFO] 127.0.0.1 - - [24/Dec/2025 01:18:26] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:18:36,420 [INFO] 127.0.0.1 - - [24/Dec/2025 01:18:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:18:54,095 [INFO] 127.0.0.1 - - [24/Dec/2025 01:18:54] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:19:19,354 [INFO] 127.0.0.1 - - [24/Dec/2025 01:19:19] "HEAD / HTTP/1.1" 200 -
+2025-12-24 01:19:27,092 [INFO] 127.0.0.1 - - [24/Dec/2025 01:19:27] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:19:36,096 [INFO] 127.0.0.1 - - [24/Dec/2025 01:19:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:19:55,104 [INFO] 127.0.0.1 - - [24/Dec/2025 01:19:55] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:20:28,099 [INFO] 127.0.0.1 - - [24/Dec/2025 01:20:28] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:20:36,421 [INFO] 127.0.0.1 - - [24/Dec/2025 01:20:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:20:56,101 [INFO] 127.0.0.1 - - [24/Dec/2025 01:20:56] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:21:29,098 [INFO] 127.0.0.1 - - [24/Dec/2025 01:21:29] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:21:36,104 [INFO] 127.0.0.1 - - [24/Dec/2025 01:21:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:21:57,118 [INFO] 127.0.0.1 - - [24/Dec/2025 01:21:57] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:22:26,443 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:26] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 01:22:26,443 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:26] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 01:22:26,481 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:26] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 01:22:26,481 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:26] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 01:22:26,496 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 01:22:26,497 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:26] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 01:22:26,497 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:22:26,497 [INFO] Returning 0 events for today
+2025-12-24 01:22:26,497 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:26] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:22:28,444 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:28] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:22:30,108 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:30] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:22:32,038 [INFO] POST /api/events - User דניאל added event: walk
+2025-12-24 01:22:32,044 [INFO] Event recorded: walk, new family total: 1
+2025-12-24 01:22:32,045 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:32] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 01:22:32,050 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:22:32,050 [INFO] Returning 1 events for today
+2025-12-24 01:22:32,058 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:32] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:22:36,424 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:22:45,398 [INFO] POST /api/events - User דניאל added event: walk
+2025-12-24 01:22:45,401 [INFO] Event recorded: walk, new family total: 1
+2025-12-24 01:22:45,401 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:45] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 01:22:45,412 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:22:45,412 [INFO] Returning 2 events for today
+2025-12-24 01:22:45,420 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:45] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:22:48,126 [INFO] POST /api/events - User דניאל added event: feed_evening
+2025-12-24 01:22:48,127 [INFO] Event recorded: feed_evening, new family total: 2
+2025-12-24 01:22:48,127 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:48] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 01:22:48,142 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:22:48,145 [INFO] Returning 3 events for today
+2025-12-24 01:22:48,145 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:48] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:22:49,178 [INFO] POST /api/events - User דניאל added event: feed_morning
+2025-12-24 01:22:49,193 [INFO] Event recorded: feed_morning, new family total: 3
+2025-12-24 01:22:49,194 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:49] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 01:22:49,203 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:22:49,204 [INFO] Returning 4 events for today
+2025-12-24 01:22:49,204 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:49] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:22:52,782 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-24 01:22:52,791 [INFO] Event recorded: poop, new family total: 6
+2025-12-24 01:22:52,791 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:52] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 01:22:52,812 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:22:52,812 [INFO] Returning 5 events for today
+2025-12-24 01:22:52,812 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:52] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:22:54,133 [INFO] POST /api/events - User דניאל added event: pee
+2025-12-24 01:22:54,137 [INFO] Event recorded: pee, new family total: 8
+2025-12-24 01:22:54,141 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:54] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 01:22:54,160 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:22:54,160 [INFO] Returning 6 events for today
+2025-12-24 01:22:54,160 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:54] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:22:55,426 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-24 01:22:55,435 [INFO] Event recorded: reward, new family total: 9
+2025-12-24 01:22:55,436 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:55] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 01:22:55,447 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:22:55,447 [INFO] Returning 7 events for today
+2025-12-24 01:22:55,449 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:55] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:22:56,579 [INFO] POST /api/events - User דניאל added event: reward
+2025-12-24 01:22:56,588 [INFO] Event recorded: reward, new family total: 9
+2025-12-24 01:22:56,588 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:56] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 01:22:56,595 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:22:56,595 [INFO] Returning 8 events for today
+2025-12-24 01:22:56,595 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:56] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:22:58,938 [INFO] POST /api/events - User דניאל added event: accident
+2025-12-24 01:22:58,938 [INFO] Event recorded: accident, new family total: 7
+2025-12-24 01:22:58,938 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:58] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 01:22:58,955 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:22:58,955 [INFO] Returning 9 events for today
+2025-12-24 01:22:58,955 [INFO] 127.0.0.1 - - [24/Dec/2025 01:22:58] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:23:03,276 [INFO] POST /api/events - User דניאל added event: walk
+2025-12-24 01:23:03,276 [INFO] Event recorded: walk, new family total: 7
+2025-12-24 01:23:03,286 [INFO] 127.0.0.1 - - [24/Dec/2025 01:23:03] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 01:23:03,294 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:23:03,294 [INFO] Returning 10 events for today
+2025-12-24 01:23:03,301 [INFO] 127.0.0.1 - - [24/Dec/2025 01:23:03] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:23:15,983 [INFO] 127.0.0.1 - - [24/Dec/2025 01:23:15] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 01:23:15,983 [INFO] 127.0.0.1 - - [24/Dec/2025 01:23:15] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 01:23:15,997 [INFO] 127.0.0.1 - - [24/Dec/2025 01:23:15] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 01:23:15,997 [INFO] 127.0.0.1 - - [24/Dec/2025 01:23:15] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 01:23:16,006 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 01:23:16,006 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:23:16,006 [INFO] Returning 10 events for today
+2025-12-24 01:23:16,006 [INFO] 127.0.0.1 - - [24/Dec/2025 01:23:16] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 01:23:16,006 [INFO] 127.0.0.1 - - [24/Dec/2025 01:23:16] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:23:17,666 [INFO] 127.0.0.1 - - [24/Dec/2025 01:23:17] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:23:31,116 [INFO] 127.0.0.1 - - [24/Dec/2025 01:23:31] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:23:36,111 [INFO] 127.0.0.1 - - [24/Dec/2025 01:23:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:24:16,114 [INFO] 127.0.0.1 - - [24/Dec/2025 01:24:16] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:24:38,088 [INFO] Script directory: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server
+2025-12-24 01:24:38,088 [INFO] Data file: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-24 01:24:38,091 [INFO] Client directory: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\client
+2025-12-24 01:24:38,091 [INFO] Client directory exists: True
+2025-12-24 01:24:38,096 [INFO] ============================================================
+2025-12-24 01:24:38,096 [INFO] 🐕 Dog Training App Server Starting (Flask)
+2025-12-24 01:24:38,096 [INFO] Port: 8000
+2025-12-24 01:24:38,096 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\client
+2025-12-24 01:24:38,096 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-24 01:24:38,096 [INFO] ============================================================
+2025-12-24 01:24:38,129 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://129.231.209.61:8000
+2025-12-24 01:24:38,129 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-24 01:24:38,290 [INFO] 127.0.0.1 - - [24/Dec/2025 01:24:38] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:24:54,418 [INFO] 127.0.0.1 - - [24/Dec/2025 01:24:54] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 01:24:54,422 [INFO] 127.0.0.1 - - [24/Dec/2025 01:24:54] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 01:24:54,501 [INFO] 127.0.0.1 - - [24/Dec/2025 01:24:54] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 01:24:54,503 [INFO] 127.0.0.1 - - [24/Dec/2025 01:24:54] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 01:24:54,503 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 01:24:54,513 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:24:54,513 [INFO] Returning 10 events for today
+2025-12-24 01:24:54,518 [INFO] 127.0.0.1 - - [24/Dec/2025 01:24:54] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 01:24:54,518 [INFO] 127.0.0.1 - - [24/Dec/2025 01:24:54] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:24:56,127 [INFO] 127.0.0.1 - - [24/Dec/2025 01:24:56] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:25:16,116 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:16] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:25:16,832 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:16] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 01:25:16,832 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:16] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 01:25:16,847 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:16] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 01:25:16,851 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:16] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 01:25:16,870 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 01:25:16,878 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:16] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 01:25:16,878 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:25:16,879 [INFO] Returning 10 events for today
+2025-12-24 01:25:16,881 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:16] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:25:18,431 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:18] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:25:26,605 [INFO] Event deleted: 8836c5f3c78749d9827be8bcc6dae661 by דניאל
+2025-12-24 01:25:26,605 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:26] "DELETE /api/events/8836c5f3c78749d9827be8bcc6dae661 HTTP/1.1" 200 -
+2025-12-24 01:25:26,619 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:25:26,620 [INFO] Returning 9 events for today
+2025-12-24 01:25:26,620 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:26] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:25:30,557 [INFO] Event deleted: 06d0ff6165884a3f957f13791611f463 by דניאל
+2025-12-24 01:25:30,559 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:30] "DELETE /api/events/06d0ff6165884a3f957f13791611f463 HTTP/1.1" 200 -
+2025-12-24 01:25:30,567 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:25:30,569 [INFO] Returning 8 events for today
+2025-12-24 01:25:30,569 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:30] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:25:33,126 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:25:34,975 [INFO] Event deleted: f492e3f0c291497e9f2b98bf9f021628 by דניאל
+2025-12-24 01:25:34,978 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:34] "DELETE /api/events/f492e3f0c291497e9f2b98bf9f021628 HTTP/1.1" 200 -
+2025-12-24 01:25:34,989 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:25:34,989 [INFO] Returning 7 events for today
+2025-12-24 01:25:34,989 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:34] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:25:36,116 [INFO] 127.0.0.1 - - [24/Dec/2025 01:25:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:26:16,111 [INFO] 127.0.0.1 - - [24/Dec/2025 01:26:16] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:26:17,125 [INFO] 127.0.0.1 - - [24/Dec/2025 01:26:17] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:26:34,109 [INFO] 127.0.0.1 - - [24/Dec/2025 01:26:34] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:26:36,437 [INFO] 127.0.0.1 - - [24/Dec/2025 01:26:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:27:16,123 [INFO] 127.0.0.1 - - [24/Dec/2025 01:27:16] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:27:17,117 [INFO] 127.0.0.1 - - [24/Dec/2025 01:27:17] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:27:35,115 [INFO] 127.0.0.1 - - [24/Dec/2025 01:27:35] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:27:36,113 [INFO] 127.0.0.1 - - [24/Dec/2025 01:27:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:28:16,116 [INFO] 127.0.0.1 - - [24/Dec/2025 01:28:16] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:28:17,115 [INFO] 127.0.0.1 - - [24/Dec/2025 01:28:17] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:28:36,120 [INFO] 127.0.0.1 - - [24/Dec/2025 01:28:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:28:36,426 [INFO] 127.0.0.1 - - [24/Dec/2025 01:28:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:29:16,112 [INFO] 127.0.0.1 - - [24/Dec/2025 01:29:16] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:29:17,110 [INFO] 127.0.0.1 - - [24/Dec/2025 01:29:17] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:29:36,115 [INFO] 127.0.0.1 - - [24/Dec/2025 01:29:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:29:36,130 [INFO] 127.0.0.1 - - [24/Dec/2025 01:29:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:30:16,133 [INFO] 127.0.0.1 - - [24/Dec/2025 01:30:16] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:30:17,127 [INFO] 127.0.0.1 - - [24/Dec/2025 01:30:17] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:30:36,138 [INFO] 127.0.0.1 - - [24/Dec/2025 01:30:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:30:36,436 [INFO] 127.0.0.1 - - [24/Dec/2025 01:30:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:31:17,118 [INFO] 127.0.0.1 - - [24/Dec/2025 01:31:17] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:31:36,135 [INFO] 127.0.0.1 - - [24/Dec/2025 01:31:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:31:36,135 [INFO] 127.0.0.1 - - [24/Dec/2025 01:31:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:32:08,986 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:08] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 01:32:08,989 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:08] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 01:32:09,024 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:09] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 01:32:09,025 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:09] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 01:32:09,030 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 01:32:09,036 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:32:09,038 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:09] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 01:32:09,038 [INFO] Returning 7 events for today
+2025-12-24 01:32:09,038 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:09] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:32:10,235 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:10] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 01:32:10,238 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:10] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 01:32:10,258 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:10] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 01:32:10,260 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:10] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 01:32:10,260 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 01:32:10,265 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:10] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 01:32:10,268 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:32:10,268 [INFO] Returning 7 events for today
+2025-12-24 01:32:10,268 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:10] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:32:10,988 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:10] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:32:11,981 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:11] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:32:14,326 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:14] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 01:32:14,326 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:14] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 01:32:14,348 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:14] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 01:32:14,351 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:14] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 01:32:14,353 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 01:32:14,359 [INFO] GET /api/today - User: דניאל
+2025-12-24 01:32:14,359 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:14] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 01:32:14,359 [INFO] Returning 7 events for today
+2025-12-24 01:32:14,359 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:14] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 01:32:16,026 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:16] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:32:18,128 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:18] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:32:36,135 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:32:36,437 [INFO] 127.0.0.1 - - [24/Dec/2025 01:32:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:33:15,138 [INFO] 127.0.0.1 - - [24/Dec/2025 01:33:15] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 01:33:19,123 [INFO] 127.0.0.1 - - [24/Dec/2025 01:33:19] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:02:07,461 [INFO] Script directory: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server
+2025-12-24 10:02:07,462 [INFO] Data file: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-24 10:02:07,462 [INFO] Client directory: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\client
+2025-12-24 10:02:07,462 [INFO] Client directory exists: True
+2025-12-24 10:02:07,471 [INFO] ============================================================
+2025-12-24 10:02:07,471 [INFO] 🐕 Dog Training App Server Starting (Flask)
+2025-12-24 10:02:07,472 [INFO] Port: 8000
+2025-12-24 10:02:07,472 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\client
+2025-12-24 10:02:07,472 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-24 10:02:07,473 [INFO] ============================================================
+2025-12-24 10:02:07,515 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.14.84.239:8000
+2025-12-24 10:02:07,515 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-24 10:03:07,314 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:07] "GET / HTTP/1.1" 200 -
+2025-12-24 10:03:23,231 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:23] "GET /style.css?v=16 HTTP/1.1" 200 -
+2025-12-24 10:03:23,232 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:23] "GET /app.js?v=16 HTTP/1.1" 200 -
+2025-12-24 10:03:23,482 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:23] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 10:03:23,597 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 10:03:23,599 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:23] "GET /favicon.ico HTTP/1.1" 200 -
+2025-12-24 10:03:23,601 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:03:23,601 [INFO] Returning 7 events for today
+2025-12-24 10:03:23,602 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:23] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:03:23,603 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:23] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 10:03:25,265 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:25] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:03:30,978 [INFO] Event deleted: 6b5741a9355e499e8e59aafc5c63175d by דניאל
+2025-12-24 10:03:30,978 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:30] "DELETE /api/events/6b5741a9355e499e8e59aafc5c63175d HTTP/1.1" 200 -
+2025-12-24 10:03:31,237 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:03:31,237 [INFO] Returning 6 events for today
+2025-12-24 10:03:31,237 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:31] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:03:34,707 [INFO] Event deleted: aa98a07053a84ce7a1838ff9b30b1e8b by דניאל
+2025-12-24 10:03:34,707 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:34] "DELETE /api/events/aa98a07053a84ce7a1838ff9b30b1e8b HTTP/1.1" 200 -
+2025-12-24 10:03:35,028 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:03:35,028 [INFO] Returning 5 events for today
+2025-12-24 10:03:35,028 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:35] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:03:46,838 [INFO] Event deleted: 39f1a236f4df4d2ebcc7012b87b63dea by דניאל
+2025-12-24 10:03:46,838 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:46] "DELETE /api/events/39f1a236f4df4d2ebcc7012b87b63dea HTTP/1.1" 200 -
+2025-12-24 10:03:47,160 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:03:47,161 [INFO] Returning 4 events for today
+2025-12-24 10:03:47,161 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:47] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:03:49,709 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:49] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 10:03:50,011 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:50] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 10:03:50,328 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:50] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 10:03:50,328 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:50] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 10:03:50,328 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 10:03:50,328 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:50] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 10:03:50,577 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:03:50,578 [INFO] Returning 4 events for today
+2025-12-24 10:03:50,578 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:50] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:03:51,862 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:51] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:03:59,349 [INFO] POST /api/events - User דניאל added event: feed_morning
+2025-12-24 10:03:59,349 [INFO] Event recorded: feed_morning, new family total: 7
+2025-12-24 10:03:59,349 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:59] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 10:03:59,602 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:03:59,602 [INFO] Returning 5 events for today
+2025-12-24 10:03:59,602 [INFO] 127.0.0.1 - - [24/Dec/2025 10:03:59] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:04:04,861 [INFO] 127.0.0.1 - - [24/Dec/2025 10:04:04] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 10:04:05,177 [ERROR] Error serving static file .well-known/appspecific/com.chrome.devtools.json: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 10:04:05,177 [INFO] 127.0.0.1 - - [24/Dec/2025 10:04:05] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 -
+2025-12-24 10:04:08,751 [INFO] POST /api/events - User דניאל added event: feed_morning
+2025-12-24 10:04:08,754 [INFO] Event recorded: feed_morning, new family total: 7
+2025-12-24 10:04:08,754 [INFO] 127.0.0.1 - - [24/Dec/2025 10:04:08] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 10:04:09,077 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:04:09,077 [INFO] Returning 6 events for today
+2025-12-24 10:04:09,077 [INFO] 127.0.0.1 - - [24/Dec/2025 10:04:09] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:04:23,789 [INFO] POST /api/events - User דניאל added event: feed_evening
+2025-12-24 10:04:23,793 [INFO] Event recorded: feed_evening, new family total: 7
+2025-12-24 10:04:23,794 [INFO] 127.0.0.1 - - [24/Dec/2025 10:04:23] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 10:04:24,106 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:04:24,106 [INFO] Returning 7 events for today
+2025-12-24 10:04:24,106 [INFO] 127.0.0.1 - - [24/Dec/2025 10:04:24] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:04:29,575 [INFO] Event deleted: 8f2ab691a4c84999aa379fc663e87267 by דניאל
+2025-12-24 10:04:29,576 [INFO] 127.0.0.1 - - [24/Dec/2025 10:04:29] "DELETE /api/events/8f2ab691a4c84999aa379fc663e87267 HTTP/1.1" 200 -
+2025-12-24 10:04:29,893 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:04:29,893 [INFO] Returning 6 events for today
+2025-12-24 10:04:29,893 [INFO] 127.0.0.1 - - [24/Dec/2025 10:04:29] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:04:50,032 [INFO] 127.0.0.1 - - [24/Dec/2025 10:04:50] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:05:20,225 [INFO] API Request: POST /api/register
+2025-12-24 10:05:20,225 [INFO] Registering user: as@a, invite: False
+2025-12-24 10:05:20,225 [INFO] User registered: as@a, admin: True
+2025-12-24 10:05:20,225 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:20] "POST /api/register HTTP/1.1" 200 -
+2025-12-24 10:05:20,479 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:20] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 10:05:20,536 [INFO] GET /api/today - User: משה
+2025-12-24 10:05:20,536 [INFO] Returning 0 events for today
+2025-12-24 10:05:20,536 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:20] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:05:27,946 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:27] "GET / HTTP/1.1" 200 -
+2025-12-24 10:05:28,259 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:28] "GET /style.css?v=16 HTTP/1.1" 200 -
+2025-12-24 10:05:28,281 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:28] "GET /app.js?v=16 HTTP/1.1" 200 -
+2025-12-24 10:05:28,281 [ERROR] Error serving static file .well-known/appspecific/com.chrome.devtools.json: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 10:05:28,282 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:28] "[36mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 304 -
+2025-12-24 10:05:28,591 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:28] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 10:05:28,591 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:28] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 10:05:28,595 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:28] "GET /manifest.webmanifest HTTP/1.1" 200 -
+2025-12-24 10:05:28,596 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 10:05:28,598 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:28] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:05:28,600 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:28] "GET /favicon.ico HTTP/1.1" 200 -
+2025-12-24 10:05:28,852 [INFO] GET /api/today - User: משה
+2025-12-24 10:05:28,852 [INFO] Returning 0 events for today
+2025-12-24 10:05:28,852 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:28] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:05:28,906 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:28] "GET /index.html HTTP/1.1" 200 -
+2025-12-24 10:05:28,910 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:28] "GET /style.css HTTP/1.1" 200 -
+2025-12-24 10:05:28,911 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:28] "[36mGET / HTTP/1.1[0m" 304 -
+2025-12-24 10:05:28,911 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:28] "GET /app.js HTTP/1.1" 200 -
+2025-12-24 10:05:29,218 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:29] "[36mGET /manifest.webmanifest HTTP/1.1[0m" 304 -
+2025-12-24 10:05:59,523 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:59] "GET /?invite=4d5f08e9104c4fe4804bf9dcf3a137a0 HTTP/1.1" 200 -
+2025-12-24 10:05:59,540 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:59] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 10:05:59,787 [INFO] 127.0.0.1 - - [24/Dec/2025 10:05:59] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 10:06:00,108 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:00] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 10:06:00,109 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:00] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 10:06:00,114 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 10:06:00,115 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:00] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 10:06:00,357 [INFO] GET /api/today - User: משה
+2025-12-24 10:06:00,357 [INFO] Returning 0 events for today
+2025-12-24 10:06:00,357 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:00] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:06:01,692 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:01] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:06:11,574 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:11] "GET /?invite=4d5f08e9104c4fe4804bf9dcf3a137a0 HTTP/1.1" 200 -
+2025-12-24 10:06:11,600 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:11] "GET /style.css?v=16 HTTP/1.1" 200 -
+2025-12-24 10:06:11,831 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:11] "GET /app.js?v=16 HTTP/1.1" 200 -
+2025-12-24 10:06:12,160 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:12] "GET /manifest.webmanifest HTTP/1.1" 200 -
+2025-12-24 10:06:12,160 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 10:06:12,160 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:12] "GET /favicon.ico HTTP/1.1" 200 -
+2025-12-24 10:06:12,160 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:12] "GET /service-worker.js HTTP/1.1" 200 -
+2025-12-24 10:06:12,423 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:12] "GET / HTTP/1.1" 200 -
+2025-12-24 10:06:12,476 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:12] "GET /index.html HTTP/1.1" 200 -
+2025-12-24 10:06:12,476 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:12] "GET /style.css HTTP/1.1" 200 -
+2025-12-24 10:06:12,476 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:12] "GET /app.js HTTP/1.1" 200 -
+2025-12-24 10:06:12,740 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:12] "[36mGET /manifest.webmanifest HTTP/1.1[0m" 304 -
+2025-12-24 10:06:29,858 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:29] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:06:31,308 [INFO] API Request: POST /api/register
+2025-12-24 10:06:31,308 [INFO] Registering user: asע@ד, invite: True
+2025-12-24 10:06:31,308 [INFO] User registered: asע@ד, admin: False
+2025-12-24 10:06:31,308 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:31] "POST /api/register HTTP/1.1" 200 -
+2025-12-24 10:06:31,562 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:31] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 10:06:31,622 [INFO] GET /api/today - User: ברוך
+2025-12-24 10:06:31,622 [INFO] Returning 0 events for today
+2025-12-24 10:06:31,623 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:31] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:06:37,460 [INFO] POST /api/events - User ברוך added event: feed_morning
+2025-12-24 10:06:37,463 [INFO] Event recorded: feed_morning, new family total: 1
+2025-12-24 10:06:37,463 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:37] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 10:06:37,774 [INFO] GET /api/today - User: ברוך
+2025-12-24 10:06:37,774 [INFO] Returning 1 events for today
+2025-12-24 10:06:37,774 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:37] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:06:53,471 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:53] "[36mGET /?invite=4d5f08e9104c4fe4804bf9dcf3a137a0 HTTP/1.1[0m" 304 -
+2025-12-24 10:06:53,770 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:53] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 10:06:53,797 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:53] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 10:06:54,117 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:54] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 10:06:54,120 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 10:06:54,120 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:54] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 10:06:54,120 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:54] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 10:06:54,370 [INFO] GET /api/today - User: משה
+2025-12-24 10:06:54,370 [INFO] Returning 1 events for today
+2025-12-24 10:06:54,370 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:54] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:06:55,647 [INFO] 127.0.0.1 - - [24/Dec/2025 10:06:55] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:07:12,556 [INFO] 127.0.0.1 - - [24/Dec/2025 10:07:12] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:07:16,039 [INFO] API Request: POST /api/login
+2025-12-24 10:07:16,039 [INFO] User logged in: דניאל
+2025-12-24 10:07:16,039 [INFO] 127.0.0.1 - - [24/Dec/2025 10:07:16] "POST /api/login HTTP/1.1" 200 -
+2025-12-24 10:07:16,294 [INFO] 127.0.0.1 - - [24/Dec/2025 10:07:16] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 10:07:16,352 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:07:16,352 [INFO] Returning 6 events for today
+2025-12-24 10:07:16,352 [INFO] 127.0.0.1 - - [24/Dec/2025 10:07:16] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:07:29,559 [INFO] 127.0.0.1 - - [24/Dec/2025 10:07:29] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:07:33,517 [INFO] All 6 events cleared by admin דניאל for household 2cde7647014345179c935294b2704f74
+2025-12-24 10:07:33,518 [INFO] 127.0.0.1 - - [24/Dec/2025 10:07:33] "POST /api/admin/clear-events HTTP/1.1" 200 -
+2025-12-24 10:07:34,597 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:07:34,597 [INFO] Returning 0 events for today
+2025-12-24 10:07:34,597 [INFO] 127.0.0.1 - - [24/Dec/2025 10:07:34] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:07:54,118 [INFO] 127.0.0.1 - - [24/Dec/2025 10:07:54] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:08:12,864 [INFO] 127.0.0.1 - - [24/Dec/2025 10:08:12] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:08:29,558 [INFO] 127.0.0.1 - - [24/Dec/2025 10:08:29] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:08:54,858 [INFO] 127.0.0.1 - - [24/Dec/2025 10:08:54] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:09:13,201 [INFO] 127.0.0.1 - - [24/Dec/2025 10:09:13] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:09:29,548 [INFO] 127.0.0.1 - - [24/Dec/2025 10:09:29] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:09:54,858 [INFO] 127.0.0.1 - - [24/Dec/2025 10:09:54] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:10:12,480 [INFO] 127.0.0.1 - - [24/Dec/2025 10:10:12] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:10:29,559 [INFO] 127.0.0.1 - - [24/Dec/2025 10:10:29] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:10:54,865 [INFO] 127.0.0.1 - - [24/Dec/2025 10:10:54] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:11:06,216 [INFO] 127.0.0.1 - - [24/Dec/2025 10:11:06] "[31m[1mGET /api/today HTTP/1.1[0m" 401 -
+2025-12-24 10:11:12,167 [INFO] 127.0.0.1 - - [24/Dec/2025 10:11:12] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:11:16,662 [INFO] 127.0.0.1 - - [24/Dec/2025 10:11:16] "[31m[1mGET /api/today HTTP/1.1[0m" 401 -
+2025-12-24 10:11:29,545 [INFO] 127.0.0.1 - - [24/Dec/2025 10:11:29] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:11:35,675 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:11:35,675 [INFO] Returning 0 events for today
+2025-12-24 10:11:35,676 [INFO] 127.0.0.1 - - [24/Dec/2025 10:11:35] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:11:44,820 [INFO] 127.0.0.1 - - [24/Dec/2025 10:11:44] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 10:11:54,865 [INFO] 127.0.0.1 - - [24/Dec/2025 10:11:54] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:12:12,474 [INFO] 127.0.0.1 - - [24/Dec/2025 10:12:12] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:12:29,542 [INFO] 127.0.0.1 - - [24/Dec/2025 10:12:29] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:12:54,857 [INFO] 127.0.0.1 - - [24/Dec/2025 10:12:54] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:13:12,557 [INFO] 127.0.0.1 - - [24/Dec/2025 10:13:12] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:13:30,545 [INFO] 127.0.0.1 - - [24/Dec/2025 10:13:30] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:13:54,845 [INFO] 127.0.0.1 - - [24/Dec/2025 10:13:54] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:14:13,845 [INFO] 127.0.0.1 - - [24/Dec/2025 10:14:13] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:14:31,542 [INFO] 127.0.0.1 - - [24/Dec/2025 10:14:31] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:14:55,841 [INFO] 127.0.0.1 - - [24/Dec/2025 10:14:55] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:15:14,863 [INFO] 127.0.0.1 - - [24/Dec/2025 10:15:14] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:15:32,552 [INFO] 127.0.0.1 - - [24/Dec/2025 10:15:32] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:15:56,864 [INFO] 127.0.0.1 - - [24/Dec/2025 10:15:56] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:16:15,840 [INFO] 127.0.0.1 - - [24/Dec/2025 10:16:15] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:16:33,538 [INFO] 127.0.0.1 - - [24/Dec/2025 10:16:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:16:57,860 [INFO] 127.0.0.1 - - [24/Dec/2025 10:16:57] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:17:16,856 [INFO] 127.0.0.1 - - [24/Dec/2025 10:17:16] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:17:33,548 [INFO] 127.0.0.1 - - [24/Dec/2025 10:17:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:17:58,850 [INFO] 127.0.0.1 - - [24/Dec/2025 10:17:58] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:18:17,855 [INFO] 127.0.0.1 - - [24/Dec/2025 10:18:17] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:18:33,540 [INFO] 127.0.0.1 - - [24/Dec/2025 10:18:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:18:59,848 [INFO] 127.0.0.1 - - [24/Dec/2025 10:18:59] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:19:06,400 [INFO] 127.0.0.1 - - [24/Dec/2025 10:19:06] "[31m[1mPOST /api/dog HTTP/1.1[0m" 403 -
+2025-12-24 10:19:15,951 [INFO] 127.0.0.1 - - [24/Dec/2025 10:19:15] "POST /api/dog HTTP/1.1" 200 -
+2025-12-24 10:19:18,848 [INFO] 127.0.0.1 - - [24/Dec/2025 10:19:18] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:19:33,544 [INFO] 127.0.0.1 - - [24/Dec/2025 10:19:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:19:54,568 [INFO] Script directory: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server
+2025-12-24 10:19:54,568 [INFO] Data file: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-24 10:19:54,568 [INFO] Client directory: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\client
+2025-12-24 10:19:54,569 [INFO] Client directory exists: True
+2025-12-24 10:19:54,574 [INFO] ============================================================
+2025-12-24 10:19:54,574 [INFO] 🐕 Dog Training App Server Starting (Flask)
+2025-12-24 10:19:54,574 [INFO] Port: 8000
+2025-12-24 10:19:54,574 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\client
+2025-12-24 10:19:54,574 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-24 10:19:54,574 [INFO] ============================================================
+2025-12-24 10:19:54,597 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.14.84.239:8000
+2025-12-24 10:19:54,597 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-24 10:19:59,011 [INFO] 127.0.0.1 - - [24/Dec/2025 10:19:59] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:20:12,454 [INFO] 127.0.0.1 - - [24/Dec/2025 10:20:12] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:20:13,378 [INFO] 127.0.0.1 - - [24/Dec/2025 10:20:13] "[36mGET /?invite=4d5f08e9104c4fe4804bf9dcf3a137a0 HTTP/1.1[0m" 304 -
+2025-12-24 10:20:13,679 [INFO] 127.0.0.1 - - [24/Dec/2025 10:20:13] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 10:20:13,711 [INFO] 127.0.0.1 - - [24/Dec/2025 10:20:13] "GET /app.js?v=16 HTTP/1.1" 200 -
+2025-12-24 10:20:14,018 [INFO] 127.0.0.1 - - [24/Dec/2025 10:20:14] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 10:20:14,018 [INFO] 127.0.0.1 - - [24/Dec/2025 10:20:14] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 10:20:14,032 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 10:20:14,032 [INFO] 127.0.0.1 - - [24/Dec/2025 10:20:14] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 10:20:14,277 [INFO] GET /api/today - User: ברוך
+2025-12-24 10:20:14,277 [INFO] Returning 1 events for today
+2025-12-24 10:20:14,277 [INFO] 127.0.0.1 - - [24/Dec/2025 10:20:14] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:20:15,701 [INFO] 127.0.0.1 - - [24/Dec/2025 10:20:15] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:20:33,539 [INFO] 127.0.0.1 - - [24/Dec/2025 10:20:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:20:54,842 [INFO] 127.0.0.1 - - [24/Dec/2025 10:20:54] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:20:55,794 [INFO] API Request: POST /api/login
+2025-12-24 10:20:55,796 [WARNING] Login failed for: אבי
+2025-12-24 10:20:55,796 [INFO] 127.0.0.1 - - [24/Dec/2025 10:20:55] "[31m[1mPOST /api/login HTTP/1.1[0m" 401 -
+2025-12-24 10:21:13,734 [INFO] 127.0.0.1 - - [24/Dec/2025 10:21:13] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:21:30,063 [INFO] API Request: POST /api/login
+2025-12-24 10:21:30,063 [INFO] User logged in: משה
+2025-12-24 10:21:30,063 [INFO] 127.0.0.1 - - [24/Dec/2025 10:21:30] "POST /api/login HTTP/1.1" 200 -
+2025-12-24 10:21:30,325 [INFO] 127.0.0.1 - - [24/Dec/2025 10:21:30] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 10:21:30,386 [INFO] GET /api/today - User: משה
+2025-12-24 10:21:30,387 [INFO] Returning 1 events for today
+2025-12-24 10:21:30,387 [INFO] 127.0.0.1 - - [24/Dec/2025 10:21:30] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:21:33,548 [INFO] 127.0.0.1 - - [24/Dec/2025 10:21:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:21:42,676 [INFO] All 1 events cleared by admin משה for household 5992568795ff49479f941bdd012f0fd7
+2025-12-24 10:21:42,680 [INFO] 127.0.0.1 - - [24/Dec/2025 10:21:42] "POST /api/admin/clear-events HTTP/1.1" 200 -
+2025-12-24 10:21:43,793 [INFO] GET /api/today - User: משה
+2025-12-24 10:21:43,793 [INFO] Returning 0 events for today
+2025-12-24 10:21:43,793 [INFO] 127.0.0.1 - - [24/Dec/2025 10:21:43] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:21:47,151 [INFO] All scores reset by admin משה for household 5992568795ff49479f941bdd012f0fd7
+2025-12-24 10:21:47,153 [INFO] 127.0.0.1 - - [24/Dec/2025 10:21:47] "POST /api/admin/reset-scores HTTP/1.1" 200 -
+2025-12-24 10:21:48,298 [INFO] GET /api/today - User: משה
+2025-12-24 10:21:48,298 [INFO] Returning 0 events for today
+2025-12-24 10:21:48,298 [INFO] 127.0.0.1 - - [24/Dec/2025 10:21:48] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:21:55,485 [INFO] POST /api/events - User משה added event: feed_morning
+2025-12-24 10:21:55,490 [INFO] Event recorded: feed_morning, new family total: 1
+2025-12-24 10:21:55,491 [INFO] 127.0.0.1 - - [24/Dec/2025 10:21:55] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 10:21:55,802 [INFO] GET /api/today - User: משה
+2025-12-24 10:21:55,802 [INFO] Returning 1 events for today
+2025-12-24 10:21:55,802 [INFO] 127.0.0.1 - - [24/Dec/2025 10:21:55] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:21:55,835 [INFO] 127.0.0.1 - - [24/Dec/2025 10:21:55] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:21:57,731 [INFO] POST /api/events - User משה added event: feed_evening
+2025-12-24 10:21:57,731 [INFO] Event recorded: feed_evening, new family total: 2
+2025-12-24 10:21:57,731 [INFO] 127.0.0.1 - - [24/Dec/2025 10:21:57] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 10:21:58,052 [INFO] GET /api/today - User: משה
+2025-12-24 10:21:58,052 [INFO] Returning 2 events for today
+2025-12-24 10:21:58,057 [INFO] 127.0.0.1 - - [24/Dec/2025 10:21:58] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:22:04,333 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:04] "[36mGET /?invite=4d5f08e9104c4fe4804bf9dcf3a137a0 HTTP/1.1[0m" 304 -
+2025-12-24 10:22:04,641 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:04] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 10:22:04,659 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:04] "GET /app.js?v=16 HTTP/1.1" 200 -
+2025-12-24 10:22:04,978 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:04] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 10:22:04,981 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:04] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 10:22:04,981 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 10:22:04,983 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:04] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 10:22:05,243 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:22:05,243 [INFO] Returning 0 events for today
+2025-12-24 10:22:05,243 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:05] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:22:06,526 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:06] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:22:10,115 [INFO] POST /api/events - User דניאל added event: feed_morning
+2025-12-24 10:22:10,115 [INFO] Event recorded: feed_morning, new family total: 1
+2025-12-24 10:22:10,115 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:10] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 10:22:10,366 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:22:10,366 [INFO] Returning 1 events for today
+2025-12-24 10:22:10,367 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:10] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:22:14,529 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:14] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:22:19,304 [INFO] POST /api/events - User דניאל added event: poop
+2025-12-24 10:22:19,311 [INFO] Event recorded: poop, new family total: 4
+2025-12-24 10:22:19,311 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:19] "POST /api/events HTTP/1.1" 200 -
+2025-12-24 10:22:19,617 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:22:19,617 [INFO] Returning 2 events for today
+2025-12-24 10:22:19,618 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:19] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:22:26,342 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:26] "[36mGET /?invite=4d5f08e9104c4fe4804bf9dcf3a137a0 HTTP/1.1[0m" 304 -
+2025-12-24 10:22:26,657 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:26] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 10:22:26,665 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:26] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 10:22:26,974 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:26] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 10:22:26,974 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:26] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 10:22:26,975 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 10:22:26,975 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:26] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 10:22:27,233 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:22:27,233 [INFO] Returning 2 events for today
+2025-12-24 10:22:27,234 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:27] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:22:28,516 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:28] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:22:33,832 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:22:35,142 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:35] "[36mGET /?invite=4d5f08e9104c4fe4804bf9dcf3a137a0 HTTP/1.1[0m" 304 -
+2025-12-24 10:22:35,156 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:35] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 10:22:35,393 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:35] "[36mGET /app.js?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 10:22:35,704 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:35] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 10:22:35,705 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:35] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 10:22:35,709 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 10:22:35,710 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:35] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2025-12-24 10:22:35,976 [INFO] GET /api/today - User: משה
+2025-12-24 10:22:35,977 [INFO] Returning 2 events for today
+2025-12-24 10:22:35,977 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:35] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:22:37,242 [INFO] 127.0.0.1 - - [24/Dec/2025 10:22:37] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:23:27,528 [INFO] 127.0.0.1 - - [24/Dec/2025 10:23:27] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:23:33,841 [INFO] 127.0.0.1 - - [24/Dec/2025 10:23:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:23:35,731 [INFO] 127.0.0.1 - - [24/Dec/2025 10:23:35] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:23:48,694 [INFO] All 2 events cleared by admin משה for household 5992568795ff49479f941bdd012f0fd7
+2025-12-24 10:23:48,698 [INFO] 127.0.0.1 - - [24/Dec/2025 10:23:48] "POST /api/admin/clear-events HTTP/1.1" 200 -
+2025-12-24 10:23:49,826 [INFO] GET /api/today - User: משה
+2025-12-24 10:23:49,826 [INFO] Returning 0 events for today
+2025-12-24 10:23:49,826 [INFO] 127.0.0.1 - - [24/Dec/2025 10:23:49] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:24:25,779 [INFO] All scores reset by admin דניאל for household 2cde7647014345179c935294b2704f74
+2025-12-24 10:24:25,779 [INFO] All 2 events cleared by admin דניאל for household 2cde7647014345179c935294b2704f74
+2025-12-24 10:24:26,060 [ERROR] Failed to save database: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\dshmaya\\Downloads\\dog-training-app\\dog-training-app\\server\\db.json.tmp' -> 'C:\\Users\\dshmaya\\Downloads\\dog-training-app\\dog-training-app\\server\\db.json'
+2025-12-24 10:24:26,062 [INFO] 127.0.0.1 - - [24/Dec/2025 10:24:26] "POST /api/admin/reset-scores HTTP/1.1" 200 -
+2025-12-24 10:24:26,064 [INFO] 127.0.0.1 - - [24/Dec/2025 10:24:26] "POST /api/admin/clear-events HTTP/1.1" 200 -
+2025-12-24 10:24:27,426 [INFO] GET /api/today - User: דניאל
+2025-12-24 10:24:27,426 [INFO] Returning 0 events for today
+2025-12-24 10:24:27,426 [INFO] 127.0.0.1 - - [24/Dec/2025 10:24:27] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 10:24:27,443 [INFO] 127.0.0.1 - - [24/Dec/2025 10:24:27] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:24:33,523 [INFO] 127.0.0.1 - - [24/Dec/2025 10:24:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:24:35,532 [INFO] 127.0.0.1 - - [24/Dec/2025 10:24:35] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:24:39,701 [INFO] 127.0.0.1 - - [24/Dec/2025 10:24:39] "POST /api/dog HTTP/1.1" 200 -
+2025-12-24 10:24:44,072 [INFO] 127.0.0.1 - - [24/Dec/2025 10:24:44] "POST /api/dog HTTP/1.1" 200 -
+2025-12-24 10:25:27,002 [INFO] 127.0.0.1 - - [24/Dec/2025 10:25:27] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:25:33,520 [INFO] 127.0.0.1 - - [24/Dec/2025 10:25:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:25:35,838 [INFO] 127.0.0.1 - - [24/Dec/2025 10:25:35] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:26:26,976 [INFO] 127.0.0.1 - - [24/Dec/2025 10:26:26] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:26:33,524 [INFO] 127.0.0.1 - - [24/Dec/2025 10:26:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:26:35,527 [INFO] 127.0.0.1 - - [24/Dec/2025 10:26:35] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:27:27,834 [INFO] 127.0.0.1 - - [24/Dec/2025 10:27:27] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:27:33,531 [INFO] 127.0.0.1 - - [24/Dec/2025 10:27:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:27:35,833 [INFO] 127.0.0.1 - - [24/Dec/2025 10:27:35] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:28:27,827 [INFO] 127.0.0.1 - - [24/Dec/2025 10:28:27] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:28:33,518 [INFO] 127.0.0.1 - - [24/Dec/2025 10:28:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:28:35,533 [INFO] 127.0.0.1 - - [24/Dec/2025 10:28:35] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:29:27,830 [INFO] 127.0.0.1 - - [24/Dec/2025 10:29:27] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:29:33,521 [INFO] 127.0.0.1 - - [24/Dec/2025 10:29:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:29:35,817 [INFO] 127.0.0.1 - - [24/Dec/2025 10:29:35] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:30:28,820 [INFO] 127.0.0.1 - - [24/Dec/2025 10:30:28] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:30:33,522 [INFO] 127.0.0.1 - - [24/Dec/2025 10:30:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:30:36,847 [INFO] 127.0.0.1 - - [24/Dec/2025 10:30:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:31:29,838 [INFO] 127.0.0.1 - - [24/Dec/2025 10:31:29] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:31:33,511 [INFO] 127.0.0.1 - - [24/Dec/2025 10:31:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:31:37,822 [INFO] 127.0.0.1 - - [24/Dec/2025 10:31:37] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:32:30,829 [INFO] 127.0.0.1 - - [24/Dec/2025 10:32:30] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:32:33,517 [INFO] 127.0.0.1 - - [24/Dec/2025 10:32:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:32:38,825 [INFO] 127.0.0.1 - - [24/Dec/2025 10:32:38] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:33:31,820 [INFO] 127.0.0.1 - - [24/Dec/2025 10:33:31] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:33:33,518 [INFO] 127.0.0.1 - - [24/Dec/2025 10:33:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:33:39,824 [INFO] 127.0.0.1 - - [24/Dec/2025 10:33:39] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:34:32,830 [INFO] 127.0.0.1 - - [24/Dec/2025 10:34:32] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:34:33,517 [INFO] 127.0.0.1 - - [24/Dec/2025 10:34:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:34:40,812 [INFO] 127.0.0.1 - - [24/Dec/2025 10:34:40] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:35:33,817 [INFO] 127.0.0.1 - - [24/Dec/2025 10:35:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:35:41,819 [INFO] 127.0.0.1 - - [24/Dec/2025 10:35:41] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:36:33,517 [INFO] 127.0.0.1 - - [24/Dec/2025 10:36:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:36:42,823 [INFO] 127.0.0.1 - - [24/Dec/2025 10:36:42] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:37:33,820 [INFO] 127.0.0.1 - - [24/Dec/2025 10:37:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:37:43,826 [INFO] 127.0.0.1 - - [24/Dec/2025 10:37:43] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:38:33,514 [INFO] 127.0.0.1 - - [24/Dec/2025 10:38:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:38:44,832 [INFO] 127.0.0.1 - - [24/Dec/2025 10:38:44] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:39:37,978 [INFO] 127.0.0.1 - - [24/Dec/2025 10:39:37] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:39:45,800 [INFO] 127.0.0.1 - - [24/Dec/2025 10:39:45] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:40:33,502 [INFO] 127.0.0.1 - - [24/Dec/2025 10:40:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:40:46,812 [INFO] 127.0.0.1 - - [24/Dec/2025 10:40:46] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:41:33,816 [INFO] 127.0.0.1 - - [24/Dec/2025 10:41:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:41:47,805 [INFO] 127.0.0.1 - - [24/Dec/2025 10:41:47] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:42:33,496 [INFO] 127.0.0.1 - - [24/Dec/2025 10:42:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:42:48,830 [INFO] 127.0.0.1 - - [24/Dec/2025 10:42:48] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:43:33,801 [INFO] 127.0.0.1 - - [24/Dec/2025 10:43:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:43:49,813 [INFO] 127.0.0.1 - - [24/Dec/2025 10:43:49] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:44:33,511 [INFO] 127.0.0.1 - - [24/Dec/2025 10:44:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:44:50,824 [INFO] 127.0.0.1 - - [24/Dec/2025 10:44:50] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:45:33,805 [INFO] 127.0.0.1 - - [24/Dec/2025 10:45:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:45:51,812 [INFO] 127.0.0.1 - - [24/Dec/2025 10:45:51] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:46:33,500 [INFO] 127.0.0.1 - - [24/Dec/2025 10:46:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:46:52,811 [INFO] 127.0.0.1 - - [24/Dec/2025 10:46:52] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:47:33,800 [INFO] 127.0.0.1 - - [24/Dec/2025 10:47:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:47:53,806 [INFO] 127.0.0.1 - - [24/Dec/2025 10:47:53] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:48:33,486 [INFO] 127.0.0.1 - - [24/Dec/2025 10:48:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:48:54,800 [INFO] 127.0.0.1 - - [24/Dec/2025 10:48:54] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:49:33,799 [INFO] 127.0.0.1 - - [24/Dec/2025 10:49:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:49:55,817 [INFO] 127.0.0.1 - - [24/Dec/2025 10:49:55] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:50:33,479 [INFO] 127.0.0.1 - - [24/Dec/2025 10:50:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:50:56,801 [INFO] 127.0.0.1 - - [24/Dec/2025 10:50:56] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:51:33,803 [INFO] 127.0.0.1 - - [24/Dec/2025 10:51:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:51:57,800 [INFO] 127.0.0.1 - - [24/Dec/2025 10:51:57] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:52:33,485 [INFO] 127.0.0.1 - - [24/Dec/2025 10:52:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:52:58,789 [INFO] 127.0.0.1 - - [24/Dec/2025 10:52:58] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:53:33,804 [INFO] 127.0.0.1 - - [24/Dec/2025 10:53:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:53:59,811 [INFO] 127.0.0.1 - - [24/Dec/2025 10:53:59] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:54:33,489 [INFO] 127.0.0.1 - - [24/Dec/2025 10:54:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:55:00,810 [INFO] 127.0.0.1 - - [24/Dec/2025 10:55:00] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:55:33,791 [INFO] 127.0.0.1 - - [24/Dec/2025 10:55:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:56:01,783 [INFO] 127.0.0.1 - - [24/Dec/2025 10:56:01] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:56:33,488 [INFO] 127.0.0.1 - - [24/Dec/2025 10:56:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:57:02,794 [INFO] 127.0.0.1 - - [24/Dec/2025 10:57:02] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:57:33,795 [INFO] 127.0.0.1 - - [24/Dec/2025 10:57:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:58:03,793 [INFO] 127.0.0.1 - - [24/Dec/2025 10:58:03] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:58:33,485 [INFO] 127.0.0.1 - - [24/Dec/2025 10:58:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:59:04,223 [INFO] 127.0.0.1 - - [24/Dec/2025 10:59:04] "POST /api/dog HTTP/1.1" 200 -
+2025-12-24 10:59:04,785 [INFO] 127.0.0.1 - - [24/Dec/2025 10:59:04] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:59:27,785 [INFO] 127.0.0.1 - - [24/Dec/2025 10:59:27] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:59:33,785 [INFO] 127.0.0.1 - - [24/Dec/2025 10:59:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 10:59:35,471 [INFO] 127.0.0.1 - - [24/Dec/2025 10:59:35] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:00:28,469 [INFO] 127.0.0.1 - - [24/Dec/2025 11:00:28] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:00:33,785 [INFO] 127.0.0.1 - - [24/Dec/2025 11:00:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:00:36,783 [INFO] 127.0.0.1 - - [24/Dec/2025 11:00:36] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:01:29,468 [INFO] 127.0.0.1 - - [24/Dec/2025 11:01:29] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:01:33,782 [INFO] 127.0.0.1 - - [24/Dec/2025 11:01:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:01:37,799 [INFO] 127.0.0.1 - - [24/Dec/2025 11:01:37] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:02:30,472 [INFO] 127.0.0.1 - - [24/Dec/2025 11:02:30] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:02:33,779 [INFO] 127.0.0.1 - - [24/Dec/2025 11:02:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:02:38,778 [INFO] 127.0.0.1 - - [24/Dec/2025 11:02:38] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:03:00,698 [INFO] Script directory: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server
+2025-12-24 11:03:00,698 [INFO] Data file: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-24 11:03:00,698 [INFO] Client directory: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\client
+2025-12-24 11:03:00,698 [INFO] Client directory exists: True
+2025-12-24 11:03:00,703 [INFO] ============================================================
+2025-12-24 11:03:00,703 [INFO] 🐕 Dog Training App Server Starting (Flask)
+2025-12-24 11:03:00,703 [INFO] Port: 8000
+2025-12-24 11:03:00,703 [INFO] Client dir: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\client
+2025-12-24 11:03:00,703 [INFO] Database: C:\Users\dshmaya\Downloads\dog-training-app\dog-training-app\server\db.json
+2025-12-24 11:03:00,703 [INFO] ============================================================
+2025-12-24 11:03:00,715 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.14.84.239:8000
+2025-12-24 11:03:00,715 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-24 11:03:08,785 [INFO] 127.0.0.1 - - [24/Dec/2025 11:03:08] "GET /?invite=4d5f08e9104c4fe4804bf9dcf3a137a0 HTTP/1.1" 200 -
+2025-12-24 11:03:08,796 [INFO] 127.0.0.1 - - [24/Dec/2025 11:03:08] "GET /style.css?v=16 HTTP/1.1" 200 -
+2025-12-24 11:03:08,963 [INFO] 127.0.0.1 - - [24/Dec/2025 11:03:08] "GET /app.js?v=16 HTTP/1.1" 200 -
+2025-12-24 11:03:09,279 [INFO] 127.0.0.1 - - [24/Dec/2025 11:03:09] "GET /api/user HTTP/1.1" 200 -
+2025-12-24 11:03:09,282 [INFO] 127.0.0.1 - - [24/Dec/2025 11:03:09] "[36mGET /manifest.webmanifest HTTP/1.1[0m" 304 -
+2025-12-24 11:03:09,283 [ERROR] Error serving static file favicon.ico: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 11:03:09,286 [INFO] 127.0.0.1 - - [24/Dec/2025 11:03:09] "GET /favicon.ico HTTP/1.1" 200 -
+2025-12-24 11:03:09,288 [INFO] 127.0.0.1 - - [24/Dec/2025 11:03:09] "GET /api/history?date=2025-12-24 HTTP/1.1" 200 -
+2025-12-24 11:03:09,547 [INFO] GET /api/today - User: דניאל
+2025-12-24 11:03:09,548 [INFO] Returning 0 events for today
+2025-12-24 11:03:09,548 [INFO] 127.0.0.1 - - [24/Dec/2025 11:03:09] "GET /api/today HTTP/1.1" 200 -
+2025-12-24 11:03:29,463 [INFO] 127.0.0.1 - - [24/Dec/2025 11:03:29] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:03:39,777 [INFO] 127.0.0.1 - - [24/Dec/2025 11:03:39] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:04:04,477 [INFO] 127.0.0.1 - - [24/Dec/2025 11:04:04] "[36mGET /manifest.webmanifest HTTP/1.1[0m" 304 -
+2025-12-24 11:04:04,793 [INFO] 127.0.0.1 - - [24/Dec/2025 11:04:04] "[36mGET /style.css?v=16 HTTP/1.1[0m" 304 -
+2025-12-24 11:04:04,812 [ERROR] Error serving static file .well-known/appspecific/com.chrome.devtools.json: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-24 11:04:04,812 [INFO] 127.0.0.1 - - [24/Dec/2025 11:04:04] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 -
+2025-12-24 11:04:08,993 [INFO] 127.0.0.1 - - [24/Dec/2025 11:04:08] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:04:30,776 [INFO] 127.0.0.1 - - [24/Dec/2025 11:04:30] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:04:40,777 [INFO] 127.0.0.1 - - [24/Dec/2025 11:04:40] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:05:09,480 [INFO] 127.0.0.1 - - [24/Dec/2025 11:05:09] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:05:31,774 [INFO] 127.0.0.1 - - [24/Dec/2025 11:05:31] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:05:41,779 [INFO] 127.0.0.1 - - [24/Dec/2025 11:05:41] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:06:03,211 [INFO] 127.0.0.1 - - [24/Dec/2025 11:06:03] "POST /api/dog HTTP/1.1" 200 -
+2025-12-24 11:06:09,321 [INFO] 127.0.0.1 - - [24/Dec/2025 11:06:09] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:06:30,230 [INFO] 127.0.0.1 - - [24/Dec/2025 11:06:30] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:06:42,770 [INFO] 127.0.0.1 - - [24/Dec/2025 11:06:42] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:07:09,774 [INFO] 127.0.0.1 - - [24/Dec/2025 11:07:09] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:07:29,475 [INFO] 127.0.0.1 - - [24/Dec/2025 11:07:29] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:07:43,772 [INFO] 127.0.0.1 - - [24/Dec/2025 11:07:43] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:08:09,783 [INFO] 127.0.0.1 - - [24/Dec/2025 11:08:09] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:08:29,459 [INFO] 127.0.0.1 - - [24/Dec/2025 11:08:29] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:08:44,772 [INFO] 127.0.0.1 - - [24/Dec/2025 11:08:44] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:09:09,759 [INFO] 127.0.0.1 - - [24/Dec/2025 11:09:09] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:09:30,454 [INFO] 127.0.0.1 - - [24/Dec/2025 11:09:30] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:09:45,771 [INFO] 127.0.0.1 - - [24/Dec/2025 11:09:45] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:10:09,786 [INFO] 127.0.0.1 - - [24/Dec/2025 11:10:09] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:10:31,455 [INFO] 127.0.0.1 - - [24/Dec/2025 11:10:31] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:10:46,770 [INFO] 127.0.0.1 - - [24/Dec/2025 11:10:46] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:11:10,754 [INFO] 127.0.0.1 - - [24/Dec/2025 11:11:10] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:11:32,777 [INFO] 127.0.0.1 - - [24/Dec/2025 11:11:32] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:11:47,777 [INFO] 127.0.0.1 - - [24/Dec/2025 11:11:47] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:12:11,459 [INFO] 127.0.0.1 - - [24/Dec/2025 11:12:11] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:12:33,768 [INFO] 127.0.0.1 - - [24/Dec/2025 11:12:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:12:48,761 [INFO] 127.0.0.1 - - [24/Dec/2025 11:12:48] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:13:12,453 [INFO] 127.0.0.1 - - [24/Dec/2025 11:13:12] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:13:33,775 [INFO] 127.0.0.1 - - [24/Dec/2025 11:13:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:13:49,765 [INFO] 127.0.0.1 - - [24/Dec/2025 11:13:49] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:14:13,448 [INFO] 127.0.0.1 - - [24/Dec/2025 11:14:13] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:14:33,781 [INFO] 127.0.0.1 - - [24/Dec/2025 11:14:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:14:50,763 [INFO] 127.0.0.1 - - [24/Dec/2025 11:14:50] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:15:14,451 [INFO] 127.0.0.1 - - [24/Dec/2025 11:15:14] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:15:33,762 [INFO] 127.0.0.1 - - [24/Dec/2025 11:15:33] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
+2025-12-24 11:15:51,749 [INFO] 127.0.0.1 - - [24/Dec/2025 11:15:51] "[36mGET /service-worker.js HTTP/1.1[0m" 304 -
