@@ -2,7 +2,7 @@
 
 // Bump the cache name whenever we change core assets like app.js
 // so that users always get the latest frontend code.
-const CACHE_NAME = 'shih-tzu-app-v16';
+const CACHE_NAME = 'shih-tzu-app-v17';
 const ASSETS = [
   '/',
   '/index.html',
@@ -33,14 +33,23 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   if (request.method !== 'GET') return;
-  // Network first for API, cache first for static assets
   const url = new URL(request.url);
-  if (url.pathname.startsWith('/api/')) {
-    return; // let the network handle API calls
+  // Let the network handle API calls
+  if (url.pathname.startsWith('/api/')) return;
+
+  // For navigation requests (user entering the app / SPA routing),
+  // use network-first with an index.html fallback. For other static
+  // assets (JS/CSS/images), use cache-first and do NOT return
+  // index.html as a fallback, which would cause JS parsing errors.
+  if (request.mode === 'navigate') {
+    event.respondWith(
+      fetch(request).catch(() => caches.match('/index.html'))
+    );
+    return;
   }
+
+  // Cache-first for static assets
   event.respondWith(
-    caches.match(request).then((cached) =>
-      cached || fetch(request).catch(() => caches.match('/index.html'))
-    )
+    caches.match(request).then((cached) => cached || fetch(request))
   );
 });
