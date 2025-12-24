@@ -4,10 +4,10 @@
       "id": "957621b617a8422cb945078cf16682a8",
       "dogName": "",
       "inviteTokens": [
-        "a67360d094d54a8f935cf9c6b198fa0e"
+        "d08055edce304a679b6ac0f22f6cfd0c"
       ],
       "inviteLinks": {
-        "a67360d094d54a8f935cf9c6b198fa0e": "f30cf4c8a4714d2fad769c462dd777fd"
+        "d08055edce304a679b6ac0f22f6cfd0c": "5137a61966cc437c90e7b52597b6b231"
       }
     },
     {
@@ -89,6 +89,16 @@
       "inviteLinks": {
         "4d5f08e9104c4fe4804bf9dcf3a137a0": "afc1ee0986204940b648031e45fbb2ef"
       },
+      "dogAgeMonths": 0,
+      "dogPhotoUrl": ""
+    },
+    {
+      "id": "2cb4fc31336e446cb6b63a071900d5ce",
+      "dogName": "",
+      "inviteTokens": [
+        "e81c2be21b8f498cbb12c7f99db15a9d"
+      ],
+      "inviteLinks": {},
       "dogAgeMonths": 0,
       "dogPhotoUrl": ""
     }
@@ -390,6 +400,32 @@
       "householdId": "5992568795ff49479f941bdd012f0fd7",
       "token": "d0ad1a04e3714383ace97e1344c09108",
       "isAdmin": false
+    },
+    {
+      "id": "574231ccad974ab3b6c571df75ab20c8",
+      "username": "Tester",
+      "email": "testuser+05842f5e21534dc483de6ef06c55550a@example.com",
+      "password": "p",
+      "householdId": "2cb4fc31336e446cb6b63a071900d5ce",
+      "token": "ee328fd3d8344bd8b98e7ee794e28292",
+      "isAdmin": true
+    },
+    {
+      "id": "3dbed33f249f45ec9f62a2ca7e553698",
+      "username": "tmpuser",
+      "email": "tmp+6c870c2caa7d45a89d70b7576df7b5ac@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "5d1834d4914e4d48a510ce0ecedf6551",
+      "isAdmin": false
+    },
+    {
+      "id": "5137a61966cc437c90e7b52597b6b231",
+      "username": "PYTEST_INT",
+      "email": "pyint@example.com",
+      "password": "p",
+      "householdId": "957621b617a8422cb945078cf16682a8",
+      "token": "4453d9c5a054406c83b5b85ad1e2d9ba"
     }
   ],
   "events": [
@@ -420,6 +456,13 @@
       "userId": "5ed45386b0184f37b0b8cfd5065bce2a",
       "type": "walk_evening",
       "timestamp": 1766531888.436393
+    },
+    {
+      "id": "6ef1d51b99b843c08d4d6e6953abcad8",
+      "householdId": "2cb4fc31336e446cb6b63a071900d5ce",
+      "userId": "574231ccad974ab3b6c571df75ab20c8",
+      "type": "walk_evening",
+      "timestamp": 1766592834.687984
     }
   ]
 }

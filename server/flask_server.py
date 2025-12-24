@@ -595,43 +595,50 @@ def api_today():
         'hasPoop': False
     }
     
-    for event in db['events']:
-        if event['householdId'] != user['householdId']:
+    # Debug: counts for events inspected
+    total_events = len(db.get('events', []))
+    matched_household = 0
+    matched_today = 0
+    sample_timestamps = []
+    for event in db.get('events', []):
+        if event.get('householdId') == user['householdId']:
+            matched_household += 1
+            sample_timestamps.append(event.get('timestamp'))
+        if event.get('householdId') != user['householdId']:
             continue
-        if event['timestamp'] >= today_ts:
+        if event.get('timestamp', 0) >= today_ts:
+            matched_today += 1
             # Get username
-            event_user = get_user_by_token(db, None)
-            for u in db['users']:
-                if u['id'] == event['userId']:
+            event_user = None
+            for u in db.get('users', []):
+                if u.get('id') == event.get('userId'):
                     event_user = u
                     break
-            
+
             events.append({
-                'id': event['id'],
-                'type': event['type'],
-                'timestamp': event['timestamp'],
-                'userId': event['userId'],
+                'id': event.get('id'),
+                'type': event.get('type'),
+                'timestamp': event.get('timestamp'),
+                'userId': event.get('userId'),
                 'username': event_user['username'] if event_user else 'Unknown'
             })
-            
+
             # Update schedule
-            if event['type'] == 'feed_morning':
+            if event.get('type') == 'feed_morning':
                 schedule['hasMorningFeed'] = True
-            elif event['type'] == 'feed_evening':
+            elif event.get('type') == 'feed_evening':
                 schedule['hasEveningFeed'] = True
-            elif event['type'] in ('walk_morning', 'walk_afternoon', 'walk_evening'):
-                # set generic hasWalk as well as specific flags
+            elif event.get('type') in ('walk_morning', 'walk_afternoon', 'walk_evening'):
                 schedule['hasWalk'] = True
-                if event['type'] == 'walk_morning':
+                if event.get('type') == 'walk_morning':
                     schedule['hasWalkMorning'] = True
-                elif event['type'] == 'walk_afternoon':
+                elif event.get('type') == 'walk_afternoon':
                     schedule['hasWalkAfternoon'] = True
                 else:
                     schedule['hasWalkEvening'] = True
-            elif event['type'] == 'walk':
-                # categorize generic walk by timestamp
+            elif event.get('type') == 'walk':
                 try:
-                    ev_dt = datetime.datetime.fromtimestamp(event['timestamp'])
+                    ev_dt = datetime.datetime.fromtimestamp(event.get('timestamp'))
                     hour = ev_dt.hour
                     schedule['hasWalk'] = True
                     if 4 <= hour < 12:
@@ -642,10 +649,17 @@ def api_today():
                         schedule['hasWalkEvening'] = True
                 except Exception:
                     schedule['hasWalk'] = True
-            elif event['type'] == 'pee':
+            elif event.get('type') == 'pee':
                 schedule['hasPee'] = True
-            elif event['type'] == 'poop':
+            elif event.get('type') == 'poop':
                 schedule['hasPoop'] = True
+
+    logger.info(f"/api/today debug: total_events={total_events}, matched_household={matched_household}, matched_today={matched_today}, sample_ts_count={len(sample_timestamps)}")
+    if sample_timestamps:
+        # show a sample of timestamps (up to 5) and their converted dates
+        sample = sample_timestamps[:5]
+        sample_dates = [str(datetime.datetime.fromtimestamp(t)) for t in sample]
+        logger.info(f"/api/today sample timestamps: {sample} -> {sample_dates}")
     
     logger.info(f"Returning {len(events)} events for today")
     
